@@ -1855,10 +1855,10 @@ Body:
       Sitting: true
     Script: |
       itemskill "MG_COLDBOLT",5;
-  - Id: 690
+  - Id: 690 # TODO: (NICE) DUMMY TESTING SKILL
     AegisName: Fire_Scroll_1_3
     Name: Level 3 Fire Bolt
-    Type: Delayconsume
+    Type: Usable
     Buy: 1000
     Weight: 10
     Flags:
@@ -1866,7 +1866,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      itemskill "MG_FIREBOLT",3;
+      skill "AL_HEAL",1,SKILL_PERM;
   - Id: 691
     AegisName: Fire_Scroll_1_5
     Name: Level 5 Fire Bolt

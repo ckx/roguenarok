@@ -85,60 +85,20 @@ Body:
         MaxLevel: 1
       - Name: SM_AUTOBERSERK
         MaxLevel: 1
-  - Job: Mage
+  - Job: Mage # TODO: MODIFIED TEST CLASS, MOVE TO IMPORTANT
     Inherit:
       Novice: true
     Tree:
-      - Name: MG_SRECOVERY
-        MaxLevel: 10
       - Name: MG_SIGHT
         MaxLevel: 1
-      - Name: MG_NAPALMBEAT
-        MaxLevel: 10
-      - Name: MG_SAFETYWALL
-        MaxLevel: 10
-        Requires:
-          - Name: MG_NAPALMBEAT
-            Level: 7
-          - Name: MG_SOULSTRIKE
-            Level: 5
       - Name: MG_SOULSTRIKE
-        MaxLevel: 10
-        Requires:
-          - Name: MG_NAPALMBEAT
-            Level: 4
-      - Name: MG_COLDBOLT
         MaxLevel: 10
       - Name: MG_FROSTDIVER
         MaxLevel: 10
-        Requires:
-          - Name: MG_COLDBOLT
-            Level: 5
-      - Name: MG_STONECURSE
-        MaxLevel: 10
-      - Name: MG_FIREBALL
-        MaxLevel: 10
-        Requires:
-          - Name: MG_FIREBOLT
-            Level: 4
-      - Name: MG_FIREWALL
-        MaxLevel: 10
-        Requires:
-          - Name: MG_FIREBALL
-            Level: 5
-          - Name: MG_SIGHT
-            Level: 1
       - Name: MG_FIREBOLT
         MaxLevel: 10
       - Name: MG_LIGHTNINGBOLT
         MaxLevel: 10
-      - Name: MG_THUNDERSTORM
-        MaxLevel: 10
-        Requires:
-          - Name: MG_LIGHTNINGBOLT
-            Level: 4
-      - Name: MG_ENERGYCOAT
-        MaxLevel: 1
   - Job: Archer
     Inherit:
       Novice: true

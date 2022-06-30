@@ -81,3 +81,10 @@ Body:
       Y: 36
     AdditionalMaps:
       2@nyd: true
+  - Id: 5
+    Name: Abyss Lake Instance
+    TimeLimit: 3600
+    Enter:
+      Map: abyss_03
+      X: 160
+      Y: 155
