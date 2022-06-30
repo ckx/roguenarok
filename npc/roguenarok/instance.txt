@@ -14,8 +14,8 @@
 
 // Instance Creation
 //============================================================
-prontera,151,190,6	script	Sample Instance	101,{
-	.@instance$ = "Abyss Lake Instance";
+geffen,116,97,6	script	Sample Instance	101,{
+	.@instance$ = "Roguenarok Instance";
 
 	if (instance_live_info(ILI_NAME, instance_id(IM_PARTY)) == .@instance$) {  // the instance "Abyss Lake Instance" is running
 		mes "[Sample Instance]";

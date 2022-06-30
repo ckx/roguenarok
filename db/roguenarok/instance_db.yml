@@ -42,42 +42,10 @@ Header:
   Version: 2
 
 Body:
-  - Id: 1
-    Name: Endless Tower
-    TimeLimit: 14400
+  - Id: 1001
+    Name: Roguenarok Instance
+    TimeLimit: 3600
     Enter:
-      Map: 1@tower
-      X: 50
-      Y: 355
-    AdditionalMaps:
-      2@tower: true
-      3@tower: true
-      4@tower: true
-      5@tower: true
-      6@tower: true
-  - Id: 2
-    Name: Sealed Catacomb
-    TimeLimit: 7200
-    Enter:
-      Map: 1@cata
-      X: 100
-      Y: 224
-    AdditionalMaps:
-      2@cata: true
-  - Id: 3
-    Name: Orc's Memory
-    Enter:
-      Map: 1@orcs 
-      X: 179
-      Y: 15
-    AdditionalMaps:
-      2@orcs: true
-  - Id: 4
-    Name: Nidhoggur's Nest
-    TimeLimit: 14400
-    Enter:
-      Map: 1@nyd
-      X: 32
-      Y: 36
-    AdditionalMaps:
-      2@nyd: true
+      Map: abyss_03
+      X: 160
+      Y: 155

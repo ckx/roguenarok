@@ -1,9 +1,9 @@
 geffen,110,48,0	script	Stacey	101,{
-	instance_create("Orc's Memory");
+	instance_create("Roguenarok Instance");
 	callsub L_Enter,1;
 	
 	L_Enter:
-	switch(instance_enter("Orc's Memory")) {
+	switch(instance_enter("Roguenarok Instance")) {
 	case IE_OTHER:
 		mes "An unknown error has occurred.";
 		close;
