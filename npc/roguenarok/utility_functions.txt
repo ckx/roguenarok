@@ -1,0 +1,6 @@
+// function get_new_instance;
+
+// function	script	get_new_instance	{
+// 	announce "from get new instance",0;
+// 	return "MagmaDun";
+// }

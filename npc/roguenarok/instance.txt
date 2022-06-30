@@ -14,8 +14,22 @@
 
 // Instance Creation
 //============================================================
-geffen,116,97,6	script	Sample Instance	101,{
-	.@instance$ = "Roguenarok Instance";
+geffen,116,97,6	script	Sample Instance	100,{
+	/* Function declaration */
+	function GetInstance;
+
+	.@instance$ = GetInstance();
+	announce "heyyo",0;
+	/* Function call */
+	mes .@instance$;
+
+	/* Function definition */
+	function GetInstance {
+		switch(rand(2)) {
+			case 0: return "MagmaDun";
+			case 1: return "ByalanIsland";
+		}
+	}
 
 	if (instance_live_info(ILI_NAME, instance_id(IM_PARTY)) == .@instance$) {  // the instance "Abyss Lake Instance" is running
 		mes "[Sample Instance]";

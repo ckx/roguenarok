@@ -1,4 +1,4 @@
-geffen,110,48,0	script	Stacey	101,{
+geffen,110,48,0	script	StaceyMom	101,{
 	instance_create("Roguenarok Instance");
 	callsub L_Enter,1;
 	

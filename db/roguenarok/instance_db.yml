@@ -42,10 +42,21 @@ Header:
   Version: 2
 
 Body:
-  - Id: 1001
-    Name: Roguenarok Instance
-    TimeLimit: 3600
+  - Id: 100
+    Name: MagmaDun
+    TimeLimit: 14400
     Enter:
-      Map: abyss_03
-      X: 160
-      Y: 155
+      Map: mag_dun01
+      X: 0
+      Y: 0
+    #AdditionalMaps:
+      #2@nyd: true
+  - Id: 101
+    Name: ByalanIsland
+    TimeLimit: 14400
+    Enter:
+      Map: iz_dun00
+      X: 0
+      Y: 0
+    #AdditionalMaps:
+      #2@nyd: true
