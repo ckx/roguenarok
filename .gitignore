@@ -135,3 +135,6 @@ Thumbs.db
 
 # CMakeFiles
 /CMakeFiles/
+
+# conf ignore
+/conf/import/
