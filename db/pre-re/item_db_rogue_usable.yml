@@ -87,9 +87,15 @@ Header:
   Type: ITEM_DB
   Version: 2
 
-Footer:
-  Imports:
-  - Path: db/pre-re/item_db_usable.yml
-  - Path: db/pre-re/item_db_equip.yml
-  - Path: db/pre-re/item_db_etc.yml
-  - Path: db/pre-re/item_db_rogue_usable.yml
+  - Id: 696969 # TODO: (NICE) DUMMY TESTING SKILL
+    AegisName: Test_Scroll
+    Name: Test Scroll
+    Type: Usable
+    Buy: 1000
+    Weight: 10
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Sitting: true
+    Script: |
+      skill "AL_HEAL",1,SKILL_PERM;
