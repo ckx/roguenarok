@@ -87,6 +87,7 @@ Header:
   Type: ITEM_DB
   Version: 2
 
+Body:
   - Id: 696969 # TODO: (NICE) DUMMY TESTING SKILL
     AegisName: Test_Scroll
     Name: Test Scroll
