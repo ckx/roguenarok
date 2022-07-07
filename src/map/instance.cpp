@@ -554,6 +554,49 @@ void instance_addnpc(std::shared_ptr<s_instance_data> idata)
 }
 
 /**
+* Roguenarok function for generating a "standalone" instance separated from chars/parties/guilds
+* @param name: Instance name
+* @return -4 = no free instances | -3 = already exists | -2 = character already in an instance | -1 = invalid type | On success return instance_id
+*/
+int instance_generate(const char *name) {
+	std::shared_ptr<s_instance_db> db = instance_search_db_name(name);
+
+	if (!db) {
+		ShowError("instance_create: Unknown instance %s creation was attempted.\n", name);
+		return -1;
+	}
+
+	struct map_session_data* session_data = nullptr;
+
+	if (instance_count <= 0)
+		return -4;
+
+	int instance_id = instance_count++;
+	std::shared_ptr<s_instance_data> entry = std::make_shared<s_instance_data>();
+
+	entry->id = db->id;
+	entry->regs.vars = i64db_alloc(DB_OPT_RELEASE_DATA);
+	entry->regs.arrays = nullptr;
+	instances.insert({ instance_id, entry });
+
+	if (session_data != nullptr) {
+		session_data->instance_id = instance_id;
+		session_data->instance_mode = IM_CHAR;
+	}
+
+	instance_wait.id.push_back(instance_id);
+	clif_instance_create(instance_id, instance_wait.id.size());
+	instance_subscription_timer(0, 0, 0, 0);
+
+	ShowInfo("[Instance] Created: %s (%d)\n", name, instance_id);
+
+	// Start the instance timer on instance creation
+	instance_startkeeptimer(entry, instance_id);
+
+	return instance_id;
+}
+
+/**
  * Create an instance
  * @param owner_id: Owner block ID
  * @param name: Instance name

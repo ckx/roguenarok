@@ -1,31 +1,47 @@
 geffen,125,100,0	script	gef420	45,1,1,{
 	OnTouch_:
-		set .@party_id,getcharid(1);
-		set .@md_name$,"Orc's Memory";
+		//set .@party_id,getcharid(1);
+		set .@md_name$,"MagmaDun";
+		mes "hello!";
+		//set .@inst_id,instance_generate(.@md_nam	e$);
+		set .@inst_id,instance_generate(.@md_name$);
+		if (.@inst_id > 0) {
+			mes "Generated new instance with ID " + .@inst_id;
+		} else {
+			mes "Something happened. " + .@inst_id;
+		}
+		getmapxy(.@map$,.@x,.@y,BL_PC);
+		setarray .@OptID[0],RDMOPT_VAR_STRAMOUNT,RDMOPT_RACE_TOLERACE_HUMAN;
+		setarray .@OptVal[0],3,5;
+		setarray .@OptParam[0],0;
+		makeitem3 2115,1,.@map$,.@x,.@y,0,0,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;
+		//todo: autowarp into generated instance
+		warp "0369#000020",0,0;
+		close;
 		// if (!instance_check_party(.@party_id,1,10)) {
 		// 	mes "u need a party of 2 muh d00d";
 		// 	close;
 		// }
-		if (instance_create(.@md_name$) < 0) {
-			party_create("ahaeuaehuaehueau",getcharid(0));
-			sleep2 200;
-		}
+		// if (instance_create(.@md_name$) < 0) {
+		// 	party_create("ahaeuaehuaehueau",getcharid(0));
+		// 	sleep2 200;
+		// }
 	
-		switch(instance_enter("Orc's Memory")) {
-			case IE_OTHER:
-				mes "An unknown error has occurred.";
-				close;
-			case IE_NOINSTANCE:
-				mes "Memorial Dungeon Orc's Memory does not exist.";
-				mes "Memorial Dungeon has been destroyed by the Party Leader, or because of the time limit. Please try again after 2 hours.";
-				close;
-			case IE_NOMEMBER:
-				mes "Only a member of the party can enter the Memorial Dungeon.";
-				close;
-			case IE_OK:
-				mapannounce "gef_fild10", getpartyname( getcharid(1) ) +" party's member "+strcharinfo(0)+" has entered the Orc's Memory.",bc_map,"0x00ff99";
-				if (checkquest(12059) == -1) setquest 12059;
-				if (getarg(0) == 0) close;
-				else end;
-		}	
+		// switch(instance_enter("Orc's Memory")) {
+		// 	case IE_OTHER:
+		// 		mes "An unknown error has occurred.";
+		// 		close;
+		// 	case IE_NOINSTANCE:
+		// 		mes "Memorial Dungeon Orc's Memory does not exist.";
+		// 		mes "Memorial Dungeon has been destroyed by the Party Leader, or because of the time limit. Please try again after 2 hours.";
+		// 		close;
+		// 	case IE_NOMEMBER:
+		// 		mes "Only a member of the party can enter the Memorial Dungeon.";
+		// 		close;
+		// 	case IE_OK:
+		// 		mapannounce "gef_fild10", getpartyname( getcharid(1) ) +" party's member "+strcharinfo(0)+" has entered the Orc's Memory.",bc_map,"0x00ff99";
+		// 		if (checkquest(12059) == -1) setquest 12059;
+		// 		if (getarg(0) == 0) close;
+		// 		else end;
+		// }	
 	}

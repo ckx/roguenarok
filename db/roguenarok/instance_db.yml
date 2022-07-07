@@ -49,8 +49,6 @@ Body:
       Map: mag_dun01
       X: 0
       Y: 0
-    #AdditionalMaps:
-      #2@nyd: true
   - Id: 101
     Name: ByalanIsland
     TimeLimit: 14400

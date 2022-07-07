@@ -21020,6 +21020,15 @@ int script_instancegetid(struct script_state* st, e_instance_mode mode)
  * Creates the instance
  * Returns Instance ID if created successfully
  *------------------------------------------*/
+BUILDIN_FUNC(instance_generate) {
+	script_pushint(st, instance_generate(script_getstr(st, 2)));
+	return SCRIPT_CMD_SUCCESS;
+}
+
+/*==========================================
+ * Creates the instance
+ * Returns Instance ID if created successfully
+ *------------------------------------------*/
 BUILDIN_FUNC(instance_create)
 {
 	e_instance_mode mode = IM_PARTY;
@@ -26572,6 +26581,7 @@ struct script_function buildin_func[] = {
 	BUILDIN_DEF(bg_info,"si"),
 
 	// Instancing
+	BUILDIN_DEF(instance_generate,"s??"),
 	BUILDIN_DEF(instance_create,"s??"),
 	BUILDIN_DEF(instance_destroy,"?"),
 	BUILDIN_DEF(instance_id,"?"),
