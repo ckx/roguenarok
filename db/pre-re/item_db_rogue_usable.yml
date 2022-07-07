@@ -99,7 +99,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""NV_BASIC"",1,SKILL_PERM;
+      skill "NV_BASIC",1,SKILL_PERM;
   - Id: 200002
     AegisName: SM_SWORD
     Name: Sword Mastery Scroll
@@ -111,7 +111,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_SWORD"",1,SKILL_PERM;
+      skill "SM_SWORD",1,SKILL_PERM;
   - Id: 200003
     AegisName: SM_TWOHAND
     Name: Two-Handed Sword Mastery Scroll
@@ -123,7 +123,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_TWOHAND"",1,SKILL_PERM;
+      skill "SM_TWOHAND",1,SKILL_PERM;
   - Id: 200004
     AegisName: SM_RECOVERY
     Name: Increase HP Recovery Scroll
@@ -135,7 +135,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_RECOVERY"",1,SKILL_PERM;
+      skill "SM_RECOVERY",1,SKILL_PERM;
   - Id: 200005
     AegisName: SM_BASH
     Name: Bash Scroll
@@ -147,7 +147,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_BASH"",1,SKILL_PERM;
+      skill "SM_BASH",1,SKILL_PERM;
   - Id: 200006
     AegisName: SM_PROVOKE
     Name: Provoke Scroll
@@ -159,7 +159,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_PROVOKE"",1,SKILL_PERM;
+      skill "SM_PROVOKE",1,SKILL_PERM;
   - Id: 200007
     AegisName: SM_MAGNUM
     Name: Magnum Break Scroll
@@ -171,7 +171,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_MAGNUM"",1,SKILL_PERM;
+      skill "SM_MAGNUM",1,SKILL_PERM;
   - Id: 200008
     AegisName: SM_ENDURE
     Name: Endure Scroll
@@ -183,7 +183,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_ENDURE"",1,SKILL_PERM;
+      skill "SM_ENDURE",1,SKILL_PERM;
   - Id: 200009
     AegisName: MG_SRECOVERY
     Name: Increase SP Recovery Scroll
@@ -195,7 +195,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_SRECOVERY"",1,SKILL_PERM;
+      skill "MG_SRECOVERY",1,SKILL_PERM;
   - Id: 200010
     AegisName: MG_SIGHT
     Name: Sight Scroll
@@ -207,7 +207,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_SIGHT"",1,SKILL_PERM;
+      skill "MG_SIGHT",1,SKILL_PERM;
   - Id: 200011
     AegisName: MG_NAPALMBEAT
     Name: Napalm Beat Scroll
@@ -219,7 +219,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_NAPALMBEAT"",1,SKILL_PERM;
+      skill "MG_NAPALMBEAT",1,SKILL_PERM;
   - Id: 200012
     AegisName: MG_SAFETYWALL
     Name: Safety Wall Scroll
@@ -231,7 +231,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_SAFETYWALL"",1,SKILL_PERM;
+      skill "MG_SAFETYWALL",1,SKILL_PERM;
   - Id: 200013
     AegisName: MG_SOULSTRIKE
     Name: Soul Strike Scroll
@@ -243,7 +243,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_SOULSTRIKE"",1,SKILL_PERM;
+      skill "MG_SOULSTRIKE",1,SKILL_PERM;
   - Id: 200014
     AegisName: MG_COLDBOLT
     Name: Cold Bolt Scroll
@@ -255,7 +255,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_COLDBOLT"",1,SKILL_PERM;
+      skill "MG_COLDBOLT",1,SKILL_PERM;
   - Id: 200015
     AegisName: MG_FROSTDIVER
     Name: Frost Diver Scroll
@@ -267,7 +267,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_FROSTDIVER"",1,SKILL_PERM;
+      skill "MG_FROSTDIVER",1,SKILL_PERM;
   - Id: 200016
     AegisName: MG_STONECURSE
     Name: Stone Curse Scroll
@@ -279,7 +279,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_STONECURSE"",1,SKILL_PERM;
+      skill "MG_STONECURSE",1,SKILL_PERM;
   - Id: 200017
     AegisName: MG_FIREBALL
     Name: Fire Ball Scroll
@@ -291,7 +291,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_FIREBALL"",1,SKILL_PERM;
+      skill "MG_FIREBALL",1,SKILL_PERM;
   - Id: 200018
     AegisName: MG_FIREWALL
     Name: Fire Wall Scroll
@@ -303,7 +303,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_FIREWALL"",1,SKILL_PERM;
+      skill "MG_FIREWALL",1,SKILL_PERM;
   - Id: 200019
     AegisName: MG_FIREBOLT
     Name: Fire Bolt Scroll
@@ -315,7 +315,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_FIREBOLT"",1,SKILL_PERM;
+      skill "MG_FIREBOLT",1,SKILL_PERM;
   - Id: 200020
     AegisName: MG_LIGHTNINGBOLT
     Name: Lightning Bolt Scroll
@@ -327,7 +327,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_LIGHTNINGBOLT"",1,SKILL_PERM;
+      skill "MG_LIGHTNINGBOLT",1,SKILL_PERM;
   - Id: 200021
     AegisName: MG_THUNDERSTORM
     Name: Thunder Storm Scroll
@@ -339,7 +339,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_THUNDERSTORM"",1,SKILL_PERM;
+      skill "MG_THUNDERSTORM",1,SKILL_PERM;
   - Id: 200022
     AegisName: AL_DP
     Name: Divine Protection Scroll
@@ -351,7 +351,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_DP"",1,SKILL_PERM;
+      skill "AL_DP",1,SKILL_PERM;
   - Id: 200023
     AegisName: AL_DEMONBANE
     Name: Demon Bane Scroll
@@ -363,7 +363,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_DEMONBANE"",1,SKILL_PERM;
+      skill "AL_DEMONBANE",1,SKILL_PERM;
   - Id: 200024
     AegisName: AL_RUWACH
     Name: Ruwach Scroll
@@ -375,7 +375,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_RUWACH"",1,SKILL_PERM;
+      skill "AL_RUWACH",1,SKILL_PERM;
   - Id: 200025
     AegisName: AL_PNEUMA
     Name: Pneuma Scroll
@@ -387,7 +387,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_PNEUMA"",1,SKILL_PERM;
+      skill "AL_PNEUMA",1,SKILL_PERM;
   - Id: 200026
     AegisName: AL_TELEPORT
     Name: Teleport Scroll
@@ -399,7 +399,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_TELEPORT"",1,SKILL_PERM;
+      skill "AL_TELEPORT",1,SKILL_PERM;
   - Id: 200027
     AegisName: AL_WARP
     Name: Warp Portal Scroll
@@ -411,7 +411,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_WARP"",1,SKILL_PERM;
+      skill "AL_WARP",1,SKILL_PERM;
   - Id: 200028
     AegisName: AL_HEAL
     Name: Heal Scroll
@@ -423,7 +423,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_HEAL"",1,SKILL_PERM;
+      skill "AL_HEAL",1,SKILL_PERM;
   - Id: 200029
     AegisName: AL_INCAGI
     Name: Increase Agility Scroll
@@ -435,7 +435,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_INCAGI"",1,SKILL_PERM;
+      skill "AL_INCAGI",1,SKILL_PERM;
   - Id: 200030
     AegisName: AL_DECAGI
     Name: Decrease Agility Scroll
@@ -447,7 +447,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_DECAGI"",1,SKILL_PERM;
+      skill "AL_DECAGI",1,SKILL_PERM;
   - Id: 200031
     AegisName: AL_HOLYWATER
     Name: Aqua Benedicta Scroll
@@ -459,7 +459,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_HOLYWATER"",1,SKILL_PERM;
+      skill "AL_HOLYWATER",1,SKILL_PERM;
   - Id: 200032
     AegisName: AL_CRUCIS
     Name: Signum Crucis Scroll
@@ -471,7 +471,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_CRUCIS"",1,SKILL_PERM;
+      skill "AL_CRUCIS",1,SKILL_PERM;
   - Id: 200033
     AegisName: AL_ANGELUS
     Name: Angelus Scroll
@@ -483,7 +483,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_ANGELUS"",1,SKILL_PERM;
+      skill "AL_ANGELUS",1,SKILL_PERM;
   - Id: 200034
     AegisName: AL_BLESSING
     Name: Blessing Scroll
@@ -495,7 +495,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_BLESSING"",1,SKILL_PERM;
+      skill "AL_BLESSING",1,SKILL_PERM;
   - Id: 200035
     AegisName: AL_CURE
     Name: Cure Scroll
@@ -507,7 +507,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_CURE"",1,SKILL_PERM;
+      skill "AL_CURE",1,SKILL_PERM;
   - Id: 200036
     AegisName: MC_INCCARRY
     Name: Enlarge Weight Limit Scroll
@@ -519,7 +519,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_INCCARRY"",1,SKILL_PERM;
+      skill "MC_INCCARRY",1,SKILL_PERM;
   - Id: 200037
     AegisName: MC_DISCOUNT
     Name: Discount Scroll
@@ -531,7 +531,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_DISCOUNT"",1,SKILL_PERM;
+      skill "MC_DISCOUNT",1,SKILL_PERM;
   - Id: 200038
     AegisName: MC_OVERCHARGE
     Name: Overcharge Scroll
@@ -543,7 +543,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_OVERCHARGE"",1,SKILL_PERM;
+      skill "MC_OVERCHARGE",1,SKILL_PERM;
   - Id: 200039
     AegisName: MC_PUSHCART
     Name: Pushcart Scroll
@@ -555,7 +555,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_PUSHCART"",1,SKILL_PERM;
+      skill "MC_PUSHCART",1,SKILL_PERM;
   - Id: 200040
     AegisName: MC_IDENTIFY
     Name: Item Appraisal Scroll
@@ -567,7 +567,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_IDENTIFY"",1,SKILL_PERM;
+      skill "MC_IDENTIFY",1,SKILL_PERM;
   - Id: 200041
     AegisName: MC_VENDING
     Name: Vending Scroll
@@ -579,7 +579,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_VENDING"",1,SKILL_PERM;
+      skill "MC_VENDING",1,SKILL_PERM;
   - Id: 200042
     AegisName: MC_MAMMONITE
     Name: Mammonite Scroll
@@ -591,7 +591,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_MAMMONITE"",1,SKILL_PERM;
+      skill "MC_MAMMONITE",1,SKILL_PERM;
   - Id: 200043
     AegisName: AC_OWL
     Name: Owl's Eye Scroll
@@ -603,7 +603,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_OWL"",1,SKILL_PERM;
+      skill "AC_OWL",1,SKILL_PERM;
   - Id: 200044
     AegisName: AC_VULTURE
     Name: Vulture's Eye Scroll
@@ -615,7 +615,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_VULTURE"",1,SKILL_PERM;
+      skill "AC_VULTURE",1,SKILL_PERM;
   - Id: 200045
     AegisName: AC_CONCENTRATION
     Name: Improve Concentration Scroll
@@ -627,7 +627,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_CONCENTRATION"",1,SKILL_PERM;
+      skill "AC_CONCENTRATION",1,SKILL_PERM;
   - Id: 200046
     AegisName: AC_DOUBLE
     Name: Double Strafe Scroll
@@ -639,7 +639,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_DOUBLE"",1,SKILL_PERM;
+      skill "AC_DOUBLE",1,SKILL_PERM;
   - Id: 200047
     AegisName: AC_SHOWER
     Name: Arrow Shower Scroll
@@ -651,7 +651,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_SHOWER"",1,SKILL_PERM;
+      skill "AC_SHOWER",1,SKILL_PERM;
   - Id: 200048
     AegisName: TF_DOUBLE
     Name: Double Attack Scroll
@@ -663,7 +663,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_DOUBLE"",1,SKILL_PERM;
+      skill "TF_DOUBLE",1,SKILL_PERM;
   - Id: 200049
     AegisName: TF_MISS
     Name: Improve Dodge Scroll
@@ -675,7 +675,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_MISS"",1,SKILL_PERM;
+      skill "TF_MISS",1,SKILL_PERM;
   - Id: 200050
     AegisName: TF_STEAL
     Name: Steal Scroll
@@ -687,7 +687,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_STEAL"",1,SKILL_PERM;
+      skill "TF_STEAL",1,SKILL_PERM;
   - Id: 200051
     AegisName: TF_HIDING
     Name: Hiding Scroll
@@ -699,7 +699,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_HIDING"",1,SKILL_PERM;
+      skill "TF_HIDING",1,SKILL_PERM;
   - Id: 200052
     AegisName: TF_POISON
     Name: Envenom Scroll
@@ -711,7 +711,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_POISON"",1,SKILL_PERM;
+      skill "TF_POISON",1,SKILL_PERM;
   - Id: 200053
     AegisName: TF_DETOXIFY
     Name: Detoxify Scroll
@@ -723,7 +723,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_DETOXIFY"",1,SKILL_PERM;
+      skill "TF_DETOXIFY",1,SKILL_PERM;
   - Id: 200054
     AegisName: ALL_RESURRECTION
     Name: Resurrection Scroll
@@ -735,7 +735,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""ALL_RESURRECTION"",1,SKILL_PERM;
+      skill "ALL_RESURRECTION",1,SKILL_PERM;
   - Id: 200055
     AegisName: KN_SPEARMASTERY
     Name: Spear Mastery Scroll
@@ -747,7 +747,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_SPEARMASTERY"",1,SKILL_PERM;
+      skill "KN_SPEARMASTERY",1,SKILL_PERM;
   - Id: 200056
     AegisName: KN_PIERCE
     Name: Pierce Scroll
@@ -759,7 +759,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_PIERCE"",1,SKILL_PERM;
+      skill "KN_PIERCE",1,SKILL_PERM;
   - Id: 200057
     AegisName: KN_BRANDISHSPEAR
     Name: Brandish Spear Scroll
@@ -771,7 +771,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_BRANDISHSPEAR"",1,SKILL_PERM;
+      skill "KN_BRANDISHSPEAR",1,SKILL_PERM;
   - Id: 200058
     AegisName: KN_SPEARSTAB
     Name: Spear Stab Scroll
@@ -783,7 +783,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_SPEARSTAB"",1,SKILL_PERM;
+      skill "KN_SPEARSTAB",1,SKILL_PERM;
   - Id: 200059
     AegisName: KN_SPEARBOOMERANG
     Name: Spear Boomerang Scroll
@@ -795,7 +795,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_SPEARBOOMERANG"",1,SKILL_PERM;
+      skill "KN_SPEARBOOMERANG",1,SKILL_PERM;
   - Id: 200060
     AegisName: KN_TWOHANDQUICKEN
     Name: Two-Hand Quicken Scroll
@@ -807,7 +807,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_TWOHANDQUICKEN"",1,SKILL_PERM;
+      skill "KN_TWOHANDQUICKEN",1,SKILL_PERM;
   - Id: 200061
     AegisName: KN_AUTOCOUNTER
     Name: Auto Counter Scroll
@@ -819,7 +819,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_AUTOCOUNTER"",1,SKILL_PERM;
+      skill "KN_AUTOCOUNTER",1,SKILL_PERM;
   - Id: 200062
     AegisName: KN_BOWLINGBASH
     Name: Bowling Bash Scroll
@@ -831,7 +831,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_BOWLINGBASH"",1,SKILL_PERM;
+      skill "KN_BOWLINGBASH",1,SKILL_PERM;
   - Id: 200063
     AegisName: KN_RIDING
     Name: Peco Peco Ride Scroll
@@ -843,7 +843,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_RIDING"",1,SKILL_PERM;
+      skill "KN_RIDING",1,SKILL_PERM;
   - Id: 200064
     AegisName: KN_CAVALIERMASTERY
     Name: Cavalry Mastery Scroll
@@ -855,7 +855,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""KN_CAVALIERMASTERY"",1,SKILL_PERM;
+      skill "KN_CAVALIERMASTERY",1,SKILL_PERM;
   - Id: 200065
     AegisName: PR_MACEMASTERY
     Name: Mace Mastery Scroll
@@ -867,7 +867,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_MACEMASTERY"",1,SKILL_PERM;
+      skill "PR_MACEMASTERY",1,SKILL_PERM;
   - Id: 200066
     AegisName: PR_IMPOSITIO
     Name: Impositio Manus Scroll
@@ -879,7 +879,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_IMPOSITIO"",1,SKILL_PERM;
+      skill "PR_IMPOSITIO",1,SKILL_PERM;
   - Id: 200067
     AegisName: PR_SUFFRAGIUM
     Name: Suffragium Scroll
@@ -891,7 +891,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_SUFFRAGIUM"",1,SKILL_PERM;
+      skill "PR_SUFFRAGIUM",1,SKILL_PERM;
   - Id: 200068
     AegisName: PR_ASPERSIO
     Name: Aspersio Scroll
@@ -903,7 +903,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_ASPERSIO"",1,SKILL_PERM;
+      skill "PR_ASPERSIO",1,SKILL_PERM;
   - Id: 200069
     AegisName: PR_BENEDICTIO
     Name: B.S Sacramenti Scroll
@@ -915,7 +915,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_BENEDICTIO"",1,SKILL_PERM;
+      skill "PR_BENEDICTIO",1,SKILL_PERM;
   - Id: 200070
     AegisName: PR_SANCTUARY
     Name: Sanctuary Scroll
@@ -927,7 +927,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_SANCTUARY"",1,SKILL_PERM;
+      skill "PR_SANCTUARY",1,SKILL_PERM;
   - Id: 200071
     AegisName: PR_SLOWPOISON
     Name: Slow Poison Scroll
@@ -939,7 +939,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_SLOWPOISON"",1,SKILL_PERM;
+      skill "PR_SLOWPOISON",1,SKILL_PERM;
   - Id: 200072
     AegisName: PR_STRECOVERY
     Name: Status Recovery Scroll
@@ -951,7 +951,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_STRECOVERY"",1,SKILL_PERM;
+      skill "PR_STRECOVERY",1,SKILL_PERM;
   - Id: 200073
     AegisName: PR_KYRIE
     Name: Kyrie Eleison Scroll
@@ -963,7 +963,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_KYRIE"",1,SKILL_PERM;
+      skill "PR_KYRIE",1,SKILL_PERM;
   - Id: 200074
     AegisName: PR_MAGNIFICAT
     Name: Magnificat Scroll
@@ -975,7 +975,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_MAGNIFICAT"",1,SKILL_PERM;
+      skill "PR_MAGNIFICAT",1,SKILL_PERM;
   - Id: 200075
     AegisName: PR_GLORIA
     Name: Gloria Scroll
@@ -987,7 +987,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_GLORIA"",1,SKILL_PERM;
+      skill "PR_GLORIA",1,SKILL_PERM;
   - Id: 200076
     AegisName: PR_LEXDIVINA
     Name: Lex Divina Scroll
@@ -999,7 +999,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_LEXDIVINA"",1,SKILL_PERM;
+      skill "PR_LEXDIVINA",1,SKILL_PERM;
   - Id: 200077
     AegisName: PR_TURNUNDEAD
     Name: Turn Undead Scroll
@@ -1011,7 +1011,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_TURNUNDEAD"",1,SKILL_PERM;
+      skill "PR_TURNUNDEAD",1,SKILL_PERM;
   - Id: 200078
     AegisName: PR_LEXAETERNA
     Name: Lex Aeterna Scroll
@@ -1023,7 +1023,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_LEXAETERNA"",1,SKILL_PERM;
+      skill "PR_LEXAETERNA",1,SKILL_PERM;
   - Id: 200079
     AegisName: PR_MAGNUS
     Name: Magnus Exorcismus Scroll
@@ -1035,7 +1035,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""PR_MAGNUS"",1,SKILL_PERM;
+      skill "PR_MAGNUS",1,SKILL_PERM;
   - Id: 200080
     AegisName: WZ_FIREPILLAR
     Name: Fire Pillar Scroll
@@ -1047,7 +1047,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_FIREPILLAR"",1,SKILL_PERM;
+      skill "WZ_FIREPILLAR",1,SKILL_PERM;
   - Id: 200081
     AegisName: WZ_SIGHTRASHER
     Name: Sightrasher Scroll
@@ -1059,7 +1059,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_SIGHTRASHER"",1,SKILL_PERM;
+      skill "WZ_SIGHTRASHER",1,SKILL_PERM;
   - Id: 200082
     AegisName: WZ_FIREIVY
     Name: Fire Ivy Scroll
@@ -1071,7 +1071,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_FIREIVY"",1,SKILL_PERM;
+      skill "WZ_FIREIVY",1,SKILL_PERM;
   - Id: 200083
     AegisName: WZ_METEOR
     Name: Meteor Storm Scroll
@@ -1083,7 +1083,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_METEOR"",1,SKILL_PERM;
+      skill "WZ_METEOR",1,SKILL_PERM;
   - Id: 200084
     AegisName: WZ_JUPITEL
     Name: Jupitel Thunder Scroll
@@ -1095,7 +1095,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_JUPITEL"",1,SKILL_PERM;
+      skill "WZ_JUPITEL",1,SKILL_PERM;
   - Id: 200085
     AegisName: WZ_VERMILION
     Name: Lord of Vermilion Scroll
@@ -1107,7 +1107,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_VERMILION"",1,SKILL_PERM;
+      skill "WZ_VERMILION",1,SKILL_PERM;
   - Id: 200086
     AegisName: WZ_WATERBALL
     Name: Water Ball Scroll
@@ -1119,7 +1119,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_WATERBALL"",1,SKILL_PERM;
+      skill "WZ_WATERBALL",1,SKILL_PERM;
   - Id: 200087
     AegisName: WZ_ICEWALL
     Name: Ice Wall Scroll
@@ -1131,7 +1131,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_ICEWALL"",1,SKILL_PERM;
+      skill "WZ_ICEWALL",1,SKILL_PERM;
   - Id: 200088
     AegisName: WZ_FROSTNOVA
     Name: Frost Nova Scroll
@@ -1143,7 +1143,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_FROSTNOVA"",1,SKILL_PERM;
+      skill "WZ_FROSTNOVA",1,SKILL_PERM;
   - Id: 200089
     AegisName: WZ_STORMGUST
     Name: Storm Gust Scroll
@@ -1155,7 +1155,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_STORMGUST"",1,SKILL_PERM;
+      skill "WZ_STORMGUST",1,SKILL_PERM;
   - Id: 200090
     AegisName: WZ_EARTHSPIKE
     Name: Earth Spike Scroll
@@ -1167,7 +1167,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_EARTHSPIKE"",1,SKILL_PERM;
+      skill "WZ_EARTHSPIKE",1,SKILL_PERM;
   - Id: 200091
     AegisName: WZ_HEAVENDRIVE
     Name: Heaven's Drive Scroll
@@ -1179,7 +1179,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_HEAVENDRIVE"",1,SKILL_PERM;
+      skill "WZ_HEAVENDRIVE",1,SKILL_PERM;
   - Id: 200092
     AegisName: WZ_QUAGMIRE
     Name: Quagmire Scroll
@@ -1191,7 +1191,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_QUAGMIRE"",1,SKILL_PERM;
+      skill "WZ_QUAGMIRE",1,SKILL_PERM;
   - Id: 200093
     AegisName: WZ_ESTIMATION
     Name: Sense Scroll
@@ -1203,7 +1203,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""WZ_ESTIMATION"",1,SKILL_PERM;
+      skill "WZ_ESTIMATION",1,SKILL_PERM;
   - Id: 200094
     AegisName: BS_IRON
     Name: Iron Tempering Scroll
@@ -1215,7 +1215,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_IRON"",1,SKILL_PERM;
+      skill "BS_IRON",1,SKILL_PERM;
   - Id: 200095
     AegisName: BS_STEEL
     Name: Steel Tempering Scroll
@@ -1227,7 +1227,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_STEEL"",1,SKILL_PERM;
+      skill "BS_STEEL",1,SKILL_PERM;
   - Id: 200096
     AegisName: BS_ENCHANTEDSTONE
     Name: Enchanted Stone Craft Scroll
@@ -1239,7 +1239,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_ENCHANTEDSTONE"",1,SKILL_PERM;
+      skill "BS_ENCHANTEDSTONE",1,SKILL_PERM;
   - Id: 200097
     AegisName: BS_ORIDEOCON
     Name: Research Oridecon Scroll
@@ -1251,7 +1251,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_ORIDEOCON"",1,SKILL_PERM;
+      skill "BS_ORIDEOCON",1,SKILL_PERM;
   - Id: 200098
     AegisName: BS_DAGGER
     Name: Smith Dagger Scroll
@@ -1263,7 +1263,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_DAGGER"",1,SKILL_PERM;
+      skill "BS_DAGGER",1,SKILL_PERM;
   - Id: 200099
     AegisName: BS_SWORD
     Name: Smith Sword Scroll
@@ -1275,7 +1275,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_SWORD"",1,SKILL_PERM;
+      skill "BS_SWORD",1,SKILL_PERM;
   - Id: 200100
     AegisName: BS_TWOHANDSWORD
     Name: Smith Two-Handed Sword Scroll
@@ -1287,7 +1287,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_TWOHANDSWORD"",1,SKILL_PERM;
+      skill "BS_TWOHANDSWORD",1,SKILL_PERM;
   - Id: 200101
     AegisName: BS_AXE
     Name: Smith Axe Scroll
@@ -1299,7 +1299,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_AXE"",1,SKILL_PERM;
+      skill "BS_AXE",1,SKILL_PERM;
   - Id: 200102
     AegisName: BS_MACE
     Name: Smith Mace Scroll
@@ -1311,7 +1311,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_MACE"",1,SKILL_PERM;
+      skill "BS_MACE",1,SKILL_PERM;
   - Id: 200103
     AegisName: BS_KNUCKLE
     Name: Smith Brass Knuckle Scroll
@@ -1323,7 +1323,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_KNUCKLE"",1,SKILL_PERM;
+      skill "BS_KNUCKLE",1,SKILL_PERM;
   - Id: 200104
     AegisName: BS_SPEAR
     Name: Smith Spear Scroll
@@ -1335,7 +1335,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_SPEAR"",1,SKILL_PERM;
+      skill "BS_SPEAR",1,SKILL_PERM;
   - Id: 200105
     AegisName: BS_HILTBINDING
     Name: Hilt Binding Scroll
@@ -1347,7 +1347,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_HILTBINDING"",1,SKILL_PERM;
+      skill "BS_HILTBINDING",1,SKILL_PERM;
   - Id: 200106
     AegisName: BS_FINDINGORE
     Name: Finding Ore Scroll
@@ -1359,7 +1359,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_FINDINGORE"",1,SKILL_PERM;
+      skill "BS_FINDINGORE",1,SKILL_PERM;
   - Id: 200107
     AegisName: BS_WEAPONRESEARCH
     Name: Weaponry Research Scroll
@@ -1371,7 +1371,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_WEAPONRESEARCH"",1,SKILL_PERM;
+      skill "BS_WEAPONRESEARCH",1,SKILL_PERM;
   - Id: 200108
     AegisName: BS_REPAIRWEAPON
     Name: Repair Weapon Scroll
@@ -1383,7 +1383,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_REPAIRWEAPON"",1,SKILL_PERM;
+      skill "BS_REPAIRWEAPON",1,SKILL_PERM;
   - Id: 200109
     AegisName: BS_SKINTEMPER
     Name: Skin Tempering Scroll
@@ -1395,7 +1395,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_SKINTEMPER"",1,SKILL_PERM;
+      skill "BS_SKINTEMPER",1,SKILL_PERM;
   - Id: 200110
     AegisName: BS_HAMMERFALL
     Name: Hammer Fall Scroll
@@ -1407,7 +1407,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_HAMMERFALL"",1,SKILL_PERM;
+      skill "BS_HAMMERFALL",1,SKILL_PERM;
   - Id: 200111
     AegisName: BS_ADRENALINE
     Name: Adrenaline Rush Scroll
@@ -1419,7 +1419,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_ADRENALINE"",1,SKILL_PERM;
+      skill "BS_ADRENALINE",1,SKILL_PERM;
   - Id: 200112
     AegisName: BS_WEAPONPERFECT
     Name: Weapon Perfection Scroll
@@ -1431,7 +1431,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_WEAPONPERFECT"",1,SKILL_PERM;
+      skill "BS_WEAPONPERFECT",1,SKILL_PERM;
   - Id: 200113
     AegisName: BS_OVERTHRUST
     Name: Over Thrust Scroll
@@ -1443,7 +1443,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_OVERTHRUST"",1,SKILL_PERM;
+      skill "BS_OVERTHRUST",1,SKILL_PERM;
   - Id: 200114
     AegisName: BS_MAXIMIZE
     Name: Maximize Power Scroll
@@ -1455,7 +1455,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BS_MAXIMIZE"",1,SKILL_PERM;
+      skill "BS_MAXIMIZE",1,SKILL_PERM;
   - Id: 200115
     AegisName: HT_SKIDTRAP
     Name: Skid Trap Scroll
@@ -1467,7 +1467,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_SKIDTRAP"",1,SKILL_PERM;
+      skill "HT_SKIDTRAP",1,SKILL_PERM;
   - Id: 200116
     AegisName: HT_LANDMINE
     Name: Land Mine Scroll
@@ -1479,7 +1479,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_LANDMINE"",1,SKILL_PERM;
+      skill "HT_LANDMINE",1,SKILL_PERM;
   - Id: 200117
     AegisName: HT_ANKLESNARE
     Name: Ankle Snare Scroll
@@ -1491,7 +1491,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_ANKLESNARE"",1,SKILL_PERM;
+      skill "HT_ANKLESNARE",1,SKILL_PERM;
   - Id: 200118
     AegisName: HT_SHOCKWAVE
     Name: Shockwave Trap Scroll
@@ -1503,7 +1503,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_SHOCKWAVE"",1,SKILL_PERM;
+      skill "HT_SHOCKWAVE",1,SKILL_PERM;
   - Id: 200119
     AegisName: HT_SANDMAN
     Name: Sandman Scroll
@@ -1515,7 +1515,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_SANDMAN"",1,SKILL_PERM;
+      skill "HT_SANDMAN",1,SKILL_PERM;
   - Id: 200120
     AegisName: HT_FLASHER
     Name: Flasher Scroll
@@ -1527,7 +1527,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_FLASHER"",1,SKILL_PERM;
+      skill "HT_FLASHER",1,SKILL_PERM;
   - Id: 200121
     AegisName: HT_FREEZINGTRAP
     Name: Freezing Trap Scroll
@@ -1539,7 +1539,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_FREEZINGTRAP"",1,SKILL_PERM;
+      skill "HT_FREEZINGTRAP",1,SKILL_PERM;
   - Id: 200122
     AegisName: HT_BLASTMINE
     Name: Blast Mine Scroll
@@ -1551,7 +1551,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_BLASTMINE"",1,SKILL_PERM;
+      skill "HT_BLASTMINE",1,SKILL_PERM;
   - Id: 200123
     AegisName: HT_CLAYMORETRAP
     Name: Claymore Trap Scroll
@@ -1563,7 +1563,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_CLAYMORETRAP"",1,SKILL_PERM;
+      skill "HT_CLAYMORETRAP",1,SKILL_PERM;
   - Id: 200124
     AegisName: HT_REMOVETRAP
     Name: Remove Trap Scroll
@@ -1575,7 +1575,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_REMOVETRAP"",1,SKILL_PERM;
+      skill "HT_REMOVETRAP",1,SKILL_PERM;
   - Id: 200125
     AegisName: HT_TALKIEBOX
     Name: Talkie Box Scroll
@@ -1587,7 +1587,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_TALKIEBOX"",1,SKILL_PERM;
+      skill "HT_TALKIEBOX",1,SKILL_PERM;
   - Id: 200126
     AegisName: HT_BEASTBANE
     Name: Beast Bane Scroll
@@ -1599,7 +1599,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_BEASTBANE"",1,SKILL_PERM;
+      skill "HT_BEASTBANE",1,SKILL_PERM;
   - Id: 200127
     AegisName: HT_FALCON
     Name: Falconry Mastery Scroll
@@ -1611,7 +1611,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_FALCON"",1,SKILL_PERM;
+      skill "HT_FALCON",1,SKILL_PERM;
   - Id: 200128
     AegisName: HT_STEELCROW
     Name: Steel Crow Scroll
@@ -1623,7 +1623,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_STEELCROW"",1,SKILL_PERM;
+      skill "HT_STEELCROW",1,SKILL_PERM;
   - Id: 200129
     AegisName: HT_BLITZBEAT
     Name: Blitz Beat Scroll
@@ -1635,7 +1635,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_BLITZBEAT"",1,SKILL_PERM;
+      skill "HT_BLITZBEAT",1,SKILL_PERM;
   - Id: 200130
     AegisName: HT_DETECTING
     Name: Detect Scroll
@@ -1647,7 +1647,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_DETECTING"",1,SKILL_PERM;
+      skill "HT_DETECTING",1,SKILL_PERM;
   - Id: 200131
     AegisName: HT_SPRINGTRAP
     Name: Spring Trap Scroll
@@ -1659,7 +1659,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""HT_SPRINGTRAP"",1,SKILL_PERM;
+      skill "HT_SPRINGTRAP",1,SKILL_PERM;
   - Id: 200132
     AegisName: AS_RIGHT
     Name: Right-Hand Mastery Scroll
@@ -1671,7 +1671,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_RIGHT"",1,SKILL_PERM;
+      skill "AS_RIGHT",1,SKILL_PERM;
   - Id: 200133
     AegisName: AS_LEFT
     Name: Left-Hand Mastery Scroll
@@ -1683,7 +1683,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_LEFT"",1,SKILL_PERM;
+      skill "AS_LEFT",1,SKILL_PERM;
   - Id: 200134
     AegisName: AS_KATAR
     Name: Katar Mastery Scroll
@@ -1695,7 +1695,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_KATAR"",1,SKILL_PERM;
+      skill "AS_KATAR",1,SKILL_PERM;
   - Id: 200135
     AegisName: AS_CLOAKING
     Name: Cloaking Scroll
@@ -1707,7 +1707,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_CLOAKING"",1,SKILL_PERM;
+      skill "AS_CLOAKING",1,SKILL_PERM;
   - Id: 200136
     AegisName: AS_SONICBLOW
     Name: Sonic Blow Scroll
@@ -1719,7 +1719,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_SONICBLOW"",1,SKILL_PERM;
+      skill "AS_SONICBLOW",1,SKILL_PERM;
   - Id: 200137
     AegisName: AS_GRIMTOOTH
     Name: Grimtooth Scroll
@@ -1731,7 +1731,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_GRIMTOOTH"",1,SKILL_PERM;
+      skill "AS_GRIMTOOTH",1,SKILL_PERM;
   - Id: 200138
     AegisName: AS_ENCHANTPOISON
     Name: Enchant Poison Scroll
@@ -1743,7 +1743,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_ENCHANTPOISON"",1,SKILL_PERM;
+      skill "AS_ENCHANTPOISON",1,SKILL_PERM;
   - Id: 200139
     AegisName: AS_POISONREACT
     Name: Poison React Scroll
@@ -1755,7 +1755,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_POISONREACT"",1,SKILL_PERM;
+      skill "AS_POISONREACT",1,SKILL_PERM;
   - Id: 200140
     AegisName: AS_VENOMDUST
     Name: Venom Dust Scroll
@@ -1767,7 +1767,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_VENOMDUST"",1,SKILL_PERM;
+      skill "AS_VENOMDUST",1,SKILL_PERM;
   - Id: 200141
     AegisName: AS_SPLASHER
     Name: Venom Splasher Scroll
@@ -1779,7 +1779,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AS_SPLASHER"",1,SKILL_PERM;
+      skill "AS_SPLASHER",1,SKILL_PERM;
   - Id: 200142
     AegisName: NV_FIRSTAID
     Name: First Aid Scroll
@@ -1791,7 +1791,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""NV_FIRSTAID"",1,SKILL_PERM;
+      skill "NV_FIRSTAID",1,SKILL_PERM;
   - Id: 200143
     AegisName: NV_TRICKDEAD
     Name: Play Dead Scroll
@@ -1803,7 +1803,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""NV_TRICKDEAD"",1,SKILL_PERM;
+      skill "NV_TRICKDEAD",1,SKILL_PERM;
   - Id: 200144
     AegisName: SM_MOVINGRECOVERY
     Name: Moving HP Recovery Scroll
@@ -1815,7 +1815,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_MOVINGRECOVERY"",1,SKILL_PERM;
+      skill "SM_MOVINGRECOVERY",1,SKILL_PERM;
   - Id: 200145
     AegisName: SM_FATALBLOW
     Name: Fatal Blow Scroll
@@ -1827,7 +1827,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_FATALBLOW"",1,SKILL_PERM;
+      skill "SM_FATALBLOW",1,SKILL_PERM;
   - Id: 200146
     AegisName: SM_AUTOBERSERK
     Name: Auto Berserk Scroll
@@ -1839,7 +1839,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SM_AUTOBERSERK"",1,SKILL_PERM;
+      skill "SM_AUTOBERSERK",1,SKILL_PERM;
   - Id: 200147
     AegisName: AC_MAKINGARROW
     Name: Arrow Crafting Scroll
@@ -1851,7 +1851,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_MAKINGARROW"",1,SKILL_PERM;
+      skill "AC_MAKINGARROW",1,SKILL_PERM;
   - Id: 200148
     AegisName: AC_CHARGEARROW
     Name: Charge Arrow Scroll
@@ -1863,7 +1863,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AC_CHARGEARROW"",1,SKILL_PERM;
+      skill "AC_CHARGEARROW",1,SKILL_PERM;
   - Id: 200149
     AegisName: TF_SPRINKLESAND
     Name: Sprinkle Sand Scroll
@@ -1875,7 +1875,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_SPRINKLESAND"",1,SKILL_PERM;
+      skill "TF_SPRINKLESAND",1,SKILL_PERM;
   - Id: 200150
     AegisName: TF_BACKSLIDING
     Name: Back Slide Scroll
@@ -1887,7 +1887,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_BACKSLIDING"",1,SKILL_PERM;
+      skill "TF_BACKSLIDING",1,SKILL_PERM;
   - Id: 200151
     AegisName: TF_PICKSTONE
     Name: Pick Stone Scroll
@@ -1899,7 +1899,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_PICKSTONE"",1,SKILL_PERM;
+      skill "TF_PICKSTONE",1,SKILL_PERM;
   - Id: 200152
     AegisName: TF_THROWSTONE
     Name: Throw Stone Scroll
@@ -1911,7 +1911,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""TF_THROWSTONE"",1,SKILL_PERM;
+      skill "TF_THROWSTONE",1,SKILL_PERM;
   - Id: 200153
     AegisName: MC_CARTREVOLUTION
     Name: Cart Revolution Scroll
@@ -1923,7 +1923,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_CARTREVOLUTION"",1,SKILL_PERM;
+      skill "MC_CARTREVOLUTION",1,SKILL_PERM;
   - Id: 200154
     AegisName: MC_CHANGECART
     Name: Change Cart Scroll
@@ -1935,7 +1935,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_CHANGECART"",1,SKILL_PERM;
+      skill "MC_CHANGECART",1,SKILL_PERM;
   - Id: 200155
     AegisName: MC_LOUD
     Name: Crazy Uproar Scroll
@@ -1947,7 +1947,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MC_LOUD"",1,SKILL_PERM;
+      skill "MC_LOUD",1,SKILL_PERM;
   - Id: 200156
     AegisName: AL_HOLYLIGHT
     Name: Holy Light Scroll
@@ -1959,7 +1959,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AL_HOLYLIGHT"",1,SKILL_PERM;
+      skill "AL_HOLYLIGHT",1,SKILL_PERM;
   - Id: 200157
     AegisName: MG_ENERGYCOAT
     Name: Energy Coat Scroll
@@ -1971,7 +1971,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MG_ENERGYCOAT"",1,SKILL_PERM;
+      skill "MG_ENERGYCOAT",1,SKILL_PERM;
   - Id: 200158
     AegisName: RG_SNATCHER
     Name: Snatcher Scroll
@@ -1983,7 +1983,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_SNATCHER"",1,SKILL_PERM;
+      skill "RG_SNATCHER",1,SKILL_PERM;
   - Id: 200159
     AegisName: RG_STEALCOIN
     Name: Steal Coin Scroll
@@ -1995,7 +1995,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_STEALCOIN"",1,SKILL_PERM;
+      skill "RG_STEALCOIN",1,SKILL_PERM;
   - Id: 200160
     AegisName: RG_BACKSTAP
     Name: Back Stab Scroll
@@ -2007,7 +2007,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_BACKSTAP"",1,SKILL_PERM;
+      skill "RG_BACKSTAP",1,SKILL_PERM;
   - Id: 200161
     AegisName: RG_TUNNELDRIVE
     Name: Tunnel Drive Scroll
@@ -2019,7 +2019,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_TUNNELDRIVE"",1,SKILL_PERM;
+      skill "RG_TUNNELDRIVE",1,SKILL_PERM;
   - Id: 200162
     AegisName: RG_RAID
     Name: Raid Scroll
@@ -2031,7 +2031,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_RAID"",1,SKILL_PERM;
+      skill "RG_RAID",1,SKILL_PERM;
   - Id: 200163
     AegisName: RG_STRIPWEAPON
     Name: Strip Weapon Scroll
@@ -2043,7 +2043,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_STRIPWEAPON"",1,SKILL_PERM;
+      skill "RG_STRIPWEAPON",1,SKILL_PERM;
   - Id: 200164
     AegisName: RG_STRIPSHIELD
     Name: Strip Shield Scroll
@@ -2055,7 +2055,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_STRIPSHIELD"",1,SKILL_PERM;
+      skill "RG_STRIPSHIELD",1,SKILL_PERM;
   - Id: 200165
     AegisName: RG_STRIPARMOR
     Name: Strip Armor Scroll
@@ -2067,7 +2067,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_STRIPARMOR"",1,SKILL_PERM;
+      skill "RG_STRIPARMOR",1,SKILL_PERM;
   - Id: 200166
     AegisName: RG_STRIPHELM
     Name: Strip Helm Scroll
@@ -2079,7 +2079,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_STRIPHELM"",1,SKILL_PERM;
+      skill "RG_STRIPHELM",1,SKILL_PERM;
   - Id: 200167
     AegisName: RG_INTIMIDATE
     Name: Intimidate Scroll
@@ -2091,7 +2091,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_INTIMIDATE"",1,SKILL_PERM;
+      skill "RG_INTIMIDATE",1,SKILL_PERM;
   - Id: 200168
     AegisName: RG_GRAFFITI
     Name: Graffiti Scroll
@@ -2103,7 +2103,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_GRAFFITI"",1,SKILL_PERM;
+      skill "RG_GRAFFITI",1,SKILL_PERM;
   - Id: 200169
     AegisName: RG_FLAGGRAFFITI
     Name: Flag Graffiti Scroll
@@ -2115,7 +2115,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_FLAGGRAFFITI"",1,SKILL_PERM;
+      skill "RG_FLAGGRAFFITI",1,SKILL_PERM;
   - Id: 200170
     AegisName: RG_CLEANER
     Name: Cleaner Scroll
@@ -2127,7 +2127,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_CLEANER"",1,SKILL_PERM;
+      skill "RG_CLEANER",1,SKILL_PERM;
   - Id: 200171
     AegisName: RG_GANGSTER
     Name: Gangster's Paradise Scroll
@@ -2139,7 +2139,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_GANGSTER"",1,SKILL_PERM;
+      skill "RG_GANGSTER",1,SKILL_PERM;
   - Id: 200172
     AegisName: RG_COMPULSION
     Name: Compulsion Discount Scroll
@@ -2151,7 +2151,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_COMPULSION"",1,SKILL_PERM;
+      skill "RG_COMPULSION",1,SKILL_PERM;
   - Id: 200173
     AegisName: RG_PLAGIARISM
     Name: Plagiarism Scroll
@@ -2163,7 +2163,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""RG_PLAGIARISM"",1,SKILL_PERM;
+      skill "RG_PLAGIARISM",1,SKILL_PERM;
   - Id: 200174
     AegisName: AM_AXEMASTERY
     Name: Axe Mastery Scroll
@@ -2175,7 +2175,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_AXEMASTERY"",1,SKILL_PERM;
+      skill "AM_AXEMASTERY",1,SKILL_PERM;
   - Id: 200175
     AegisName: AM_LEARNINGPOTION
     Name: Learning Potion Scroll
@@ -2187,7 +2187,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_LEARNINGPOTION"",1,SKILL_PERM;
+      skill "AM_LEARNINGPOTION",1,SKILL_PERM;
   - Id: 200176
     AegisName: AM_PHARMACY
     Name: Pharmacy Scroll
@@ -2199,7 +2199,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_PHARMACY"",1,SKILL_PERM;
+      skill "AM_PHARMACY",1,SKILL_PERM;
   - Id: 200177
     AegisName: AM_DEMONSTRATION
     Name: Demonstration Scroll
@@ -2211,7 +2211,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_DEMONSTRATION"",1,SKILL_PERM;
+      skill "AM_DEMONSTRATION",1,SKILL_PERM;
   - Id: 200178
     AegisName: AM_ACIDTERROR
     Name: Acid Terror Scroll
@@ -2223,7 +2223,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_ACIDTERROR"",1,SKILL_PERM;
+      skill "AM_ACIDTERROR",1,SKILL_PERM;
   - Id: 200179
     AegisName: AM_POTIONPITCHER
     Name: Potion Pitcher Scroll
@@ -2235,7 +2235,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_POTIONPITCHER"",1,SKILL_PERM;
+      skill "AM_POTIONPITCHER",1,SKILL_PERM;
   - Id: 200180
     AegisName: AM_CANNIBALIZE
     Name: Bio Cannibalize Scroll
@@ -2247,7 +2247,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CANNIBALIZE"",1,SKILL_PERM;
+      skill "AM_CANNIBALIZE",1,SKILL_PERM;
   - Id: 200181
     AegisName: AM_SPHEREMINE
     Name: Sphere Mine Scroll
@@ -2259,7 +2259,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_SPHEREMINE"",1,SKILL_PERM;
+      skill "AM_SPHEREMINE",1,SKILL_PERM;
   - Id: 200182
     AegisName: AM_CP_WEAPON
     Name: Chemical Protection Weapon Scroll
@@ -2271,7 +2271,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CP_WEAPON"",1,SKILL_PERM;
+      skill "AM_CP_WEAPON",1,SKILL_PERM;
   - Id: 200183
     AegisName: AM_CP_SHIELD
     Name: Chemical Protection Shield Scroll
@@ -2283,7 +2283,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CP_SHIELD"",1,SKILL_PERM;
+      skill "AM_CP_SHIELD",1,SKILL_PERM;
   - Id: 200184
     AegisName: AM_CP_ARMOR
     Name: Chemical Protection Armor Scroll
@@ -2295,7 +2295,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CP_ARMOR"",1,SKILL_PERM;
+      skill "AM_CP_ARMOR",1,SKILL_PERM;
   - Id: 200185
     AegisName: AM_CP_HELM
     Name: Chemical Protection Helm Scroll
@@ -2307,7 +2307,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CP_HELM"",1,SKILL_PERM;
+      skill "AM_CP_HELM",1,SKILL_PERM;
   - Id: 200186
     AegisName: AM_BIOETHICS
     Name: Bioethics Scroll
@@ -2319,7 +2319,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_BIOETHICS"",1,SKILL_PERM;
+      skill "AM_BIOETHICS",1,SKILL_PERM;
   - Id: 200187
     AegisName: AM_BIOTECHNOLOGY
     Name: Biotechnology Scroll
@@ -2331,7 +2331,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_BIOTECHNOLOGY"",1,SKILL_PERM;
+      skill "AM_BIOTECHNOLOGY",1,SKILL_PERM;
   - Id: 200188
     AegisName: AM_CREATECREATURE
     Name: Create Creature Scroll
@@ -2343,7 +2343,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CREATECREATURE"",1,SKILL_PERM;
+      skill "AM_CREATECREATURE",1,SKILL_PERM;
   - Id: 200189
     AegisName: AM_CULTIVATION
     Name: Cultivation Scroll
@@ -2355,7 +2355,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CULTIVATION"",1,SKILL_PERM;
+      skill "AM_CULTIVATION",1,SKILL_PERM;
   - Id: 200190
     AegisName: AM_FLAMECONTROL
     Name: Flame Control Scroll
@@ -2367,7 +2367,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_FLAMECONTROL"",1,SKILL_PERM;
+      skill "AM_FLAMECONTROL",1,SKILL_PERM;
   - Id: 200191
     AegisName: AM_CALLHOMUN
     Name: Call Homunculus Scroll
@@ -2379,7 +2379,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_CALLHOMUN"",1,SKILL_PERM;
+      skill "AM_CALLHOMUN",1,SKILL_PERM;
   - Id: 200192
     AegisName: AM_REST
     Name: Rest Scroll
@@ -2391,7 +2391,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_REST"",1,SKILL_PERM;
+      skill "AM_REST",1,SKILL_PERM;
   - Id: 200193
     AegisName: AM_DRILLMASTER
     Name: Drillmaster Scroll
@@ -2403,7 +2403,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_DRILLMASTER"",1,SKILL_PERM;
+      skill "AM_DRILLMASTER",1,SKILL_PERM;
   - Id: 200194
     AegisName: AM_HEALHOMUN
     Name: Heal Homunculus Scroll
@@ -2415,7 +2415,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_HEALHOMUN"",1,SKILL_PERM;
+      skill "AM_HEALHOMUN",1,SKILL_PERM;
   - Id: 200195
     AegisName: AM_RESURRECTHOMUN
     Name: Resurrect Homunculus Scroll
@@ -2427,7 +2427,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""AM_RESURRECTHOMUN"",1,SKILL_PERM;
+      skill "AM_RESURRECTHOMUN",1,SKILL_PERM;
   - Id: 200196
     AegisName: CR_TRUST
     Name: Faith Scroll
@@ -2439,7 +2439,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_TRUST"",1,SKILL_PERM;
+      skill "CR_TRUST",1,SKILL_PERM;
   - Id: 200197
     AegisName: CR_AUTOGUARD
     Name: Auto Guard Scroll
@@ -2451,7 +2451,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_AUTOGUARD"",1,SKILL_PERM;
+      skill "CR_AUTOGUARD",1,SKILL_PERM;
   - Id: 200198
     AegisName: CR_SHIELDCHARGE
     Name: Shield Charge Scroll
@@ -2463,7 +2463,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_SHIELDCHARGE"",1,SKILL_PERM;
+      skill "CR_SHIELDCHARGE",1,SKILL_PERM;
   - Id: 200199
     AegisName: CR_SHIELDBOOMERANG
     Name: Shield Boomerang Scroll
@@ -2475,7 +2475,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_SHIELDBOOMERANG"",1,SKILL_PERM;
+      skill "CR_SHIELDBOOMERANG",1,SKILL_PERM;
   - Id: 200200
     AegisName: CR_REFLECTSHIELD
     Name: Reflect Shield Scroll
@@ -2487,7 +2487,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_REFLECTSHIELD"",1,SKILL_PERM;
+      skill "CR_REFLECTSHIELD",1,SKILL_PERM;
   - Id: 200201
     AegisName: CR_HOLYCROSS
     Name: Holy Cross Scroll
@@ -2499,7 +2499,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_HOLYCROSS"",1,SKILL_PERM;
+      skill "CR_HOLYCROSS",1,SKILL_PERM;
   - Id: 200202
     AegisName: CR_GRANDCROSS
     Name: Grand Cross Scroll
@@ -2511,7 +2511,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_GRANDCROSS"",1,SKILL_PERM;
+      skill "CR_GRANDCROSS",1,SKILL_PERM;
   - Id: 200203
     AegisName: CR_DEVOTION
     Name: Devotion Scroll
@@ -2523,7 +2523,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_DEVOTION"",1,SKILL_PERM;
+      skill "CR_DEVOTION",1,SKILL_PERM;
   - Id: 200204
     AegisName: CR_PROVIDENCE
     Name: Providence Scroll
@@ -2535,7 +2535,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_PROVIDENCE"",1,SKILL_PERM;
+      skill "CR_PROVIDENCE",1,SKILL_PERM;
   - Id: 200205
     AegisName: CR_DEFENDER
     Name: Defender Scroll
@@ -2547,7 +2547,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_DEFENDER"",1,SKILL_PERM;
+      skill "CR_DEFENDER",1,SKILL_PERM;
   - Id: 200206
     AegisName: CR_SPEARQUICKEN
     Name: Spear Quicken Scroll
@@ -2559,7 +2559,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""CR_SPEARQUICKEN"",1,SKILL_PERM;
+      skill "CR_SPEARQUICKEN",1,SKILL_PERM;
   - Id: 200207
     AegisName: MO_IRONHAND
     Name: Iron Hand Scroll
@@ -2571,7 +2571,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_IRONHAND"",1,SKILL_PERM;
+      skill "MO_IRONHAND",1,SKILL_PERM;
   - Id: 200208
     AegisName: MO_SPIRITSRECOVERY
     Name: Spirits Recovery Scroll
@@ -2583,7 +2583,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_SPIRITSRECOVERY"",1,SKILL_PERM;
+      skill "MO_SPIRITSRECOVERY",1,SKILL_PERM;
   - Id: 200209
     AegisName: MO_CALLSPIRITS
     Name: Call Spirits Scroll
@@ -2595,7 +2595,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_CALLSPIRITS"",1,SKILL_PERM;
+      skill "MO_CALLSPIRITS",1,SKILL_PERM;
   - Id: 200210
     AegisName: MO_ABSORBSPIRITS
     Name: Absorb Spirits Scroll
@@ -2607,7 +2607,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_ABSORBSPIRITS"",1,SKILL_PERM;
+      skill "MO_ABSORBSPIRITS",1,SKILL_PERM;
   - Id: 200211
     AegisName: MO_TRIPLEATTACK
     Name: Triple Attack Scroll
@@ -2619,7 +2619,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_TRIPLEATTACK"",1,SKILL_PERM;
+      skill "MO_TRIPLEATTACK",1,SKILL_PERM;
   - Id: 200212
     AegisName: MO_BODYRELOCATION
     Name: Body Relocation Scroll
@@ -2631,7 +2631,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_BODYRELOCATION"",1,SKILL_PERM;
+      skill "MO_BODYRELOCATION",1,SKILL_PERM;
   - Id: 200213
     AegisName: MO_DODGE
     Name: Dodge Scroll
@@ -2643,7 +2643,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_DODGE"",1,SKILL_PERM;
+      skill "MO_DODGE",1,SKILL_PERM;
   - Id: 200214
     AegisName: MO_INVESTIGATE
     Name: Investigate Scroll
@@ -2655,7 +2655,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_INVESTIGATE"",1,SKILL_PERM;
+      skill "MO_INVESTIGATE",1,SKILL_PERM;
   - Id: 200215
     AegisName: MO_FINGEROFFENSIVE
     Name: Finger Offensive Scroll
@@ -2667,7 +2667,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_FINGEROFFENSIVE"",1,SKILL_PERM;
+      skill "MO_FINGEROFFENSIVE",1,SKILL_PERM;
   - Id: 200216
     AegisName: MO_STEELBODY
     Name: Steel Body Scroll
@@ -2679,7 +2679,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_STEELBODY"",1,SKILL_PERM;
+      skill "MO_STEELBODY",1,SKILL_PERM;
   - Id: 200217
     AegisName: MO_BLADESTOP
     Name: Blade Stop Scroll
@@ -2691,7 +2691,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_BLADESTOP"",1,SKILL_PERM;
+      skill "MO_BLADESTOP",1,SKILL_PERM;
   - Id: 200218
     AegisName: MO_EXPLOSIONSPIRITS
     Name: Critical Explosion Scroll
@@ -2703,7 +2703,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_EXPLOSIONSPIRITS"",1,SKILL_PERM;
+      skill "MO_EXPLOSIONSPIRITS",1,SKILL_PERM;
   - Id: 200219
     AegisName: MO_EXTREMITYFIST
     Name: Asura Strike Scroll
@@ -2715,7 +2715,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_EXTREMITYFIST"",1,SKILL_PERM;
+      skill "MO_EXTREMITYFIST",1,SKILL_PERM;
   - Id: 200220
     AegisName: MO_CHAINCOMBO
     Name: Chain Combo Scroll
@@ -2727,7 +2727,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_CHAINCOMBO"",1,SKILL_PERM;
+      skill "MO_CHAINCOMBO",1,SKILL_PERM;
   - Id: 200221
     AegisName: MO_COMBOFINISH
     Name: Combo Finish Scroll
@@ -2739,7 +2739,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""MO_COMBOFINISH"",1,SKILL_PERM;
+      skill "MO_COMBOFINISH",1,SKILL_PERM;
   - Id: 200222
     AegisName: SA_ADVANCEDBOOK
     Name: Advanced Book Scroll
@@ -2751,7 +2751,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_ADVANCEDBOOK"",1,SKILL_PERM;
+      skill "SA_ADVANCEDBOOK",1,SKILL_PERM;
   - Id: 200223
     AegisName: SA_CASTCANCEL
     Name: Cast Cancel Scroll
@@ -2763,7 +2763,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_CASTCANCEL"",1,SKILL_PERM;
+      skill "SA_CASTCANCEL",1,SKILL_PERM;
   - Id: 200224
     AegisName: SA_MAGICROD
     Name: Magic Rod Scroll
@@ -2775,7 +2775,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_MAGICROD"",1,SKILL_PERM;
+      skill "SA_MAGICROD",1,SKILL_PERM;
   - Id: 200225
     AegisName: SA_SPELLBREAKER
     Name: Spell Breaker Scroll
@@ -2787,7 +2787,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_SPELLBREAKER"",1,SKILL_PERM;
+      skill "SA_SPELLBREAKER",1,SKILL_PERM;
   - Id: 200226
     AegisName: SA_FREECAST
     Name: Free Cast Scroll
@@ -2799,7 +2799,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_FREECAST"",1,SKILL_PERM;
+      skill "SA_FREECAST",1,SKILL_PERM;
   - Id: 200227
     AegisName: SA_AUTOSPELL
     Name: Auto Spell Scroll
@@ -2811,7 +2811,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_AUTOSPELL"",1,SKILL_PERM;
+      skill "SA_AUTOSPELL",1,SKILL_PERM;
   - Id: 200228
     AegisName: SA_FLAMELAUNCHER
     Name: Flame Launcher Scroll
@@ -2823,7 +2823,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_FLAMELAUNCHER"",1,SKILL_PERM;
+      skill "SA_FLAMELAUNCHER",1,SKILL_PERM;
   - Id: 200229
     AegisName: SA_FROSTWEAPON
     Name: Frost Weapon Scroll
@@ -2835,7 +2835,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_FROSTWEAPON"",1,SKILL_PERM;
+      skill "SA_FROSTWEAPON",1,SKILL_PERM;
   - Id: 200230
     AegisName: SA_LIGHTNINGLOADER
     Name: Lightning Loader Scroll
@@ -2847,7 +2847,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_LIGHTNINGLOADER"",1,SKILL_PERM;
+      skill "SA_LIGHTNINGLOADER",1,SKILL_PERM;
   - Id: 200231
     AegisName: SA_SEISMICWEAPON
     Name: Seismic Weapon Scroll
@@ -2859,7 +2859,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_SEISMICWEAPON"",1,SKILL_PERM;
+      skill "SA_SEISMICWEAPON",1,SKILL_PERM;
   - Id: 200232
     AegisName: SA_DRAGONOLOGY
     Name: Dragonology Scroll
@@ -2871,7 +2871,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_DRAGONOLOGY"",1,SKILL_PERM;
+      skill "SA_DRAGONOLOGY",1,SKILL_PERM;
   - Id: 200233
     AegisName: SA_VOLCANO
     Name: Volcano Scroll
@@ -2883,7 +2883,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_VOLCANO"",1,SKILL_PERM;
+      skill "SA_VOLCANO",1,SKILL_PERM;
   - Id: 200234
     AegisName: SA_DELUGE
     Name: Deluge Scroll
@@ -2895,7 +2895,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_DELUGE"",1,SKILL_PERM;
+      skill "SA_DELUGE",1,SKILL_PERM;
   - Id: 200235
     AegisName: SA_VIOLENTGALE
     Name: Violent Gale Scroll
@@ -2907,7 +2907,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_VIOLENTGALE"",1,SKILL_PERM;
+      skill "SA_VIOLENTGALE",1,SKILL_PERM;
   - Id: 200236
     AegisName: SA_LANDPROTECTOR
     Name: Land Protector Scroll
@@ -2919,7 +2919,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_LANDPROTECTOR"",1,SKILL_PERM;
+      skill "SA_LANDPROTECTOR",1,SKILL_PERM;
   - Id: 200237
     AegisName: SA_DISPELL
     Name: Dispell Scroll
@@ -2931,7 +2931,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_DISPELL"",1,SKILL_PERM;
+      skill "SA_DISPELL",1,SKILL_PERM;
   - Id: 200238
     AegisName: SA_ABRACADABRA
     Name: Abracadabra Scroll
@@ -2943,7 +2943,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_ABRACADABRA"",1,SKILL_PERM;
+      skill "SA_ABRACADABRA",1,SKILL_PERM;
   - Id: 200239
     AegisName: SA_MONOCELL
     Name: Monocell Scroll
@@ -2955,7 +2955,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_MONOCELL"",1,SKILL_PERM;
+      skill "SA_MONOCELL",1,SKILL_PERM;
   - Id: 200240
     AegisName: SA_CLASSCHANGE
     Name: Class Change Scroll
@@ -2967,7 +2967,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_CLASSCHANGE"",1,SKILL_PERM;
+      skill "SA_CLASSCHANGE",1,SKILL_PERM;
   - Id: 200241
     AegisName: SA_SUMMONMONSTER
     Name: Summon Monster Scroll
@@ -2979,7 +2979,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_SUMMONMONSTER"",1,SKILL_PERM;
+      skill "SA_SUMMONMONSTER",1,SKILL_PERM;
   - Id: 200242
     AegisName: SA_REVERSEORCISH
     Name: Reverse Orcish Scroll
@@ -2991,7 +2991,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_REVERSEORCISH"",1,SKILL_PERM;
+      skill "SA_REVERSEORCISH",1,SKILL_PERM;
   - Id: 200243
     AegisName: SA_DEATH
     Name: Death Scroll
@@ -3003,7 +3003,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_DEATH"",1,SKILL_PERM;
+      skill "SA_DEATH",1,SKILL_PERM;
   - Id: 200244
     AegisName: SA_FORTUNE
     Name: Fortune Scroll
@@ -3015,7 +3015,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_FORTUNE"",1,SKILL_PERM;
+      skill "SA_FORTUNE",1,SKILL_PERM;
   - Id: 200245
     AegisName: SA_TAMINGMONSTER
     Name: Taming Monster Scroll
@@ -3027,7 +3027,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_TAMINGMONSTER"",1,SKILL_PERM;
+      skill "SA_TAMINGMONSTER",1,SKILL_PERM;
   - Id: 200246
     AegisName: SA_QUESTION
     Name: ? Scroll
@@ -3039,7 +3039,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_QUESTION"",1,SKILL_PERM;
+      skill "SA_QUESTION",1,SKILL_PERM;
   - Id: 200247
     AegisName: SA_GRAVITY
     Name: Gravity Scroll
@@ -3051,7 +3051,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_GRAVITY"",1,SKILL_PERM;
+      skill "SA_GRAVITY",1,SKILL_PERM;
   - Id: 200248
     AegisName: SA_LEVELUP
     Name: Level Up Scroll
@@ -3063,7 +3063,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_LEVELUP"",1,SKILL_PERM;
+      skill "SA_LEVELUP",1,SKILL_PERM;
   - Id: 200249
     AegisName: SA_INSTANTDEATH
     Name: Instant Death Scroll
@@ -3075,7 +3075,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_INSTANTDEATH"",1,SKILL_PERM;
+      skill "SA_INSTANTDEATH",1,SKILL_PERM;
   - Id: 200250
     AegisName: SA_FULLRECOVERY
     Name: Full Recovery Scroll
@@ -3087,7 +3087,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_FULLRECOVERY"",1,SKILL_PERM;
+      skill "SA_FULLRECOVERY",1,SKILL_PERM;
   - Id: 200251
     AegisName: SA_COMA
     Name: Coma Scroll
@@ -3099,7 +3099,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""SA_COMA"",1,SKILL_PERM;
+      skill "SA_COMA",1,SKILL_PERM;
   - Id: 200252
     AegisName: BD_ADAPTATION
     Name: Adaptation to Circumstances Scroll
@@ -3111,7 +3111,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_ADAPTATION"",1,SKILL_PERM;
+      skill "BD_ADAPTATION",1,SKILL_PERM;
   - Id: 200253
     AegisName: BD_ENCORE
     Name: Encore Scroll
@@ -3123,7 +3123,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_ENCORE"",1,SKILL_PERM;
+      skill "BD_ENCORE",1,SKILL_PERM;
   - Id: 200254
     AegisName: BD_LULLABY
     Name: Lullaby Scroll
@@ -3135,7 +3135,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_LULLABY"",1,SKILL_PERM;
+      skill "BD_LULLABY",1,SKILL_PERM;
   - Id: 200255
     AegisName: BD_RICHMANKIM
     Name: Mr. Kim A Rich Man Scroll
@@ -3147,7 +3147,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_RICHMANKIM"",1,SKILL_PERM;
+      skill "BD_RICHMANKIM",1,SKILL_PERM;
   - Id: 200256
     AegisName: BD_ETERNALCHAOS
     Name: Eternal Chaos Scroll
@@ -3159,7 +3159,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_ETERNALCHAOS"",1,SKILL_PERM;
+      skill "BD_ETERNALCHAOS",1,SKILL_PERM;
   - Id: 200257
     AegisName: BD_DRUMBATTLEFIELD
     Name: A Drum on the Battlefield Scroll
@@ -3171,7 +3171,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_DRUMBATTLEFIELD"",1,SKILL_PERM;
+      skill "BD_DRUMBATTLEFIELD",1,SKILL_PERM;
   - Id: 200258
     AegisName: BD_RINGNIBELUNGEN
     Name: The Ring of Nibelungen Scroll
@@ -3183,7 +3183,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_RINGNIBELUNGEN"",1,SKILL_PERM;
+      skill "BD_RINGNIBELUNGEN",1,SKILL_PERM;
   - Id: 200259
     AegisName: BD_ROKISWEIL
     Name: Loki's Veil Scroll
@@ -3195,7 +3195,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_ROKISWEIL"",1,SKILL_PERM;
+      skill "BD_ROKISWEIL",1,SKILL_PERM;
   - Id: 200260
     AegisName: BD_INTOABYSS
     Name: Into the Abyss Scroll
@@ -3207,7 +3207,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_INTOABYSS"",1,SKILL_PERM;
+      skill "BD_INTOABYSS",1,SKILL_PERM;
   - Id: 200261
     AegisName: BD_SIEGFRIED
     Name: Invulnerable Siegfried Scroll
@@ -3219,7 +3219,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_SIEGFRIED"",1,SKILL_PERM;
+      skill "BD_SIEGFRIED",1,SKILL_PERM;
   - Id: 200262
     AegisName: BD_RAGNAROK
     Name: Ragnarok Scroll
@@ -3231,7 +3231,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BD_RAGNAROK"",1,SKILL_PERM;
+      skill "BD_RAGNAROK",1,SKILL_PERM;
   - Id: 200263
     AegisName: BA_MUSICALLESSON
     Name: Musical Lesson Scroll
@@ -3243,7 +3243,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_MUSICALLESSON"",1,SKILL_PERM;
+      skill "BA_MUSICALLESSON",1,SKILL_PERM;
   - Id: 200264
     AegisName: BA_MUSICALSTRIKE
     Name: Musical Strike Scroll
@@ -3255,7 +3255,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_MUSICALSTRIKE"",1,SKILL_PERM;
+      skill "BA_MUSICALSTRIKE",1,SKILL_PERM;
   - Id: 200265
     AegisName: BA_DISSONANCE
     Name: Dissonance Scroll
@@ -3267,7 +3267,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_DISSONANCE"",1,SKILL_PERM;
+      skill "BA_DISSONANCE",1,SKILL_PERM;
   - Id: 200266
     AegisName: BA_FROSTJOKE
     Name: Frost Joker Scroll
@@ -3279,7 +3279,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_FROSTJOKE"",1,SKILL_PERM;
+      skill "BA_FROSTJOKE",1,SKILL_PERM;
   - Id: 200267
     AegisName: BA_WHISTLE
     Name: A Whistle Scroll
@@ -3291,7 +3291,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_WHISTLE"",1,SKILL_PERM;
+      skill "BA_WHISTLE",1,SKILL_PERM;
   - Id: 200268
     AegisName: BA_ASSASSINCROSS
     Name: Assassin Cross of Sunset Scroll
@@ -3303,7 +3303,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_ASSASSINCROSS"",1,SKILL_PERM;
+      skill "BA_ASSASSINCROSS",1,SKILL_PERM;
   - Id: 200269
     AegisName: BA_POEMBRAGI
     Name: A Poem of Bragi Scroll
@@ -3315,7 +3315,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_POEMBRAGI"",1,SKILL_PERM;
+      skill "BA_POEMBRAGI",1,SKILL_PERM;
   - Id: 200270
     AegisName: BA_APPLEIDUN
     Name: The Apple of Idun Scroll
@@ -3327,7 +3327,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""BA_APPLEIDUN"",1,SKILL_PERM;
+      skill "BA_APPLEIDUN",1,SKILL_PERM;
   - Id: 200271
     AegisName: DC_DANCINGLESSON
     Name: Dancing Lesson Scroll
@@ -3339,7 +3339,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_DANCINGLESSON"",1,SKILL_PERM;
+      skill "DC_DANCINGLESSON",1,SKILL_PERM;
   - Id: 200272
     AegisName: DC_THROWARROW
     Name: Throw Arrow Scroll
@@ -3351,7 +3351,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_THROWARROW"",1,SKILL_PERM;
+      skill "DC_THROWARROW",1,SKILL_PERM;
   - Id: 200273
     AegisName: DC_UGLYDANCE
     Name: Ugly Dance Scroll
@@ -3363,7 +3363,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_UGLYDANCE"",1,SKILL_PERM;
+      skill "DC_UGLYDANCE",1,SKILL_PERM;
   - Id: 200274
     AegisName: DC_SCREAM
     Name: Scream Scroll
@@ -3375,7 +3375,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_SCREAM"",1,SKILL_PERM;
+      skill "DC_SCREAM",1,SKILL_PERM;
   - Id: 200275
     AegisName: DC_HUMMING
     Name: Humming Scroll
@@ -3387,7 +3387,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_HUMMING"",1,SKILL_PERM;
+      skill "DC_HUMMING",1,SKILL_PERM;
   - Id: 200276
     AegisName: DC_DONTFORGETME
     Name: Please Don't Forget Me Scroll
@@ -3399,7 +3399,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_DONTFORGETME"",1,SKILL_PERM;
+      skill "DC_DONTFORGETME",1,SKILL_PERM;
   - Id: 200277
     AegisName: DC_FORTUNEKISS
     Name: Fortune's Kiss Scroll
@@ -3411,7 +3411,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_FORTUNEKISS"",1,SKILL_PERM;
+      skill "DC_FORTUNEKISS",1,SKILL_PERM;
   - Id: 200278
     AegisName: DC_SERVICEFORYOU
     Name: Service for You Scroll
@@ -3423,4 +3423,4 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      skill ""DC_SERVICEFORYOU"",1,SKILL_PERM;
+      skill "DC_SERVICEFORYOU",1,SKILL_PERM;
