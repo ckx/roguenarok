@@ -8757,7 +8757,7 @@ int pc_resetstate(struct map_session_data* sd)
  * if flag&2, just count total amount of skill points used by player, do not really reset.
  * if flag&4, just reset the skills if the player class is a bard/dancer type (for changesex.)
  *------------------------------------------*/
-int pc_resetskill(struct map_session_data* sd, int flag)
+int pc_resetskill(struct map_session_data* sd, int flag, int sk_id)
 {
 	int i, skill_point=0;
 	nullpo_ret(sd);
@@ -8815,6 +8815,27 @@ int pc_resetskill(struct map_session_data* sd, int flag)
 
 		if( skill.second->inf2[INF2_ISWEDDING] || skill.second->inf2[INF2_ISSPIRIT] ) //Avoid reseting wedding/linker skills.
 			continue;
+
+		// Roguenarok individual skill removal, for builtin func "removenamedskill"
+		if (sk_id != 0 && lv != 0) 
+		{
+			if (skill_id == sk_id)
+			{
+				if (sd->status.skill[idx].flag == SKILL_FLAG_PERMANENT)
+				{
+					sd->status.skill_point += lv;
+				}
+
+				if (flag & 1)
+				{
+					clif_updatestatus(sd, SP_SKILLPOINT);
+					clif_deleteskill(sd, skill_id);
+					status_calc_pc(sd, SCO_FORCE);
+				}
+
+				return lv;
+			}
+		}
 
 		// Don't reset trick dead if not a novice/baby
 		if( skill_id == NV_TRICKDEAD && (sd->class_&MAPID_UPPERMASK) != MAPID_NOVICE )

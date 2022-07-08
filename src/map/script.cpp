@@ -12444,6 +12444,26 @@ BUILDIN_FUNC(resetskill)
 }
 
 /**
+ * Reset single skill on character
+ * resetskill({<char_id>},{<skill_ID>});
+ * skill_ID should be suppled in "NV_BASIC" format
+ **/
+BUILDIN_FUNC(resetnamedskill)
+{
+	int id;
+	TBL_PC *sd;
+
+	if (!script_charid2sd(3,sd)) {
+		return SCRIPT_CMD_FAILURE;
+	}
+
+	id = ( script_isstring(st, 2) ? skill_name2id(script_getstr(st,2)) : script_getnum(st,2) );
+	
+	pc_resetskill(sd,1,id);
+	return SCRIPT_CMD_SUCCESS;
+}
+
+/**
  * Reset SG designated maps
  * resetfeel({<char_id>});
  **/
@@ -26311,6 +26331,7 @@ struct script_function buildin_func[] = {
 	BUILDIN_DEF(resetlvl,"i?"),
 	BUILDIN_DEF(resetstatus,"?"),
 	BUILDIN_DEF(resetskill,"?"),
+	BUILDIN_DEF(resetnamedskill,"s?"),
 	BUILDIN_DEF(resetfeel,"?"),
 	BUILDIN_DEF(resethate,"?"),
 	BUILDIN_DEF(skillpointcount,"?"),

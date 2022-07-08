@@ -1,0 +1,5 @@
+function	script	RemoveSkill	{
+	mes "hello";
+	resetnamedskill("AL_HEAL");
+	close;
+}

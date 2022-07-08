@@ -1386,7 +1386,7 @@ void pc_skillup(struct map_session_data*,uint16 skill_id);
 int pc_allskillup(struct map_session_data*);
 int pc_resetlvl(struct map_session_data*,int type);
 int pc_resetstate(struct map_session_data*);
-int pc_resetskill(struct map_session_data*, int);
+int pc_resetskill(struct map_session_data*, int, int skill_id = 0);
 int pc_resetfeel(struct map_session_data*);
 int pc_resethate(struct map_session_data*);
 bool pc_equipitem(struct map_session_data *sd, short n, int req_pos, bool equipswitch=false);
