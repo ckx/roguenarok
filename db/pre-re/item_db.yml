@@ -84,12 +84,11 @@
 ###########################################################################
 
 Header:
-  Type: ITEM_DB
-  Version: 2
+    Type: ITEM_DB
+    Version: 2
 
 Footer:
-  Imports:
-  - Path: db/pre-re/item_db_usable.yml
-  - Path: db/pre-re/item_db_equip.yml
-  - Path: db/pre-re/item_db_etc.yml
-  - Path: db/pre-re/item_db_rogue_usable.yml
+    Imports:
+        - Path: db/pre-re/item_db_usable.yml
+        - Path: db/pre-re/item_db_equip.yml
+        - Path: db/pre-re/item_db_etc.yml
