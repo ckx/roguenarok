@@ -1854,11 +1854,13 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      itemskill "MG_COLDBOLT",5;
+      SkillPoint += getskilllv("AL_HEAL");
+      skill "AL_HEAL",0,SKILL_PERM;
+      kick;
   - Id: 690 # TODO: (NICE) DUMMY TESTING SKILL
     AegisName: Fire_Scroll_1_3
     Name: Level 3 Fire Bolt
-    Type: Usable
+    Type: Delayconsume
     Buy: 1000
     Weight: 10
     Flags:
@@ -1867,6 +1869,7 @@ Body:
       Sitting: true
     Script: |
       skill "AL_HEAL",1,SKILL_PERM;
+      SkillPoint -= 1;
   - Id: 691
     AegisName: Fire_Scroll_1_5
     Name: Level 5 Fire Bolt
