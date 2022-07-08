@@ -95,4 +95,4 @@ Footer:
           Mode: Renewal
         - Path: db/import/item_db.yml
         - Path: db/roguenarok/item_db_rogue_usable.yml
-        - Path:db/roguenarok/item_db_rogue_testing.yml
+        - Path: db/roguenarok/item_db_rogue_testing.yml
