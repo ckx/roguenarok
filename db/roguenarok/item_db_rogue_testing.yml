@@ -90,30 +90,25 @@ Header:
 Body:
   - Id: 600001
     AegisName: testitem_1
-    Name: Level 5 Cold Bolt
+    Name: Tao Pls Strawberry
     Type: Delayconsume
     Buy: 2000
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
     NoUse:
-      Sitting: true
+      Sitting: false
     Script: |
-      callfunc "RemoveSkill";
-  - Id: 600002 # TODO: (NICE) DUMMY TESTING SKILL
+      callfunc "RemoveNamedSkill","AL_HEAL";
+  - Id: 600002
     AegisName: testitem_2
-    Name: Level 3 Fire Bolt
+    Name: Gib Tao Banana
     Type: Delayconsume
     Buy: 1000
-    Weight: 10
+    Weight: 1
     Flags:
       BuyingStore: true
     NoUse:
-      Sitting: true
+      Sitting: false
     Script: |
-      if (SkillPoint > 1) {
-        skill "AL_HEAL",1,SKILL_PERM;
-        SkillPoint -= 1;
-      } else { 
-        dispbottom "Not enough Skill Points.";
-      }
+      callfunc "AddNamedSkill","AL_HEAL";

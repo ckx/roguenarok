@@ -1,5 +1,31 @@
-function	script	RemoveSkill	{
-	mes "hello";
-	resetnamedskill("AL_HEAL");
-	close;
+function	script	AddNamedSkill	{
+	// TODO: Don't consume item if we don't have enough skill points to learn the skill https://github.com/ckx/roguenarok/issues/1
+	set @skillname$,getarg(0);
+	set @lv,getskilllv(@skillname$);
+
+	if (@lv > 0) {
+		dispbottom "You already know " + @skillname$ + ".";
+		return;
+	}
+
+	if (SkillPoint > 1) {
+        skill @skillname$,1,SKILL_PERM;
+        SkillPoint -= 1;
+      } else { 
+        dispbottom "You require more skill points.";
+      }
+}
+
+function	script	RemoveNamedSkill	{
+	// TODO: Don't consume item if skill isn't known https://github.com/ckx/roguenarok/issues/1
+	set @skillname$,getarg(0);
+	set @lv,getskilllv(@skillname$);
+
+	if (@lv < 1) {
+		dispbottom "You don't have any points in " + @skillname$;
+		return;
+	}
+
+	resetnamedskill(@skillname$);
+	dispbottom "Reset " + @skillname$ + ", refunding " + @lv + " skill point(s).";
 }
