@@ -92,23 +92,11 @@ Body:
     AegisName: testitem_1
     Name: Tao Pls Strawberry
     Type: Delayconsume
-    Buy: 2000
-    Weight: 1
-    Flags:
-      BuyingStore: true
-    NoUse:
-      Sitting: false
     Script: |
       callfunc "RemoveNamedSkill","AL_HEAL";
   - Id: 600002
     AegisName: testitem_2
     Name: Gib Tao Banana
     Type: Delayconsume
-    Buy: 1000
-    Weight: 1
-    Flags:
-      BuyingStore: true
-    NoUse:
-      Sitting: false
     Script: |
       callfunc "AddNamedSkill","AL_HEAL";
