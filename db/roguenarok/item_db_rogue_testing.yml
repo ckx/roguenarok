@@ -91,12 +91,12 @@ Body:
   - Id: 600001
     AegisName: testitem_1
     Name: Tao Pls Strawberry
-    Type: Delayconsume
+    Type: Usable
     Script: |
       callfunc "RemoveNamedSkill","AL_HEAL";
   - Id: 600002
     AegisName: testitem_2
     Name: Gib Tao Banana
-    Type: Delayconsume
+    Type: Usable
     Script: |
       callfunc "AddNamedSkill","AL_HEAL";
