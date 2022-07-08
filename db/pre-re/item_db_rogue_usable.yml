@@ -30787,4 +30787,4 @@ Body:
         Sitting: true
         Script: |
         SkillPoint += getskilllv("GD_ITEMEMERGENCYCALL");
-        skill "GD_ITEMEMERGENCYCALL",0,SKILL_PERM;"
+        skill "GD_ITEMEMERGENCYCALL",0,SKILL_PERM;
