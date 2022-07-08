@@ -26097,9 +26097,23 @@ BUILDIN_FUNC(preg_match) {
 #endif
 }
 
+BUILDIN_FUNC(kick)
+{
+	TBL_PC* sd;
+
+	if (!script_rid2sd(sd))
+		return SCRIPT_CMD_SUCCESS;
+
+	clif_GM_kick(NULL, sd);
+
+	return SCRIPT_CMD_SUCCESS;
+}
+
 /// script command definitions
 /// for an explanation on args, see add_buildin_func
 struct script_function buildin_func[] = {
+	// Roguenarok
+	BUILDIN_DEF(kick, ""),
 	// NPC interaction
 	BUILDIN_DEF(mes,"s*"),
 	BUILDIN_DEF(next,""),
