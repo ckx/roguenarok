@@ -1,0 +1,1 @@
+set encoding to Korean before making any changes, otherwise the korean filename references will break and no icons will show ingame
