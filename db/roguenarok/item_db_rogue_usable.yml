@@ -14824,19 +14824,19 @@ Body:
           Sitting: true
       Script: |
           skill "GD_ITEMEMERGENCYCALL",1,SKILL_PERM;
-    # - Id: 300001
-    #     AegisName: NV_BASIC_REM
-    #     Name: Basic Skill Remover
-    #     Type: Usable
-    #     Buy: 1000
-    #     Weight: 10
-    #     Flags:
-    #       BuyingStore: true
-    #     NoUse:
-    #       Sitting: true
-    #     Script: |
-    #       SkillPoint += getskilllv("NV_BASIC");
-    #       skill "NV_BASIC",0,SKILL_PERM;
+    - Id: 300001
+      AegisName: NV_BASIC_REM
+      Name: Basic Skill Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          SkillPoint += getskilllv("NV_BASIC");
+          skill "NV_BASIC",0,SKILL_PERM;
     # - Id: 300002
     #     AegisName: SM_SWORD_REM
     #     Name: Sword Mastery Remover
