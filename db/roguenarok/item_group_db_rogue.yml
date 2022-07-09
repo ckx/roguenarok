@@ -51,7 +51,467 @@ Body:
       SubGroups:
           - SubGroup: 1
             List:
-                - Item: AL_HEAL_SC
+                - Item: SM_BASH_SC
+                  Rate: 1
+                - Item: SM_PROVOKE_SC
+                  Rate: 1
+                - Item: SM_MAGNUM_SC
+                  Rate: 1
+                - Item: SM_ENDURE_SC
+                  Rate: 1
+                - Item: MG_SIGHT_SC
+                  Rate: 1
+                - Item: MG_NAPALMBEAT_SC
+                  Rate: 1
+                - Item: MG_SAFETYWALL_SC
+                  Rate: 1
+                - Item: MG_SOULSTRIKE_SC
+                  Rate: 1
+                - Item: MG_COLDBOLT_SC
+                  Rate: 1
+                - Item: MG_FROSTDIVER_SC
+                  Rate: 1
+                - Item: MG_STONECURSE_SC
+                  Rate: 1
+                - Item: MG_FIREBALL_SC
+                  Rate: 1
+                - Item: MG_FIREWALL_SC
+                  Rate: 1
+                - Item: MG_FIREBOLT_SC
+                  Rate: 1
+                - Item: MG_LIGHTNINGBOLT_SC
+                  Rate: 1
+                - Item: MG_THUNDERSTORM_SC
+                  Rate: 1
+                - Item: AL_RUWACH_SC
                   Rate: 1
                 - Item: AL_PNEUMA_SC
+                  Rate: 1
+                - Item: AL_HEAL_SC
+                  Rate: 1
+                - Item: AL_INCAGI_SC
+                  Rate: 1
+                - Item: AL_DECAGI_SC
+                  Rate: 1
+                - Item: AL_CRUCIS_SC
+                  Rate: 1
+                - Item: AL_ANGELUS_SC
+                  Rate: 1
+                - Item: AL_BLESSING_SC
+                  Rate: 1
+                - Item: AL_CURE_SC
+                  Rate: 1
+                - Item: MC_MAMMONITE_SC
+                  Rate: 1
+                - Item: AC_DOUBLE_SC
+                  Rate: 1
+                - Item: AC_SHOWER_SC
+                  Rate: 1
+                - Item: TF_DOUBLE_SC
+                  Rate: 1
+                - Item: TF_STEAL_SC
+                  Rate: 1
+                - Item: TF_HIDING_SC
+                  Rate: 1
+                - Item: TF_POISON_SC
+                  Rate: 1
+                - Item: TF_DETOXIFY_SC
+                  Rate: 1
+                - Item: KN_PIERCE_SC
+                  Rate: 1
+                - Item: KN_BRANDISHSPEAR_SC
+                  Rate: 1
+                - Item: KN_SPEARSTAB_SC
+                  Rate: 1
+                - Item: KN_SPEARBOOMERANG_SC
+                  Rate: 1
+                - Item: KN_TWOHANDQUICKEN_SC
+                  Rate: 1
+                - Item: KN_AUTOCOUNTER_SC
+                  Rate: 1
+                - Item: KN_BOWLINGBASH_SC
+                  Rate: 1
+                - Item: PR_IMPOSITIO_SC
+                  Rate: 1
+                - Item: PR_SUFFRAGIUM_SC
+                  Rate: 1
+                - Item: PR_ASPERSIO_SC
+                  Rate: 1
+                - Item: PR_BENEDICTIO_SC
+                  Rate: 1
+                - Item: PR_SANCTUARY_SC
+                  Rate: 1
+                - Item: PR_SLOWPOISON_SC
+                  Rate: 1
+                - Item: PR_STRECOVERY_SC
+                  Rate: 1
+                - Item: PR_MAGNIFICAT_SC
+                  Rate: 1
+                - Item: PR_GLORIA_SC
+                  Rate: 1
+                - Item: PR_LEXDIVINA_SC
+                  Rate: 1
+                - Item: PR_TURNUNDEAD_SC
+                  Rate: 1
+                - Item: PR_LEXAETERNA_SC
+                  Rate: 1
+                - Item: PR_MAGNUS_SC
+                  Rate: 1
+                - Item: WZ_FIREPILLAR_SC
+                  Rate: 1
+                - Item: WZ_SIGHTRASHER_SC
+                  Rate: 1
+                - Item: WZ_FIREIVY_SC
+                  Rate: 1
+                - Item: WZ_METEOR_SC
+                  Rate: 1
+                - Item: WZ_JUPITEL_SC
+                  Rate: 1
+                - Item: WZ_VERMILION_SC
+                  Rate: 1
+                - Item: WZ_WATERBALL_SC
+                  Rate: 1
+                - Item: WZ_ICEWALL_SC
+                  Rate: 1
+                - Item: WZ_FROSTNOVA_SC
+                  Rate: 1
+                - Item: WZ_STORMGUST_SC
+                  Rate: 1
+                - Item: WZ_EARTHSPIKE_SC
+                  Rate: 1
+                - Item: WZ_HEAVENDRIVE_SC
+                  Rate: 1
+                - Item: WZ_QUAGMIRE_SC
+                  Rate: 1
+                - Item: BS_REPAIRWEAPON_SC
+                  Rate: 1
+                - Item: BS_SKINTEMPER_SC
+                  Rate: 1
+                - Item: BS_HAMMERFALL_SC
+                  Rate: 1
+                - Item: BS_ADRENALINE_SC
+                  Rate: 1
+                - Item: BS_WEAPONPERFECT_SC
+                  Rate: 1
+                - Item: BS_OVERTHRUST_SC
+                  Rate: 1
+                - Item: BS_MAXIMIZE_SC
+                  Rate: 1
+                - Item: HT_SKIDTRAP_SC
+                  Rate: 1
+                - Item: HT_LANDMINE_SC
+                  Rate: 1
+                - Item: HT_ANKLESNARE_SC
+                  Rate: 1
+                - Item: HT_SHOCKWAVE_SC
+                  Rate: 1
+                - Item: HT_SANDMAN_SC
+                  Rate: 1
+                - Item: HT_FLASHER_SC
+                  Rate: 1
+                - Item: HT_FREEZINGTRAP_SC
+                  Rate: 1
+                - Item: HT_BLASTMINE_SC
+                  Rate: 1
+                - Item: HT_CLAYMORETRAP_SC
+                  Rate: 1
+                - Item: HT_REMOVETRAP_SC
+                  Rate: 1
+                - Item: AS_SONICBLOW_SC
+                  Rate: 1
+                - Item: AS_GRIMTOOTH_SC
+                  Rate: 1
+                - Item: AS_ENCHANTPOISON_SC
+                  Rate: 1
+                - Item: AS_POISONREACT_SC
+                  Rate: 1
+                - Item: AS_VENOMDUST_SC
+                  Rate: 1
+                - Item: AS_SPLASHER_SC
+                  Rate: 1
+                - Item: AC_CHARGEARROW_SC
+                  Rate: 1
+                - Item: TF_SPRINKLESAND_SC
+                  Rate: 1
+                - Item: TF_BACKSLIDING_SC
+                  Rate: 1
+                - Item: MC_LOUD_SC
+                  Rate: 1
+                - Item: AL_HOLYLIGHT_SC
+                  Rate: 1
+                - Item: RG_STEALCOIN_SC
+                  Rate: 1
+                - Item: RG_BACKSTAP_SC
+                  Rate: 1
+                - Item: RG_TUNNELDRIVE_SC
+                  Rate: 1
+                - Item: RG_RAID_SC
+                  Rate: 1
+                - Item: RG_STRIPWEAPON_SC
+                  Rate: 1
+                - Item: RG_STRIPSHIELD_SC
+                  Rate: 1
+                - Item: RG_STRIPARMOR_SC
+                  Rate: 1
+                - Item: RG_STRIPHELM_SC
+                  Rate: 1
+                - Item: RG_GANGSTER_SC
+                  Rate: 1
+                - Item: RG_COMPULSION_SC
+                  Rate: 1
+                - Item: RG_PLAGIARISM_SC
+                  Rate: 1
+                - Item: AM_DEMONSTRATION_SC
+                  Rate: 1
+                - Item: AM_ACIDTERROR_SC
+                  Rate: 1
+                - Item: AM_CANNIBALIZE_SC
+                  Rate: 1
+                - Item: AM_SPHEREMINE_SC
+                  Rate: 1
+                - Item: AM_CP_WEAPON_SC
+                  Rate: 1
+                - Item: AM_CP_SHIELD_SC
+                  Rate: 1
+                - Item: AM_CP_ARMOR_SC
+                  Rate: 1
+                - Item: AM_CP_HELM_SC
+                  Rate: 1
+                - Item: AM_CREATECREATURE_SC
+                  Rate: 1
+                - Item: AM_CULTIVATION_SC
+                  Rate: 1
+                - Item: AM_FLAMECONTROL_SC
+                  Rate: 1
+                - Item: AM_DRILLMASTER_SC
+                  Rate: 1
+                - Item: CR_AUTOGUARD_SC
+                  Rate: 1
+                - Item: CR_SHIELDCHARGE_SC
+                  Rate: 1
+                - Item: CR_SHIELDBOOMERANG_SC
+                  Rate: 1
+                - Item: CR_REFLECTSHIELD_SC
+                  Rate: 1
+                - Item: CR_HOLYCROSS_SC
+                  Rate: 1
+                - Item: CR_GRANDCROSS_SC
+                  Rate: 1
+                - Item: CR_PROVIDENCE_SC
+                  Rate: 1
+                - Item: CR_DEFENDER_SC
+                  Rate: 1
+                - Item: CR_SPEARQUICKEN_SC
+                  Rate: 1
+                - Item: MO_CALLSPIRITS_SC
+                  Rate: 1
+                - Item: MO_ABSORBSPIRITS_SC
+                  Rate: 1
+                - Item: MO_TRIPLEATTACK_SC
+                  Rate: 1
+                - Item: MO_INVESTIGATE_SC
+                  Rate: 1
+                - Item: MO_FINGEROFFENSIVE_SC
+                  Rate: 1
+                - Item: MO_STEELBODY_SC
+                  Rate: 1
+                - Item: MO_BLADESTOP_SC
+                  Rate: 1
+                - Item: MO_EXPLOSIONSPIRITS_SC
+                  Rate: 1
+                - Item: MO_CHAINCOMBO_SC
+                  Rate: 1
+                - Item: MO_COMBOFINISH_SC
+                  Rate: 1
+                - Item: SA_CASTCANCEL_SC
+                  Rate: 1
+                - Item: SA_MAGICROD_SC
+                  Rate: 1
+                - Item: SA_SPELLBREAKER_SC
+                  Rate: 1
+                - Item: SA_AUTOSPELL_SC
+                  Rate: 1
+                - Item: SA_FLAMELAUNCHER_SC
+                  Rate: 1
+                - Item: SA_FROSTWEAPON_SC
+                  Rate: 1
+                - Item: SA_LIGHTNINGLOADER_SC
+                  Rate: 1
+                - Item: SA_SEISMICWEAPON_SC
+                  Rate: 1
+                - Item: SA_VOLCANO_SC
+                  Rate: 1
+                - Item: SA_DELUGE_SC
+                  Rate: 1
+                - Item: SA_VIOLENTGALE_SC
+                  Rate: 1
+                - Item: SA_LANDPROTECTOR_SC
+                  Rate: 1
+                - Item: SA_DISPELL_SC
+                  Rate: 1
+                - Item: BD_ENCORE_SC
+                  Rate: 1
+                - Item: BD_LULLABY_SC
+                  Rate: 1
+                - Item: BD_ETERNALCHAOS_SC
+                  Rate: 1
+                - Item: BA_MUSICALSTRIKE_SC
+                  Rate: 1
+                - Item: BA_DISSONANCE_SC
+                  Rate: 1
+                - Item: BA_FROSTJOKE_SC
+                  Rate: 1
+                - Item: BA_WHISTLE_SC
+                  Rate: 1
+                - Item: BA_ASSASSINCROSS_SC
+                  Rate: 1
+                - Item: BA_APPLEIDUN_SC
+                  Rate: 1
+                - Item: DC_THROWARROW_SC
+                  Rate: 1
+                - Item: DC_UGLYDANCE_SC
+                  Rate: 1
+                - Item: DC_SCREAM_SC
+                  Rate: 1
+                - Item: DC_HUMMING_SC
+                  Rate: 1
+                - Item: DC_DONTFORGETME_SC
+                  Rate: 1
+                - Item: DC_FORTUNEKISS_SC
+                  Rate: 1
+                - Item: DC_SERVICEFORYOU_SC
+                  Rate: 1
+                - Item: ITM_TOMAHAWK_SC
+                  Rate: 1
+                - Item: LK_AURABLADE_SC
+                  Rate: 1
+                - Item: LK_CONCENTRATION_SC
+                  Rate: 1
+                - Item: LK_TENSIONRELAX_SC
+                  Rate: 1
+                - Item: LK_BERSERK_SC
+                  Rate: 1
+                - Item: HP_BASILICA_SC
+                  Rate: 1
+                - Item: HW_SOULDRAIN_SC
+                  Rate: 1
+                - Item: HW_MAGICCRASHER_SC
+                  Rate: 1
+                - Item: PA_PRESSURE_SC
+                  Rate: 1
+                - Item: PA_SACRIFICE_SC
+                  Rate: 1
+                - Item: CH_PALMSTRIKE_SC
+                  Rate: 1
+                - Item: CH_TIGERFIST_SC
+                  Rate: 1
+                - Item: CH_CHAINCRUSH_SC
+                  Rate: 1
+                - Item: PF_HPCONVERSION_SC
+                  Rate: 1
+                - Item: PF_SOULCHANGE_SC
+                  Rate: 1
+                - Item: PF_SOULBURN_SC
+                  Rate: 1
+                - Item: ASC_EDP_SC
+                  Rate: 1
+                - Item: ASC_BREAKER_SC
+                  Rate: 1
+                - Item: SN_SHARPSHOOTING_SC
+                  Rate: 1
+                - Item: SN_WINDWALK_SC
+                  Rate: 1
+                - Item: WS_MELTDOWN_SC
+                  Rate: 1
+                - Item: WS_CREATECOIN_SC
+                  Rate: 1
+                - Item: WS_CREATENUGGET_SC
+                  Rate: 1
+                - Item: WS_SYSTEMCREATE_SC
+                  Rate: 1
+                - Item: ST_REJECTSWORD_SC
+                  Rate: 1
+                - Item: ST_STEALBACKPACK_SC
+                  Rate: 1
+                - Item: CR_ALCHEMY_SC
+                  Rate: 1
+                - Item: CG_ARROWVULCAN_SC
+                  Rate: 1
+                - Item: CG_MARIONETTE_SC
+                  Rate: 1
+                - Item: LK_SPIRALPIERCE_SC
+                  Rate: 1
+                - Item: LK_HEADCRUSH_SC
+                  Rate: 1
+                - Item: LK_JOINTBEAT_SC
+                  Rate: 1
+                - Item: HW_NAPALMVULCAN_SC
+                  Rate: 1
+                - Item: PF_MINDBREAKER_SC
+                  Rate: 1
+                - Item: PF_MEMORIZE_SC
+                  Rate: 1
+                - Item: PF_FOGWALL_SC
+                  Rate: 1
+                - Item: PF_SPIDERWEB_SC
+                  Rate: 1
+                - Item: ASC_METEORASSAULT_SC
+                  Rate: 1
+                - Item: AM_BERSERKPITCHER_SC
+                  Rate: 1
+                - Item: BS_ADRENALINE2_SC
+                  Rate: 1
+                - Item: ST_FULLSTRIP_SC
+                  Rate: 1
+                - Item: CR_SLIMPITCHER_SC
+                  Rate: 1
+                - Item: CR_FULLPROTECTION_SC
+                  Rate: 1
+                - Item: PA_SHIELDCHAIN_SC
+                  Rate: 1
+                - Item: HP_MANARECHARGE_SC
+                  Rate: 1
+                - Item: PF_DOUBLECASTING_SC
+                  Rate: 1
+                - Item: HW_GANBANTEIN_SC
+                  Rate: 1
+                - Item: HW_GRAVITATION_SC
+                  Rate: 1
+                - Item: WS_OVERTHRUSTMAX_SC
+                  Rate: 1
+                - Item: CG_LONGINGFREEDOM_SC
+                  Rate: 1
+                - Item: CG_HERMODE_SC
+                  Rate: 1
+                - Item: CG_TAROTCARD_SC
+                  Rate: 1
+                - Item: CR_ACIDDEMONSTRATION_SC
+                  Rate: 1
+                - Item: CR_CULTIVATION_SC
+                  Rate: 1
+                - Item: KN_ONEHAND_SC
+                  Rate: 1
+                - Item: HT_POWER_SC
+                  Rate: 1
+                - Item: KN_CHARGEATK_SC
+                  Rate: 1
+                - Item: CR_SHRINK_SC
+                  Rate: 1
+                - Item: AS_VENOMKNIFE_SC
+                  Rate: 1
+                - Item: RG_CLOSECONFINE_SC
+                  Rate: 1
+                - Item: WZ_SIGHTBLASTER_SC
+                  Rate: 1
+                - Item: HT_PHANTASMIC_SC
+                  Rate: 1
+                - Item: BA_PANGVOICE_SC
+                  Rate: 1
+                - Item: DC_WINKCHARM_SC
+                  Rate: 1
+                - Item: BS_UNFAIRLYTRICK_SC
+                  Rate: 1
+                - Item: MO_KITRANSLATION_SC
+                  Rate: 1
+                - Item: MO_BALKYOUNG_SC
                   Rate: 1
