@@ -88,15 +88,21 @@ Header:
     Version: 2
 
 Body:
-  - Id: 600001
-    AegisName: testitem_1
-    Name: Tao Pls Strawberry
-    Type: Usable
-    Script: |
-      callfunc "RemoveNamedSkill","AL_HEAL";
-  - Id: 600002
-    AegisName: testitem_2
-    Name: Gib Tao Banana
-    Type: Usable
-    Script: |
-      callfunc "AddNamedSkill","AL_HEAL";
+    - Id: 600001
+      AegisName: testitem_1
+      Name: Tao Pls Strawberry
+      Type: Usable
+      Script: |
+          callfunc "RemoveNamedSkill","AL_HEAL";
+    - Id: 600002
+      AegisName: testitem_2
+      Name: Gib Tao Banana
+      Type: Usable
+      Script: |
+          callfunc "AddNamedSkill","AL_HEAL";
+    - Id: 600003
+      AegisName: testitem_3
+      Name: PN's Test Item
+      Type: Usable
+      Script: |
+          getrandgroupitem(IG_skillscrollbox,1,);
