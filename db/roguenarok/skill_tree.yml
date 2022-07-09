@@ -58,6 +58,8 @@ Body:
             Exclude: true
           - Name: WE_CALLBABY
             MaxLevel: 1
+          - Name: MC_INCCARRY
+            MaxLevel: 10
     - Job: Swordman
       Inherit:
           Novice: true
