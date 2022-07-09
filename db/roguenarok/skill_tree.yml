@@ -407,15 +407,7 @@ Body:
             MaxLevel: 10
           - Name: WS_MELTDOWN
             MaxLevel: 10
-          - Name: WS_CREATECOIN
-            MaxLevel: 3
-          - Name: WS_CREATENUGGET
-            MaxLevel: 3
-          - Name: WS_SYSTEMCREATE
-            MaxLevel: 1
           - Name: ST_REJECTSWORD
-            MaxLevel: 5
-          - Name: CR_ALCHEMY
             MaxLevel: 5
           - Name: CG_ARROWVULCAN
             MaxLevel: 10
