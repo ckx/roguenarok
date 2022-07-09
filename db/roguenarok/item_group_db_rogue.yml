@@ -161,8 +161,6 @@ Body:
                   Rate: 1
                 - Item: WZ_SIGHTRASHER_SC
                   Rate: 1
-                - Item: WZ_FIREIVY_SC
-                  Rate: 1
                 - Item: WZ_METEOR_SC
                   Rate: 1
                 - Item: WZ_JUPITEL_SC
@@ -277,14 +275,6 @@ Body:
                   Rate: 1
                 - Item: AM_CP_HELM_SC
                   Rate: 1
-                - Item: AM_CREATECREATURE_SC
-                  Rate: 1
-                - Item: AM_CULTIVATION_SC
-                  Rate: 1
-                - Item: AM_FLAMECONTROL_SC
-                  Rate: 1
-                - Item: AM_DRILLMASTER_SC
-                  Rate: 1
                 - Item: CR_AUTOGUARD_SC
                   Rate: 1
                 - Item: CR_SHIELDCHARGE_SC
@@ -359,7 +349,7 @@ Body:
                   Rate: 1
                 - Item: BA_DISSONANCE_SC
                   Rate: 1
-                - Item: BA_FROSTJOKE_SC
+                - Item: BA_FROSTJOKER_SC
                   Rate: 1
                 - Item: BA_WHISTLE_SC
                   Rate: 1
@@ -431,8 +421,6 @@ Body:
                   Rate: 1
                 - Item: ST_REJECTSWORD_SC
                   Rate: 1
-                - Item: ST_STEALBACKPACK_SC
-                  Rate: 1
                 - Item: CR_ALCHEMY_SC
                   Rate: 1
                 - Item: CG_ARROWVULCAN_SC
@@ -460,6 +448,8 @@ Body:
                 - Item: AM_BERSERKPITCHER_SC
                   Rate: 1
                 - Item: BS_ADRENALINE2_SC
+                  Rate: 1
+                - Item: ST_PRESERVE_SC
                   Rate: 1
                 - Item: ST_FULLSTRIP_SC
                   Rate: 1
