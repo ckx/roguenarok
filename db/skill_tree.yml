@@ -37,13 +37,14 @@
 ###########################################################################
 
 Header:
-  Type: SKILL_TREE_DB
-  Version: 1
+    Type: SKILL_TREE_DB
+    Version: 1
 
 Footer:
-  Imports:
-  - Path: db/pre-re/skill_tree.yml
-    Mode: Prerenewal
-  - Path: db/re/skill_tree.yml
-    Mode: Renewal
-  - Path: db/import/skill_tree.yml
+    Imports:
+        # - Path: db/pre-re/skill_tree.yml
+          Mode: Prerenewal
+        - Path: db/re/skill_tree.yml
+          Mode: Renewal
+        - Path: db/import/skill_tree.yml
+        - Path: db/roguenarok//skill_tree.yml
