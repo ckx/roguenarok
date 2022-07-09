@@ -47,4 +47,4 @@ Footer:
         - Path: db/re/skill_tree.yml
           Mode: Renewal
         - Path: db/import/skill_tree.yml
-        - Path: db/roguenarok//skill_tree.yml
+        - Path: db/roguenarok/skill_tree.yml
