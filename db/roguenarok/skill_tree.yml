@@ -43,6 +43,8 @@ Header:
 Body:
     - Job: Novice
       Tree:
+          - Name: NV_BASIC
+            MaxLevel: 9
           - Name: SM_BASH
             MaxLevel: 10
           - Name: SM_PROVOKE
