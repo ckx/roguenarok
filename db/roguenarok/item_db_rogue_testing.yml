@@ -105,4 +105,4 @@ Body:
       Name: PN's Test Item
       Type: Usable
       Script: |
-          getrandgroupitem(IG_skillscrollbox,1,);
+          getrandgroupitem(IG_skillscrollbox,1);
