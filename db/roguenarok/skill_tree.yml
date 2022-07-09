@@ -41,13 +41,7 @@ Header:
     Version: 1
 
 Body:
-    - Job: Base
-      Tree:
-          - Name: MC_INCCARRY
-            MaxLevel: 10
     - Job: Novice
-      Inherit:
-          Base: true
       Tree:
           - Name: NV_BASIC
             MaxLevel: 9
