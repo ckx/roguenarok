@@ -44,14 +44,16 @@ Header:
 Body:
   - Id: 100
     Name: MagmaDun
-    TimeLimit: 14400
+    TimeLimit: 99999
+    IdleTimeOut: 99999
     Enter:
       Map: mag_dun01
       X: 0
       Y: 0
   - Id: 101
     Name: ByalanIsland
-    TimeLimit: 14400
+    TimeLimit: 0
+    IdleTimeOut: 0
     Enter:
       Map: iz_dun00
       X: 0

@@ -553,6 +553,7 @@ void instance_addnpc(std::shared_ptr<s_instance_data> idata)
   }
 }
 
+// TODO: needs proper returns and stuff
 /**
 * Roguenarok function for generating a "standalone" instance separated from chars/parties/guilds
 * @param name: Instance name
@@ -566,8 +567,6 @@ int instance_generate(const char *name) {
 		return -1;
 	}
 
-	struct map_session_data* session_data = nullptr;
-
 	if (instance_count <= 0)
 		return -4;
 
@@ -575,17 +574,13 @@ int instance_generate(const char *name) {
 	std::shared_ptr<s_instance_data> entry = std::make_shared<s_instance_data>();
 
 	entry->id = db->id;
+	entry->mode = IM_CHAR;
 	entry->regs.vars = i64db_alloc(DB_OPT_RELEASE_DATA);
 	entry->regs.arrays = nullptr;
 	instances.insert({ instance_id, entry });
 
-	if (session_data != nullptr) {
-		session_data->instance_id = instance_id;
-		session_data->instance_mode = IM_CHAR;
-	}
-
 	instance_wait.id.push_back(instance_id);
-	clif_instance_create(instance_id, instance_wait.id.size());
+	//clif_instance_create(instance_id, instance_wait.id.size());
 	instance_subscription_timer(0, 0, 0, 0);
 
 	ShowInfo("[Instance] Created: %s (%d)\n", name, instance_id);

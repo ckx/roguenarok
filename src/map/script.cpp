@@ -12445,8 +12445,8 @@ BUILDIN_FUNC(resetskill)
 
 /**
  * Reset single skill on character
- * resetskill({<char_id>},{<skill_ID>});
- * skill_ID should be suppled in "NV_BASIC" format
+ * resetnamedskill({<char_id>},{<skill_ID>});
+ * skill_ID can be supplied in NV_BASIC format or the integer ID
  **/
 BUILDIN_FUNC(resetnamedskill)
 {
