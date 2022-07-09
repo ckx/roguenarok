@@ -16,7 +16,7 @@ geffen,125,100,0	script	gef420	45,1,1,{
 		setarray .@OptParam[0],0;
 		makeitem3 2115,1,.@map$,.@x,.@y,0,0,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;
 		//todo: autowarp into generated instance
-		warp "0369#000020",0,0;
+		//warp "0369#000020",0,0;
 		close;
 		// if (!instance_check_party(.@party_id,1,10)) {
 		// 	mes "u need a party of 2 muh d00d";
