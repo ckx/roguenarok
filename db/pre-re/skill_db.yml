@@ -150,6 +150,8 @@ Body:
   - Id: 2
     Name: SM_SWORD
     Description: Sword Mastery
+    Flags:
+      IsQuest: true
     MaxLevel: 10
     Type: Weapon
   - Id: 3
