@@ -472,35 +472,35 @@ Body:
       Inherit:
           Novice: true
       Tree:
-          - Name: SM_SWORD
-            MaxLevel: 10
-          - Name: SM_TWOHAND
-            MaxLevel: 10
-            Requires:
-                - Name: SM_SWORD
-                  Level: 1
-          - Name: SM_RECOVERY
-            MaxLevel: 10
-          - Name: SM_BASH
-            MaxLevel: 10
-          - Name: SM_PROVOKE
-            MaxLevel: 10
-          - Name: SM_MAGNUM
-            MaxLevel: 10
-            Requires:
-                - Name: SM_BASH
-                  Level: 5
-          - Name: SM_ENDURE
-            MaxLevel: 10
-            Requires:
-                - Name: SM_PROVOKE
-                  Level: 5
-          - Name: SM_MOVINGRECOVERY
-            MaxLevel: 1
-          - Name: SM_FATALBLOW
-            MaxLevel: 1
-          - Name: SM_AUTOBERSERK
-            MaxLevel: 1
+          # - Name: SM_SWORD
+          #   MaxLevel: 10
+          # - Name: SM_TWOHAND
+          #   MaxLevel: 10
+          #   Requires:
+          #       - Name: SM_SWORD
+          #         Level: 1
+          # - Name: SM_RECOVERY
+          #   MaxLevel: 10
+          # - Name: SM_BASH
+          #   MaxLevel: 10
+          # - Name: SM_PROVOKE
+          #   MaxLevel: 10
+          # - Name: SM_MAGNUM
+          #   MaxLevel: 10
+          #   Requires:
+          #       - Name: SM_BASH
+          #         Level: 5
+          # - Name: SM_ENDURE
+          #   MaxLevel: 10
+          #   Requires:
+          #       - Name: SM_PROVOKE
+          #         Level: 5
+          # - Name: SM_MOVINGRECOVERY
+          #   MaxLevel: 1
+          # - Name: SM_FATALBLOW
+          #   MaxLevel: 1
+          # - Name: SM_AUTOBERSERK
+          #   MaxLevel: 1
     - Job: Mage # TODO: MODIFIED TEST CLASS, MOVE TO IMPORTANT
       Inherit:
           Novice: true
