@@ -1,0 +1,41 @@
+function	script	SelectInstance	{
+	set .@inst_selector,rand(2);
+	switch (.@inst_selector) {
+		case 0: return "mag_dun01";
+		case 1: return "iz_dun00";
+	}
+}
+
+function	script	GetEasyMob	{
+	switch (rand(2)) {
+		case 0: return 1836; // magmaring
+		case 1: return 1144; // marse
+	}
+}
+
+function	script	GetHardMob	{
+	switch (rand(2)) {
+		case 0: return 1065; // strouf
+		case 1: return 1408; // bloody butterfly
+	}
+}
+
+
+function	script	SelectMob	{
+	.@mobtospawn$ = getarg(0);
+	if (.@mobtospawn$ == "easy") {
+		return GetEasyMob;
+	} else if (.@mobtospawn$ == "hard") {
+		return GetHardMob;
+	}
+}
+
+function	script	SelectMobAmount	{
+	.@mobamount$ = getarg(0);
+	if (.@mobamount$ == "many") {
+		return rand(160,250);
+	} else if (.@mobamount$ == "some") {
+		return rand(10,30);
+	}
+}
+

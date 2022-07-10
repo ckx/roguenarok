@@ -612,7 +612,7 @@ int instance_create(int owner_id, const char *name, e_instance_mode mode) {
 	struct clan* cd;
 
 	switch(mode) {
-		case IM_NONE:
+		case IM_NONE:	
 			break;
 		case IM_CHAR:
 			if (!(sd = map_charid2sd(owner_id))) {

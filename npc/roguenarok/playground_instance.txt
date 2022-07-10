@@ -14,7 +14,7 @@
 
 // Instance Creation
 //============================================================
-geffen,116,97,6	script	Sample Instance	100,{
+hugel,89,149,6	script	Sample Instance	100,{
 	/* Function declaration */
 	function GetInstance;
 

@@ -42,21 +42,20 @@ Header:
   Version: 2
 
 Body:
-  - Id: 100
-    Name: MagmaDun
-    TimeLimit: 99999
-    IdleTimeOut: 99999
+  - Id: 10000
+    Name: mag_dun01
+    TimeLimit: 9999999
+    IdleTimeOut: 9999999
+    Destroyable: false
     Enter:
       Map: mag_dun01
       X: 0
       Y: 0
-  - Id: 101
-    Name: ByalanIsland
-    TimeLimit: 0
-    IdleTimeOut: 0
+  - Id: 10001
+    Name: iz_dun00
+    TimeLimit: 9999999
+    IdleTimeOut: 9999999
     Enter:
       Map: iz_dun00
       X: 0
       Y: 0
-    #AdditionalMaps:
-      #2@nyd: true

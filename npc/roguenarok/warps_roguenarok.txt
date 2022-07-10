@@ -1,21 +1,21 @@
 hugel,96,140,0	script	gef420	45,1,1,{
 	OnTouch_:
-		// //set .@party_id,getcharid(1);
-		// set .@md_name$,"MagmaDun";
-		// mes "hello!";
-		// //set .@inst_id,instance_generate(.@md_nam	e$);
-		// set .@inst_id,instance_generate(.@md_name$);
-		// if (.@inst_id > 0) {
-		// 	mes "Generated new instance with ID " + .@inst_id;
-		// } else {
-		// 	mes "Something happened. " + .@inst_id;
-		// }
-		// getmapxy(.@map$,.@x,.@y,BL_PC);
-		// setarray .@OptID[0],RDMOPT_VAR_STRAMOUNT,RDMOPT_RACE_TOLERACE_HUMAN;
-		// setarray .@OptVal[0],3,5;
-		// setarray .@OptParam[0],0;
-		// makeitem3 2115,1,.@map$,.@x,.@y,0,0,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;
-		// close;
+		instance_destroy(@instID);
+		set .@instname$,SelectInstance;
+		set @instID,instance_create(.@instname$,IM_CHAR,getcharid(0));
+		dispbottom "" + @instID;
+
+		switch(instance_enter(.@instname$,-1,-1,getcharid(0),@instID)) {
+			case IE_OTHER:
+				mes "An unknown error has occurred.";
+				close;
+			case IE_NOINSTANCE:
+				mes "Instance does not exist.";
+				close;
+			case IE_OK:
+				dispbottom "OK, entering instance " + .@inst_name$ + " (ID: " + @instID + ")";
+		}
+		dispbottom "Instance script termination.";
 		// if (!instance_check_party(.@party_id,1,10)) {
 		// 	mes "u need a party of 2 muh d00d";
 		// 	close;
@@ -24,22 +24,10 @@ hugel,96,140,0	script	gef420	45,1,1,{
 		// 	party_create("ahaeuaehuaehueau",getcharid(0));
 		// 	sleep2 200;
 		// }
-	
-		// switch(instance_enter("MagmaDun")) {
-		// 	case IE_OTHER:
-		// 		mes "An unknown error has occurred.";
-		// 		close;
-		// 	case IE_NOINSTANCE:
-		// 		mes "Memorial Dungeon Orc's Memory does not exist.";
-		// 		mes "Memorial Dungeon has been destroyed by the Party Leader, or because of the time limit. Please try again after 2 hours.";
-		// 		close;
-		// 	case IE_NOMEMBER:
-		// 		mes "Only a member of the party can enter the Memorial Dungeon.";
-		// 		close;
-		// 	case IE_OK:
-		// 		mapannounce "gef_fild10", getpartyname( getcharid(1) ) +" party's member "+strcharinfo(0)+" has entered the Orc's Memory.",bc_map,"0x00ff99";
-		// 		if (checkquest(12059) == -1) setquest 12059;
-		// 		if (getarg(0) == 0) close;
-		// 		else end;
-		// }	
+
+		OnInstanceInit:  // initialize the NPC when the instance is created
+			set .@mapname$,instance_mapname(.@instname$,@instID);
+			dispbottom "mapname: " + .@mapname$;
+			monster .@mapname$,0,0,"???",SelectMob("easy"),SelectMobAmount("many");
+			monster .@mapname$,0,0,"???",SelectMob("hard"),SelectMobAmount("some");
 	}
