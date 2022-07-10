@@ -95,276 +95,276 @@ Body:
             MaxLevel: 10
           - Name: AL_CURE
             MaxLevel: 1
-          # - Name: MC_MAMMONITE
-          #   MaxLevel: 10
-          # - Name: AC_DOUBLE
-          #   MaxLevel: 10
-          # - Name: AC_SHOWER
-          #   MaxLevel: 10
-          # - Name: TF_DOUBLE
-          #   MaxLevel: 10
-          # - Name: TF_STEAL
-          #   MaxLevel: 10
-          # - Name: TF_HIDING
-          #   MaxLevel: 10
-          # - Name: TF_POISON
-          #   MaxLevel: 10
-          # - Name: TF_DETOXIFY
-          #   MaxLevel: 1
-          # - Name: KN_PIERCE
-          #   MaxLevel: 10
-          # - Name: KN_BRANDISHSPEAR
-          #   MaxLevel: 10
-          # - Name: KN_SPEARSTAB
-          #   MaxLevel: 10
-          # - Name: KN_SPEARBOOMERANG
-          #   MaxLevel: 5
-          # - Name: KN_TWOHANDQUICKEN
-          #   MaxLevel: 10
-          # - Name: KN_AUTOCOUNTER
-          #   MaxLevel: 5
-          # - Name: KN_BOWLINGBASH
-          #   MaxLevel: 10
-          # - Name: PR_IMPOSITIO
-          #   MaxLevel: 5
-          # - Name: PR_SUFFRAGIUM
-          #   MaxLevel: 3
-          # - Name: PR_ASPERSIO
-          #   MaxLevel: 5
-          # - Name: PR_BENEDICTIO
-          #   MaxLevel: 5
-          # - Name: PR_SANCTUARY
-          #   MaxLevel: 10
-          # - Name: PR_SLOWPOISON
-          #   MaxLevel: 4
-          # - Name: PR_STRECOVERY
-          #   MaxLevel: 1
-          # - Name: PR_MAGNIFICAT
-          #   MaxLevel: 5
-          # - Name: PR_GLORIA
-          #   MaxLevel: 5
-          # - Name: PR_LEXDIVINA
-          #   MaxLevel: 10
-          # - Name: PR_TURNUNDEAD
-          #   MaxLevel: 10
-          # - Name: PR_LEXAETERNA
-          #   MaxLevel: 1
-          # - Name: PR_MAGNUS
-          #   MaxLevel: 10
-          # - Name: WZ_FIREPILLAR
-          #   MaxLevel: 10
-          # - Name: WZ_SIGHTRASHER
-          #   MaxLevel: 10
-          # - Name: WZ_METEOR
-          #   MaxLevel:
-          # - Name: WZ_JUPITEL
-          #   MaxLevel: 10
-          # - Name: WZ_VERMILION
-          #   MaxLevel: 10
-          # - Name: WZ_WATERBALL
-          #   MaxLevel: 5
-          # - Name: WZ_ICEWALL
-          #   MaxLevel: 10
-          # - Name: WZ_FROSTNOVA
-          #   MaxLevel: 10
-          # - Name: WZ_STORMGUST
-          #   MaxLevel: 10
-          # - Name: WZ_EARTHSPIKE
-          #   MaxLevel: 5
-          # - Name: WZ_HEAVENDRIVE
-          #   MaxLevel: 5
-          # - Name: WZ_QUAGMIRE
-          #   MaxLevel: 5
-          # - Name: BS_REPAIRWEAPON
-          #   MaxLevel: 1
-          # - Name: BS_SKINTEMPER
-          #   MaxLevel: 5
-          # - Name: BS_HAMMERFALL
-          #   MaxLevel: 5
-          # - Name: BS_ADRENALINE
-          #   MaxLevel: 5
-          # - Name: BS_WEAPONPERFECT
-          #   MaxLevel: 5
-          # - Name: BS_OVERTHRUST
-          #   MaxLevel: 5
-          # - Name: BS_MAXIMIZE
-          #   MaxLevel: 5
-          # - Name: HT_SKIDTRAP
-          #   MaxLevel: 5
-          # - Name: HT_LANDMINE
-          #   MaxLevel: 5
-          # - Name: HT_ANKLESNARE
-          #   MaxLevel: 5
-          # - Name: HT_SHOCKWAVE
-          #   MaxLevel: 5
-          # - Name: HT_SANDMAN
-          #   MaxLevel: 5
-          # - Name: HT_FLASHER
-          #   MaxLevel: 5
-          # - Name: HT_FREEZINGTRAP
-          #   MaxLevel: 5
-          # - Name: HT_BLASTMINE
-          #   MaxLevel: 5
-          # - Name: HT_CLAYMORETRAP
-          #   MaxLevel: 5
-          # - Name: HT_REMOVETRAP
-          #   MaxLevel: 1
-          # - Name: AS_SONICBLOW
-          #   MaxLevel: 10
-          # - Name: AS_GRIMTOOTH
-          #   MaxLevel: 5
-          # - Name: AS_ENCHANTPOISON
-          #   MaxLevel: 10
-          # - Name: AS_POISONREACT
-          #   MaxLevel: 10
-          # - Name: AS_VENOMDUST
-          #   MaxLevel: 10
-          # - Name: AS_SPLASHER
-          #   MaxLevel: 10
-          # - Name: AC_CHARGEARROW
-          #   MaxLevel: 1
-          # - Name: TF_SPRINKLESAND
-          #   MaxLevel: 1
-          # - Name: TF_BACKSLIDING
-          #   MaxLevel: 1
-          # - Name: MC_LOUD
-          #   MaxLevel: 1
-          # - Name: AL_HOLYLIGHT
-          #   MaxLevel: 1
-          # - Name: RG_STEALCOIN
-          #   MaxLevel: 10
-          # - Name: RG_BACKSTAP
-          #   MaxLevel: 10
-          # - Name: RG_TUNNELDRIVE
-          #   MaxLevel: 5
-          # - Name: RG_RAID
-          #   MaxLevel: 5
-          # - Name: RG_STRIPWEAPON
-          #   MaxLevel: 5
-          # - Name: RG_STRIPSHIELD
-          #   MaxLevel: 5
-          # - Name: RG_STRIPARMOR
-          #   MaxLevel: 5
-          # - Name: RG_STRIPHELM
-          #   MaxLevel: 5
-          # - Name: RG_GANGSTER
-          #   MaxLevel: 1
-          # - Name: RG_COMPULSION
-          #   MaxLevel: 5
-          # - Name: RG_PLAGIARISM
-          #   MaxLevel: 10
-          # - Name: AM_DEMONSTRATION
-          #   MaxLevel: 5
-          # - Name: AM_ACIDTERROR
-          #   MaxLevel: 5
-          # - Name: AM_CANNIBALIZE
-          #   MaxLevel: 5
-          # - Name: AM_SPHEREMINE
-          #   MaxLevel: 5
-          # - Name: AM_CP_WEAPON
-          #   MaxLevel: 5
-          # - Name: AM_CP_SHIELD
-          #   MaxLevel: 5
-          # - Name: AM_CP_ARMOR
-          #   MaxLevel: 5
-          # - Name: AM_CP_HELM
-          #   MaxLevel: 5
-          # - Name: CR_AUTOGUARD
-          #   MaxLevel: 10
-          # - Name: CR_SHIELDCHARGE
-          #   MaxLevel: 5
-          # - Name: CR_SHIELDBOOMERANG
-          #   MaxLevel: 5
-          # - Name: CR_REFLECTSHIELD
-          #   MaxLevel: 10
-          # - Name: CR_HOLYCROSS
-          #   MaxLevel: 10
-          # - Name: CR_GRANDCROSS
-          #   MaxLevel: 10
-          # - Name: CR_PROVIDENCE
-          #   MaxLevel: 5
-          # - Name: CR_DEFENDER
-          #   MaxLevel: 5
-          # - Name: CR_SPEARQUICKEN
-          #   MaxLevel: 10
-          # - Name: MO_CALLSPIRITS
-          #   MaxLevel: 5
-          # - Name: MO_ABSORBSPIRITS
-          #   MaxLevel: 1
-          # - Name: MO_TRIPLEATTACK
-          #   MaxLevel: 10
-          # - Name: MO_INVESTIGATE
-          #   MaxLevel: 5
-          # - Name: MO_FINGEROFFENSIVE
-          #   MaxLevel: 5
-          # - Name: MO_STEELBODY
-          #   MaxLevel: 5
-          # - Name: MO_BLADESTOP
-          #   MaxLevel: 5
-          # - Name: MO_EXPLOSIONSPIRITS
-          #   MaxLevel: 5
-          # - Name: MO_CHAINCOMBO
-          #   MaxLevel: 5
-          # - Name: MO_COMBOFINISH
-          #   MaxLevel: 5
-          # - Name: SA_CASTCANCEL
-          #   MaxLevel: 5
-          # - Name: SA_MAGICROD
-          #   MaxLevel: 5
-          # - Name: SA_SPELLBREAKER
-          #   MaxLevel: 5
-          # - Name: SA_AUTOSPELL
-          #   MaxLevel: 10
-          # - Name: SA_FLAMELAUNCHER
-          #   MaxLevel: 5
-          # - Name: SA_FROSTWEAPON
-          #   MaxLevel: 5
-          # - Name: SA_LIGHTNINGLOADER
-          #   MaxLevel: 5
-          # - Name: SA_SEISMICWEAPON
-          #   MaxLevel: 5
-          # - Name: SA_VOLCANO
-          #   MaxLevel: 5
-          # - Name: SA_DELUGE
-          #   MaxLevel: 5
-          # - Name: SA_VIOLENTGALE
-          #   MaxLevel: 5
-          # - Name: SA_LANDPROTECTOR
-          #   MaxLevel: 5
-          # - Name: SA_DISPELL
-          #   MaxLevel: 5
-          # - Name: BD_ENCORE
-          #   MaxLevel: 1
-          # - Name: BD_LULLABY
-          #   MaxLevel: 1
-          # - Name: BD_ETERNALCHAOS
-          #   MaxLevel: 1
-          # - Name: BA_MUSICALSTRIKE
-          #   MaxLevel: 5
-          # - Name: BA_DISSONANCE
-          #   MaxLevel: 5
-          # - Name: BA_FROSTJOKER
-          #   MaxLevel: 5
-          # - Name: BA_WHISTLE
-          #   MaxLevel: 10
-          # - Name: BA_ASSASSINCROSS
-          #   MaxLevel: 10
-          # - Name: BA_APPLEIDUN
-          #   MaxLevel: 10
-          # - Name: DC_THROWARROW
-          #   MaxLevel: 5
-          # - Name: DC_UGLYDANCE
-          #   MaxLevel: 5
-          # - Name: DC_SCREAM
-          #   MaxLevel: 5
-          # - Name: DC_HUMMING
-          #   MaxLevel: 10
-          # - Name: DC_DONTFORGETME
-          #   MaxLevel: 10
-          # - Name: DC_FORTUNEKISS
-          #   MaxLevel: 10
-          # - Name: DC_SERVICEFORYOU
-          #   MaxLevel: 10
+          - Name: MC_MAMMONITE
+            MaxLevel: 10
+          - Name: AC_DOUBLE
+            MaxLevel: 10
+          - Name: AC_SHOWER
+            MaxLevel: 10
+          - Name: TF_DOUBLE
+            MaxLevel: 10
+          - Name: TF_STEAL
+            MaxLevel: 10
+          - Name: TF_HIDING
+            MaxLevel: 10
+          - Name: TF_POISON
+            MaxLevel: 10
+          - Name: TF_DETOXIFY
+            MaxLevel: 1
+          - Name: KN_PIERCE
+            MaxLevel: 10
+          - Name: KN_BRANDISHSPEAR
+            MaxLevel: 10
+          - Name: KN_SPEARSTAB
+            MaxLevel: 10
+          - Name: KN_SPEARBOOMERANG
+            MaxLevel: 5
+          - Name: KN_TWOHANDQUICKEN
+            MaxLevel: 10
+          - Name: KN_AUTOCOUNTER
+            MaxLevel: 5
+          - Name: KN_BOWLINGBASH
+            MaxLevel: 10
+          - Name: PR_IMPOSITIO
+            MaxLevel: 5
+          - Name: PR_SUFFRAGIUM
+            MaxLevel: 3
+          - Name: PR_ASPERSIO
+            MaxLevel: 5
+          - Name: PR_BENEDICTIO
+            MaxLevel: 5
+          - Name: PR_SANCTUARY
+            MaxLevel: 10
+          - Name: PR_SLOWPOISON
+            MaxLevel: 4
+          - Name: PR_STRECOVERY
+            MaxLevel: 1
+          - Name: PR_MAGNIFICAT
+            MaxLevel: 5
+          - Name: PR_GLORIA
+            MaxLevel: 5
+          - Name: PR_LEXDIVINA
+            MaxLevel: 10
+          - Name: PR_TURNUNDEAD
+            MaxLevel: 10
+          - Name: PR_LEXAETERNA
+            MaxLevel: 1
+          - Name: PR_MAGNUS
+            MaxLevel: 10
+          - Name: WZ_FIREPILLAR
+            MaxLevel: 10
+          - Name: WZ_SIGHTRASHER
+            MaxLevel: 10
+          - Name: WZ_METEOR
+            MaxLevel:
+          - Name: WZ_JUPITEL
+            MaxLevel: 10
+          - Name: WZ_VERMILION
+            MaxLevel: 10
+          - Name: WZ_WATERBALL
+            MaxLevel: 5
+          - Name: WZ_ICEWALL
+            MaxLevel: 10
+          - Name: WZ_FROSTNOVA
+            MaxLevel: 10
+          - Name: WZ_STORMGUST
+            MaxLevel: 10
+          - Name: WZ_EARTHSPIKE
+            MaxLevel: 5
+          - Name: WZ_HEAVENDRIVE
+            MaxLevel: 5
+          - Name: WZ_QUAGMIRE
+            MaxLevel: 5
+          - Name: BS_REPAIRWEAPON
+            MaxLevel: 1
+          - Name: BS_SKINTEMPER
+            MaxLevel: 5
+          - Name: BS_HAMMERFALL
+            MaxLevel: 5
+          - Name: BS_ADRENALINE
+            MaxLevel: 5
+          - Name: BS_WEAPONPERFECT
+            MaxLevel: 5
+          - Name: BS_OVERTHRUST
+            MaxLevel: 5
+          - Name: BS_MAXIMIZE
+            MaxLevel: 5
+          - Name: HT_SKIDTRAP
+            MaxLevel: 5
+          - Name: HT_LANDMINE
+            MaxLevel: 5
+          - Name: HT_ANKLESNARE
+            MaxLevel: 5
+          - Name: HT_SHOCKWAVE
+            MaxLevel: 5
+          - Name: HT_SANDMAN
+            MaxLevel: 5
+          - Name: HT_FLASHER
+            MaxLevel: 5
+          - Name: HT_FREEZINGTRAP
+            MaxLevel: 5
+          - Name: HT_BLASTMINE
+            MaxLevel: 5
+          - Name: HT_CLAYMORETRAP
+            MaxLevel: 5
+          - Name: HT_REMOVETRAP
+            MaxLevel: 1
+          - Name: AS_SONICBLOW
+            MaxLevel: 10
+          - Name: AS_GRIMTOOTH
+            MaxLevel: 5
+          - Name: AS_ENCHANTPOISON
+            MaxLevel: 10
+          - Name: AS_POISONREACT
+            MaxLevel: 10
+          - Name: AS_VENOMDUST
+            MaxLevel: 10
+          - Name: AS_SPLASHER
+            MaxLevel: 10
+          - Name: AC_CHARGEARROW
+            MaxLevel: 1
+          - Name: TF_SPRINKLESAND
+            MaxLevel: 1
+          - Name: TF_BACKSLIDING
+            MaxLevel: 1
+          - Name: MC_LOUD
+            MaxLevel: 1
+          - Name: AL_HOLYLIGHT
+            MaxLevel: 1
+          - Name: RG_STEALCOIN
+            MaxLevel: 10
+          - Name: RG_BACKSTAP
+            MaxLevel: 10
+          - Name: RG_TUNNELDRIVE
+            MaxLevel: 5
+          - Name: RG_RAID
+            MaxLevel: 5
+          - Name: RG_STRIPWEAPON
+            MaxLevel: 5
+          - Name: RG_STRIPSHIELD
+            MaxLevel: 5
+          - Name: RG_STRIPARMOR
+            MaxLevel: 5
+          - Name: RG_STRIPHELM
+            MaxLevel: 5
+          - Name: RG_GANGSTER
+            MaxLevel: 1
+          - Name: RG_COMPULSION
+            MaxLevel: 5
+          - Name: RG_PLAGIARISM
+            MaxLevel: 10
+          - Name: AM_DEMONSTRATION
+            MaxLevel: 5
+          - Name: AM_ACIDTERROR
+            MaxLevel: 5
+          - Name: AM_CANNIBALIZE
+            MaxLevel: 5
+          - Name: AM_SPHEREMINE
+            MaxLevel: 5
+          - Name: AM_CP_WEAPON
+            MaxLevel: 5
+          - Name: AM_CP_SHIELD
+            MaxLevel: 5
+          - Name: AM_CP_ARMOR
+            MaxLevel: 5
+          - Name: AM_CP_HELM
+            MaxLevel: 5
+          - Name: CR_AUTOGUARD
+            MaxLevel: 10
+          - Name: CR_SHIELDCHARGE
+            MaxLevel: 5
+          - Name: CR_SHIELDBOOMERANG
+            MaxLevel: 5
+          - Name: CR_REFLECTSHIELD
+            MaxLevel: 10
+          - Name: CR_HOLYCROSS
+            MaxLevel: 10
+          - Name: CR_GRANDCROSS
+            MaxLevel: 10
+          - Name: CR_PROVIDENCE
+            MaxLevel: 5
+          - Name: CR_DEFENDER
+            MaxLevel: 5
+          - Name: CR_SPEARQUICKEN
+            MaxLevel: 10
+          - Name: MO_CALLSPIRITS
+            MaxLevel: 5
+          - Name: MO_ABSORBSPIRITS
+            MaxLevel: 1
+          - Name: MO_TRIPLEATTACK
+            MaxLevel: 10
+          - Name: MO_INVESTIGATE
+            MaxLevel: 5
+          - Name: MO_FINGEROFFENSIVE
+            MaxLevel: 5
+          - Name: MO_STEELBODY
+            MaxLevel: 5
+          - Name: MO_BLADESTOP
+            MaxLevel: 5
+          - Name: MO_EXPLOSIONSPIRITS
+            MaxLevel: 5
+          - Name: MO_CHAINCOMBO
+            MaxLevel: 5
+          - Name: MO_COMBOFINISH
+            MaxLevel: 5
+          - Name: SA_CASTCANCEL
+            MaxLevel: 5
+          - Name: SA_MAGICROD
+            MaxLevel: 5
+          - Name: SA_SPELLBREAKER
+            MaxLevel: 5
+          - Name: SA_AUTOSPELL
+            MaxLevel: 10
+          - Name: SA_FLAMELAUNCHER
+            MaxLevel: 5
+          - Name: SA_FROSTWEAPON
+            MaxLevel: 5
+          - Name: SA_LIGHTNINGLOADER
+            MaxLevel: 5
+          - Name: SA_SEISMICWEAPON
+            MaxLevel: 5
+          - Name: SA_VOLCANO
+            MaxLevel: 5
+          - Name: SA_DELUGE
+            MaxLevel: 5
+          - Name: SA_VIOLENTGALE
+            MaxLevel: 5
+          - Name: SA_LANDPROTECTOR
+            MaxLevel: 5
+          - Name: SA_DISPELL
+            MaxLevel: 5
+          - Name: BD_ENCORE
+            MaxLevel: 1
+          - Name: BD_LULLABY
+            MaxLevel: 1
+          - Name: BD_ETERNALCHAOS
+            MaxLevel: 1
+          - Name: BA_MUSICALSTRIKE
+            MaxLevel: 5
+          - Name: BA_DISSONANCE
+            MaxLevel: 5
+          - Name: BA_FROSTJOKER
+            MaxLevel: 5
+          - Name: BA_WHISTLE
+            MaxLevel: 10
+          - Name: BA_ASSASSINCROSS
+            MaxLevel: 10
+          - Name: BA_APPLEIDUN
+            MaxLevel: 10
+          - Name: DC_THROWARROW
+            MaxLevel: 5
+          - Name: DC_UGLYDANCE
+            MaxLevel: 5
+          - Name: DC_SCREAM
+            MaxLevel: 5
+          - Name: DC_HUMMING
+            MaxLevel: 10
+          - Name: DC_DONTFORGETME
+            MaxLevel: 10
+          - Name: DC_FORTUNEKISS
+            MaxLevel: 10
+          - Name: DC_SERVICEFORYOU
+            MaxLevel: 10
           # - Name: ITM_TOMAHAWK
           #   MaxLevel: 1
           # - Name: LK_AURABLADE
