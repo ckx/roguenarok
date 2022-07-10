@@ -1,11 +1,13 @@
-hugel,96,140,0	script	gef420	45,1,1,{
+hugel,96,140,0	script	hugel420	45,1,1,{
 	OnTouch_:
-		instance_destroy(@instID);
+		if(instance_id(IM_CHAR) != 0) {
+			instance_destroy(instance_id(IM_CHAR));
+		} 
 		set .@instname$,SelectInstance;
-		set @instID,instance_create(.@instname$,IM_CHAR,getcharid(0));
-		dispbottom "" + @instID;
+		set .@instID,instance_create(.@instname$,IM_CHAR,getcharid(0));
+		dispbottom "" + .@instID;
 
-		switch(instance_enter(.@instname$,-1,-1,getcharid(0),@instID)) {
+		switch(instance_enter(.@instname$,-1,-1,getcharid(0),.@instID)) {
 			case IE_OTHER:
 				mes "An unknown error has occurred.";
 				close;
@@ -13,21 +15,14 @@ hugel,96,140,0	script	gef420	45,1,1,{
 				mes "Instance does not exist.";
 				close;
 			case IE_OK:
-				dispbottom "OK, entering instance " + .@inst_name$ + " (ID: " + @instID + ")";
+				dispbottom "OK, entering instance " + .@inst_name$ + " (ID: " + .@instID + ")";
 		}
-		dispbottom "Instance script termination.";
-		// if (!instance_check_party(.@party_id,1,10)) {
-		// 	mes "u need a party of 2 muh d00d";
-		// 	close;
-		// }
-		// if (instance_create(.@md_name$) < 0) {
-		// 	party_create("ahaeuaehuaehueau",getcharid(0));
-		// 	sleep2 200;
-		// }
 
-		OnInstanceInit:  // initialize the NPC when the instance is created
-			set .@mapname$,instance_mapname(.@instname$,@instID);
-			dispbottom "mapname: " + .@mapname$;
+		dispbottom "instname: " + .@instname$ + "ID: " + .@instID;
+		set .@mapname$,instance_mapname(.@instname$,.@instID);
+		dispbottom "mapname: " + .@mapname$;
+
+		OnInstanceInit: 
 			monster .@mapname$,0,0,"???",SelectMob("easy"),SelectMobAmount("many");
 			monster .@mapname$,0,0,"???",SelectMob("hard"),SelectMobAmount("some");
 	}
