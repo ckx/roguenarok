@@ -270,14 +270,14 @@ Body:
     - Id: 7
       Name: SM_MAGNUM
       Description: Magnum Break
-			Flags:
-					isQuest: true
+
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Hit: Single
       HitCount: 1
@@ -403,15 +403,14 @@ Body:
     - Id: 11
       Name: MG_NAPALMBEAT
       Description: Napalm Beat
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
       DamageFlags:
           Splash: true
           SplashSplit: true
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
           TargetTrap: true
       Range: 9
@@ -560,12 +559,12 @@ Body:
     - Id: 13
       Name: MG_SOULSTRIKE
       Description: Soul Strike
-			Flags:
 					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -643,12 +642,11 @@ Body:
     - Id: 14
       Name: MG_COLDBOLT
       Description: Cold Bolt
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -746,12 +744,11 @@ Body:
     - Id: 15
       Name: MG_FROSTDIVER
       Description: Frost Diver
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Single
@@ -857,14 +854,13 @@ Body:
     - Id: 17
       Name: MG_FIREBALL
       Description: Fire Ball
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
           TargetTrap: true
       Range: 9
@@ -924,12 +920,11 @@ Body:
     - Id: 18
       Name: MG_FIREWALL
       Description: Fire Wall
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Single
@@ -997,12 +992,11 @@ Body:
     - Id: 19
       Name: MG_FIREBOLT
       Description: Fire Bolt
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -1100,12 +1094,11 @@ Body:
     - Id: 20
       Name: MG_LIGHTNINGBOLT
       Description: Lightning Bolt
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -1203,12 +1196,11 @@ Body:
     - Id: 21
       Name: MG_THUNDERSTORM
       Description: Thunderstorm
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -1380,14 +1372,13 @@ Body:
     - Id: 26
       Name: AL_TELEPORT
       Description: Teleport
-			Flags:
-					isQuest: true
       MaxLevel: 2
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreKagehumi: true
           AllowOnMado: true
       Hit: Single
@@ -1460,15 +1451,14 @@ Body:
     - Id: 28
       Name: AL_HEAL
       Description: Heal
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Single
@@ -1505,14 +1495,13 @@ Body:
     - Id: 29
       Name: AL_INCAGI
       Description: Increase AGI
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
       Range: 9
       Hit: Single
@@ -1729,14 +1718,13 @@ Body:
     - Id: 34
       Name: AL_BLESSING
       Description: Blessing
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
       Range: 9
       Hit: Single
@@ -1832,13 +1820,12 @@ Body:
     - Id: 40
       Name: MC_IDENTIFY
       Description: Item Appraisal
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Range: 1
       Hit: Single
@@ -1848,13 +1835,12 @@ Body:
     - Id: 41
       Name: MC_VENDING
       Description: Vending
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Range: 1
       Hit: Single
@@ -1865,12 +1851,11 @@ Body:
     - Id: 42
       Name: MC_MAMMONITE
       Description: Mammonite
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Range: -1
       Hit: Single
@@ -1976,12 +1961,11 @@ Body:
     - Id: 46
       Name: AC_DOUBLE
       Description: Double Strafe
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           AlterRangeVulture: true
       Range: -9
       Hit: Multi_Hit
@@ -2002,14 +1986,13 @@ Body:
     - Id: 47
       Name: AC_SHOWER
       Description: Arrow Shower
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Ground
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           IgnoreLandProtector: true
           AlterRangeVulture: true
@@ -2067,13 +2050,12 @@ Body:
     - Id: 51
       Name: TF_HIDING
       Description: Hiding
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenHidden: true
           IgnoreKagehumi: true
           AllowOnMado: true
@@ -2393,14 +2375,13 @@ Body:
     - Id: 62
       Name: KN_BOWLINGBASH
       Description: Bowling Bash
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: -2
       Hit: Single
@@ -2488,14 +2469,13 @@ Body:
     - Id: 67
       Name: PR_SUFFRAGIUM
       Description: Suffragium
-			Flags:
-					isQuest: true
       MaxLevel: 3
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -2564,8 +2544,6 @@ Body:
     - Id: 69
       Name: PR_BENEDICTIO
       Description: B.S. Sacramenti
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
@@ -2573,7 +2551,8 @@ Body:
           NoDamage: true
           Splash: true
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Range: 9
       Hit: Single
@@ -3026,14 +3005,13 @@ Body:
     - Id: 80
       Name: WZ_FIREPILLAR
       Description: Fire Pillar
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
       DamageFlags:
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           IsAutoShadowSpell: true
       Range: 9
@@ -3163,14 +3141,13 @@ Body:
     - Id: 81
       Name: WZ_SIGHTRASHER
       Description: Sightrasher
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
           TargetTrap: true
       Hit: Single
@@ -3213,12 +3190,11 @@ Body:
     - Id: 83
       Name: WZ_METEOR
       Description: Meteor Storm
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -3351,12 +3327,11 @@ Body:
     - Id: 84
       Name: WZ_JUPITEL
       Description: Jupitel Thunder
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -3454,12 +3429,11 @@ Body:
     - Id: 85
       Name: WZ_VERMILION
       Description: Lord of Vermilion
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -3551,12 +3525,11 @@ Body:
     - Id: 86
       Name: WZ_WATERBALL
       Description: Water Ball
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -3666,14 +3639,13 @@ Body:
     - Id: 88
       Name: WZ_FROSTNOVA
       Description: Frost Nova
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Hit: Single
       HitCount: 1
@@ -3753,12 +3725,11 @@ Body:
     - Id: 89
       Name: WZ_STORMGUST
       Description: Storm Gust
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Single
@@ -3809,12 +3780,11 @@ Body:
     - Id: 90
       Name: WZ_EARTHSPIKE
       Description: Earth Spike
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
       Range: 9
       Hit: Multi_Hit
@@ -3862,12 +3832,11 @@ Body:
     - Id: 91
       Name: WZ_HEAVENDRIVE
       Description: Heaven's Drive
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
-      Flags:
+			Flags:
+					isQuest: true
           IsAutoShadowSpell: true
           TargetHidden: true
       Range: 9
@@ -3924,14 +3893,13 @@ Body:
     - Id: 92
       Name: WZ_QUAGMIRE
       Description: Quagmire
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
           TargetHidden: true
       Range: 9
@@ -4101,14 +4069,13 @@ Body:
     - Id: 108
       Name: BS_REPAIRWEAPON
       Description: Weapon Repair
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Range: 2
       Hit: Single
@@ -4127,15 +4094,14 @@ Body:
     - Id: 110
       Name: BS_HAMMERFALL
       Description: Hammer Fall
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Ground
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Range: 1
       Hit: Single
@@ -4166,15 +4132,14 @@ Body:
     - Id: 111
       Name: BS_ADRENALINE
       Description: Adrenaline Rush
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -4210,15 +4175,14 @@ Body:
     - Id: 112
       Name: BS_WEAPONPERFECT
       Description: Weapon Perfection
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -4250,15 +4214,14 @@ Body:
     - Id: 113
       Name: BS_OVERTHRUST
       Description: Power-Thrust
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -4314,14 +4277,13 @@ Body:
     - Id: 114
       Name: BS_MAXIMIZE
       Description: Maximize Power
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
           Toggleable: true
       Hit: Single
@@ -4343,14 +4305,13 @@ Body:
     - Id: 115
       Name: HT_SKIDTRAP
       Description: Skid Trap
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           IgnoreHovering: true
           AllowOnWarg: true
@@ -4397,15 +4358,14 @@ Body:
     - Id: 116
       Name: HT_LANDMINE
       Description: Land Mine
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
       DamageFlags:
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           AlterRangeResearchTrap: true
           IgnoreHovering: true
@@ -4448,14 +4408,13 @@ Body:
     - Id: 117
       Name: HT_ANKLESNARE
       Description: Ankle Snare
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           IgnoreHovering: true
           AllowOnWarg: true
@@ -4503,15 +4462,14 @@ Body:
     - Id: 118
       Name: HT_SHOCKWAVE
       Description: Shockwave Trap
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           IgnoreHovering: true
           AllowOnWarg: true
@@ -4547,15 +4505,14 @@ Body:
     - Id: 119
       Name: HT_SANDMAN
       Description: Sandman
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           IgnoreHovering: true
           AllowOnWarg: true
@@ -4593,15 +4550,14 @@ Body:
     - Id: 120
       Name: HT_FLASHER
       Description: Flasher
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           IgnoreHovering: true
           AllowOnWarg: true
@@ -4639,15 +4595,14 @@ Body:
     - Id: 121
       Name: HT_FREEZINGTRAP
       Description: Freezing Trap
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Ground
       DamageFlags:
           Splash: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           AlterRangeResearchTrap: true
           IgnoreHovering: true
@@ -4701,8 +4656,6 @@ Body:
     - Id: 122
       Name: HT_BLASTMINE
       Description: Blast Mine
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
@@ -4710,7 +4663,8 @@ Body:
           Splash: true
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           AlterRangeResearchTrap: true
           IgnoreHovering: true
@@ -4752,8 +4706,6 @@ Body:
     - Id: 123
       Name: HT_CLAYMORETRAP
       Description: Claymore Trap
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
@@ -4761,7 +4713,8 @@ Body:
           Splash: true
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           TargetTrap: true
           AlterRangeResearchTrap: true
@@ -4804,14 +4757,13 @@ Body:
     - Id: 124
       Name: HT_REMOVETRAP
       Description: Remove Trap
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Trap
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 2
       Hit: Single
@@ -4821,14 +4773,13 @@ Body:
     - Id: 125
       Name: HT_TALKIEBOX
       Description: Talkie Box
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsTrap: true
           AllowOnWarg: true
       Range: 3
@@ -4879,7 +4830,8 @@ Body:
       DamageFlags:
           Splash: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           AlterRangeVulture: true
       Range: 5
@@ -4988,14 +4940,13 @@ Body:
     - Id: 135
       Name: AS_CLOAKING
       Description: Cloaking
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreKagehumi: true
           IgnoreWugBite: true
           Toggleable: true
@@ -5070,14 +5021,13 @@ Body:
     - Id: 137
       Name: AS_GRIMTOOTH
       Description: Grimtooth
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           AllowWhenHidden: true
       Range:
@@ -5105,14 +5055,13 @@ Body:
     - Id: 138
       Name: AS_ENCHANTPOISON
       Description: Enchant Poison
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           PartyOnly: true
       Range: 1
       Hit: Single
@@ -5603,14 +5552,13 @@ Body:
     - Id: 158
       Name: NPC_PIERCINGATT
       Description: Piercing Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5619,14 +5567,13 @@ Body:
     - Id: 159
       Name: NPC_MENTALBREAKER
       Description: Spirit Destruction
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5635,12 +5582,11 @@ Body:
     - Id: 160
       Name: NPC_RANGEATTACK
       Description: Stand off attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5648,14 +5594,13 @@ Body:
     - Id: 161
       Name: NPC_ATTRICHANGE
       Description: Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Duration1: 1800000
@@ -5663,14 +5608,13 @@ Body:
     - Id: 162
       Name: NPC_CHANGEWATER
       Description: Water Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Water
@@ -5679,14 +5623,13 @@ Body:
     - Id: 163
       Name: NPC_CHANGEGROUND
       Description: Earth Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Earth
@@ -5695,14 +5638,13 @@ Body:
     - Id: 164
       Name: NPC_CHANGEFIRE
       Description: Fire Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Fire
@@ -5711,14 +5653,13 @@ Body:
     - Id: 165
       Name: NPC_CHANGEWIND
       Description: Wind Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Wind
@@ -5727,14 +5668,13 @@ Body:
     - Id: 166
       Name: NPC_CHANGEPOISON
       Description: Poison Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Poison
@@ -5743,14 +5683,13 @@ Body:
     - Id: 167
       Name: NPC_CHANGEHOLY
       Description: Holy Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Holy
@@ -5759,14 +5698,13 @@ Body:
     - Id: 168
       Name: NPC_CHANGEDARKNESS
       Description: Shadow Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Dark
@@ -5775,14 +5713,13 @@ Body:
     - Id: 169
       Name: NPC_CHANGETELEKINESIS
       Description: Ghost Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Element: Ghost
@@ -5791,14 +5728,13 @@ Body:
     - Id: 170
       Name: NPC_CRITICALSLASH
       Description: Defense disregard attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5807,12 +5743,11 @@ Body:
     - Id: 171
       Name: NPC_COMBOATTACK
       Description: Multi-stage Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Multi_Hit
@@ -5841,14 +5776,13 @@ Body:
     - Id: 172
       Name: NPC_GUIDEDATTACK
       Description: Guided Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5857,8 +5791,6 @@ Body:
     - Id: 173
       Name: NPC_SELFDESTRUCTION
       Description: Suicide bombing
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
@@ -5867,7 +5799,8 @@ Body:
           IgnoreDefense: true
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetTrap: true
       Hit: Single
@@ -5879,14 +5812,13 @@ Body:
     - Id: 174
       Name: NPC_SPLASHATTACK
       Description: Splash attack
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetTrap: true
       Range: -9
@@ -5897,26 +5829,24 @@ Body:
     - Id: 175
       Name: NPC_SUICIDE
       Description: Suicide
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 176
       Name: NPC_POISON
       Description: Poison Attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5927,12 +5857,11 @@ Body:
     - Id: 177
       Name: NPC_BLINDATTACK
       Description: Blind Attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5943,12 +5872,11 @@ Body:
     - Id: 178
       Name: NPC_SILENCEATTACK
       Description: Silence Attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5959,12 +5887,11 @@ Body:
     - Id: 179
       Name: NPC_STUNATTACK
       Description: Stun Attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5975,12 +5902,11 @@ Body:
     - Id: 180
       Name: NPC_PETRIFYATTACK
       Description: Petrify Attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -5992,12 +5918,11 @@ Body:
     - Id: 181
       Name: NPC_CURSEATTACK
       Description: Curse Attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6008,12 +5933,11 @@ Body:
     - Id: 182
       Name: NPC_SLEEPATTACK
       Description: Sleep attack
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6024,12 +5948,11 @@ Body:
     - Id: 183
       Name: NPC_RANDOMATTACK
       Description: Random Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6038,12 +5961,11 @@ Body:
     - Id: 184
       Name: NPC_WATERATTACK
       Description: Water Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6052,12 +5974,11 @@ Body:
     - Id: 185
       Name: NPC_GROUNDATTACK
       Description: Earth Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetHidden: true
       Range: -7
@@ -6067,12 +5988,11 @@ Body:
     - Id: 186
       Name: NPC_FIREATTACK
       Description: Fire Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6081,12 +6001,11 @@ Body:
     - Id: 187
       Name: NPC_WINDATTACK
       Description: Wind Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6095,12 +6014,11 @@ Body:
     - Id: 188
       Name: NPC_POISONATTACK
       Description: Poison Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6110,12 +6028,11 @@ Body:
     - Id: 189
       Name: NPC_HOLYATTACK
       Description: Holy Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6124,12 +6041,11 @@ Body:
     - Id: 190
       Name: NPC_DARKNESSATTACK
       Description: Shadow Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6138,12 +6054,11 @@ Body:
     - Id: 191
       Name: NPC_TELEKINESISATTACK
       Description: Ghost Attribute Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6152,12 +6067,11 @@ Body:
     - Id: 192
       Name: NPC_MAGICALATTACK
       Description: Demon Shock Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6168,92 +6082,85 @@ Body:
     - Id: 193
       Name: NPC_METAMORPHOSIS
       Description: Metamorphosis
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 194
       Name: NPC_PROVOCATION
       Description: Provocation
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 195
       Name: NPC_SMOKING
       Description: Smoking
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           IgnoreElement: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
     - Id: 196
       Name: NPC_SUMMONSLAVE
       Description: Follower Summons
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 197
       Name: NPC_EMOTION
       Description: Emotion
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Status: ModeChange
     - Id: 198
       Name: NPC_TRANSFORMATION
       Description: Transformation
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 199
       Name: NPC_BLOODDRAIN
       Description: Sucking Blood
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -6262,12 +6169,11 @@ Body:
     - Id: 200
       Name: NPC_ENERGYDRAIN
       Description: Energy Drain
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -6276,14 +6182,13 @@ Body:
     - Id: 201
       Name: NPC_KEEPING
       Description: Keeping
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Duration1:
@@ -6311,12 +6216,11 @@ Body:
     - Id: 202
       Name: NPC_DARKBREATH
       Description: Dark Breath
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -6325,14 +6229,13 @@ Body:
     - Id: 203
       Name: NPC_DARKBLESSING
       Description: Dark Blessing
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -6342,14 +6245,13 @@ Body:
     - Id: 204
       Name: NPC_BARRIER
       Description: Barrier
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Duration1:
@@ -6377,14 +6279,13 @@ Body:
     - Id: 205
       Name: NPC_DEFENDER
       Description: Defender
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Duration1:
@@ -6412,14 +6313,13 @@ Body:
     - Id: 206
       Name: NPC_LICK
       Description: Lick
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 1
       Hit: Single
@@ -6430,14 +6330,13 @@ Body:
     - Id: 207
       Name: NPC_HALLUCINATION
       Description: Hallucination
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       HitCount: 1
@@ -6446,28 +6345,26 @@ Body:
     - Id: 208
       Name: NPC_REBIRTH
       Description: Rebirth
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Status: Rebirth
     - Id: 209
       Name: NPC_SUMMONMONSTER
       Description: Monster Summons
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 210
@@ -6496,14 +6393,13 @@ Body:
     - Id: 212
       Name: RG_BACKSTAP
       Description: Back Stab
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenHidden: true
       Range: -1
       Hit: Single
@@ -6526,14 +6422,13 @@ Body:
     - Id: 214
       Name: RG_RAID
       Description: Sightless Mind
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           AllowWhenHidden: true
       Hit: Single
@@ -6830,15 +6725,14 @@ Body:
     - Id: 229
       Name: AM_DEMONSTRATION
       Description: Bomb
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Ground
       DamageFlags:
           NoDamage: true
           IgnoreAtkCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreAutoGuard: true
           IgnoreCicada: true
       Range: 9
@@ -6878,15 +6772,14 @@ Body:
     - Id: 230
       Name: AM_ACIDTERROR
       Description: Acid Terror
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreAtkCard: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreAutoGuard: true
           IgnoreCicada: true
       Range: 9
@@ -6919,13 +6812,12 @@ Body:
     - Id: 231
       Name: AM_POTIONPITCHER
       Description: Aid Potion
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           PartyOnly: true
           GuildOnly: true
       Range: 9
@@ -7337,12 +7229,11 @@ Body:
     - Id: 253
       Name: CR_HOLYCROSS
       Description: Holy Cross
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: -2
       Hit: Multi_Hit
@@ -7379,15 +7270,14 @@ Body:
     - Id: 254
       Name: CR_GRANDCROSS
       Description: Grand Cross
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           IgnoreAtkCard: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetSelf: true
       Range: 5
       Hit: Single
@@ -7437,13 +7327,12 @@ Body:
     - Id: 255
       Name: CR_DEVOTION
       Description: Sacrifice
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
           PartyOnly: true
       Range:
@@ -7478,13 +7367,12 @@ Body:
     - Id: 256
       Name: CR_PROVIDENCE
       Description: Resistant Souls
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -7620,11 +7508,10 @@ Body:
     - Id: 263
       Name: MO_TRIPLEATTACK
       Description: Raging Trifecta Blow
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           TargetEmperium: true
       Range: -1
@@ -7662,14 +7549,13 @@ Body:
     - Id: 266
       Name: MO_INVESTIGATE
       Description: Occult Impaction
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 2
       Hit: Single
@@ -7696,12 +7582,11 @@ Body:
     - Id: 267
       Name: MO_FINGEROFFENSIVE
       Description: Throw Spirit Sphere
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 9
       Hit: Multi_Hit
@@ -7853,15 +7738,14 @@ Body:
     - Id: 271
       Name: MO_EXTREMITYFIST
       Description: Asura Strike
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreDefense: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: -2
       Hit: Single
@@ -7926,12 +7810,11 @@ Body:
     - Id: 272
       Name: MO_CHAINCOMBO
       Description: Raging Quadruple Blow
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: -2
       Hit: Multi_Hit
@@ -7981,14 +7864,14 @@ Body:
     - Id: 273
       Name: MO_COMBOFINISH
       Description: Raging Thrust
-			Flags:
 					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
           TargetTrap: true
       Range: -2
@@ -8147,14 +8030,13 @@ Body:
     - Id: 280
       Name: SA_FLAMELAUNCHER
       Description: Endow Blaze
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           PartyOnly: true
           GuildOnly: true
       Range: 9
@@ -8183,14 +8065,13 @@ Body:
     - Id: 281
       Name: SA_FROSTWEAPON
       Description: Endow Tsunami
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           PartyOnly: true
           GuildOnly: true
       Range: 9
@@ -8219,14 +8100,13 @@ Body:
     - Id: 282
       Name: SA_LIGHTNINGLOADER
       Description: Endow Tornado
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           PartyOnly: true
           GuildOnly: true
       Range: 9
@@ -8255,14 +8135,13 @@ Body:
     - Id: 283
       Name: SA_SEISMICWEAPON
       Description: Endow Quake
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           PartyOnly: true
           GuildOnly: true
       Range: 9
@@ -8298,14 +8177,13 @@ Body:
     - Id: 285
       Name: SA_VOLCANO
       Description: Volcano
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
       Range: 2
       Hit: Single
@@ -8350,14 +8228,13 @@ Body:
     - Id: 286
       Name: SA_DELUGE
       Description: Deluge
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
       Range: 2
       Hit: Single
@@ -8402,14 +8279,13 @@ Body:
     - Id: 287
       Name: SA_VIOLENTGALE
       Description: Whirlwind
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
       Range: 2
       Hit: Single
@@ -8514,14 +8390,13 @@ Body:
     - Id: 289
       Name: SA_DISPELL
       Description: Dispell
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
           PartyOnly: true
           GuildOnly: true
@@ -8575,14 +8450,13 @@ Body:
     - Id: 292
       Name: SA_CLASSCHANGE
       Description: Class Change
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8610,14 +8484,13 @@ Body:
     - Id: 294
       Name: SA_REVERSEORCISH
       Description: Grampus Morph
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8630,14 +8503,13 @@ Body:
     - Id: 295
       Name: SA_DEATH
       Description: Grim Reaper
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8648,14 +8520,13 @@ Body:
     - Id: 296
       Name: SA_FORTUNE
       Description: Gold Digger
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8666,14 +8537,13 @@ Body:
     - Id: 297
       Name: SA_TAMINGMONSTER
       Description: Beastly Hypnosis
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8684,14 +8554,13 @@ Body:
     - Id: 298
       Name: SA_QUESTION
       Description: Questioning
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8702,14 +8571,13 @@ Body:
     - Id: 299
       Name: SA_GRAVITY
       Description: Gravity
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8720,14 +8588,13 @@ Body:
     - Id: 300
       Name: SA_LEVELUP
       Description: Leveling
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8738,12 +8605,11 @@ Body:
     - Id: 301
       Name: SA_INSTANTDEATH
       Description: Suicide
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8754,14 +8620,13 @@ Body:
     - Id: 302
       Name: SA_FULLRECOVERY
       Description: Rejuvenation
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8772,12 +8637,11 @@ Body:
     - Id: 303
       Name: SA_COMA
       Description: Coma
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -8789,13 +8653,12 @@ Body:
     - Id: 304
       Name: BD_ADAPTATION
       Description: Amp
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenPerforming: true
       Hit: Single
       HitCount: 1
@@ -8822,14 +8685,13 @@ Body:
     - Id: 306
       Name: BD_LULLABY
       Description: Lullaby
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -8850,14 +8712,13 @@ Body:
     - Id: 307
       Name: BD_RICHMANKIM
       Description: Mental Sensing
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -8880,14 +8741,13 @@ Body:
     - Id: 308
       Name: BD_ETERNALCHAOS
       Description: Down Tempo
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -8909,14 +8769,13 @@ Body:
     - Id: 309
       Name: BD_DRUMBATTLEFIELD
       Description: Battle Theme
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -8948,14 +8807,13 @@ Body:
     - Id: 310
       Name: BD_RINGNIBELUNGEN
       Description: Harmonic Lick
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -8987,14 +8845,13 @@ Body:
     - Id: 311
       Name: BD_ROKISWEIL
       Description: Classical Pluck
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -9015,14 +8872,13 @@ Body:
     - Id: 312
       Name: BD_INTOABYSS
       Description: Power Chord
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -9045,14 +8901,13 @@ Body:
     - Id: 313
       Name: BD_SIEGFRIED
       Description: Acoustic Rhythm
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       Hit: Single
       HitCount: 1
@@ -9081,12 +8936,10 @@ Body:
     - Id: 316
       Name: BA_MUSICALSTRIKE
       Description: Melody Strike
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
-      TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenPerforming: true
       Range: 9
       Hit: Single
@@ -9113,15 +8966,14 @@ Body:
     - Id: 317
       Name: BA_DISSONANCE
       Description: Unchained Serenade
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Multi_Hit
@@ -9181,14 +9033,13 @@ Body:
     - Id: 319
       Name: BA_WHISTLE
       Description: Perfect Tablature
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9231,14 +9082,13 @@ Body:
     - Id: 320
       Name: BA_ASSASSINCROSS
       Description: Impressive Riff
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9281,14 +9131,13 @@ Body:
     - Id: 321
       Name: BA_POEMBRAGI
       Description: Magic Strings
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9331,14 +9180,13 @@ Body:
     - Id: 322
       Name: BA_APPLEIDUN
       Description: Song of Lutie
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9389,12 +9237,11 @@ Body:
     - Id: 324
       Name: DC_THROWARROW
       Description: Slinging Arrow
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenPerforming: true
       Range: 9
       Hit: Single
@@ -9421,14 +9268,13 @@ Body:
     - Id: 325
       Name: DC_UGLYDANCE
       Description: Hip Shaker
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Multi_Hit
@@ -9488,14 +9334,13 @@ Body:
     - Id: 327
       Name: DC_HUMMING
       Description: Focus Ballet
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9538,14 +9383,13 @@ Body:
     - Id: 328
       Name: DC_DONTFORGETME
       Description: Slow Grace
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9588,14 +9432,13 @@ Body:
     - Id: 329
       Name: DC_FORTUNEKISS
       Description: Lady Luck
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9638,14 +9481,13 @@ Body:
     - Id: 330
       Name: DC_SERVICEFORYOU
       Description: Gypsy's Kiss
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -9688,49 +9530,45 @@ Body:
     - Id: 331
       Name: NPC_RANDOMMOVE
       Description: Random Move
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
     - Id: 332
       Name: NPC_SPEEDUP
       Description: Speed UP
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
     - Id: 333
       Name: NPC_REVENGE
       Description: Revenge
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
     - Id: 334
       Name: WE_MALE
       Description: I Will Protect You
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsWedding: true
       Range: 9
       Hit: Single
@@ -9743,13 +9581,12 @@ Body:
     - Id: 335
       Name: WE_FEMALE
       Description: I Look up to You
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsWedding: true
       Range: 9
       Hit: Single
@@ -9762,13 +9599,12 @@ Body:
     - Id: 336
       Name: WE_CALLPARTNER
       Description: I miss You
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsWedding: true
       Range: 9
       Hit: Single
@@ -9788,12 +9624,11 @@ Body:
     - Id: 337
       Name: ITM_TOMAHAWK
       Description: Throw Tomahawk
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -9808,12 +9643,11 @@ Body:
     - Id: 338
       Name: NPC_DARKCROSS
       Description: Cross of Darkness
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -2
       Hit: Multi_Hit
@@ -9824,15 +9658,14 @@ Body:
     - Id: 339
       Name: NPC_GRANDDARKNESS
       Description: Grand cross of Darkness
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           IgnoreAtkCard: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetSelf: true
       Hit: Single
@@ -9850,12 +9683,11 @@ Body:
     - Id: 340
       Name: NPC_DARKSTRIKE
       Description: Soul Strike of Darkness
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Multi_Hit
@@ -9885,12 +9717,11 @@ Body:
     - Id: 341
       Name: NPC_DARKTHUNDER
       Description: Darkness Jupitel
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Multi_Hit
@@ -9941,13 +9772,12 @@ Body:
     - Id: 342
       Name: NPC_STOP
       Description: Stop
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -2
       Hit: Single
@@ -9956,12 +9786,11 @@ Body:
     - Id: 343
       Name: NPC_WEAPONBRAKER
       Description: Break weapon
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -9971,12 +9800,11 @@ Body:
     - Id: 344
       Name: NPC_ARMORBRAKE
       Description: Break armor
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -2
       Hit: Single
@@ -9986,12 +9814,11 @@ Body:
     - Id: 345
       Name: NPC_HELMBRAKE
       Description: Break helm
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -2
       Hit: Single
@@ -10000,12 +9827,11 @@ Body:
     - Id: 346
       Name: NPC_SHIELDBRAKE
       Description: Break shield
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -2
       Hit: Single
@@ -10014,12 +9840,11 @@ Body:
     - Id: 347
       Name: NPC_UNDEADATTACK
       Description: Undead Element Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -10028,12 +9853,11 @@ Body:
     - Id: 348
       Name: NPC_CHANGEUNDEAD
       Description: Undead Attribute Change
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -2
       Hit: Single
@@ -10044,14 +9868,13 @@ Body:
     - Id: 349
       Name: NPC_POWERUP
       Description: Power Up
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       Duration1:
@@ -10069,13 +9892,12 @@ Body:
     - Id: 350
       Name: NPC_AGIUP
       Description: Agility UP
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       Duration1:
@@ -10093,47 +9915,43 @@ Body:
     - Id: 351
       Name: NPC_SIEGEMODE
       Description: Siege Mode
-			Flags:
-					isQuest: true
       MaxLevel: 1
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
     - Id: 352
       Name: NPC_CALLSLAVE
       Description: Recall Slaves
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
     - Id: 353
       Name: NPC_INVISIBLE
       Description: Invisible
-			Flags:
-					isQuest: true
       MaxLevel: 1
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Duration1: 30000
       Status: Cloaking
     - Id: 354
       Name: NPC_RUN
       Description: Run
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       AfterCastActDelay:
@@ -10550,8 +10368,6 @@ Body:
     - Id: 367
       Name: PA_PRESSURE
       Description: Gloria Domini
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Attack
@@ -10559,7 +10375,8 @@ Body:
           IgnoreElement: true
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreBgReduction: true
           IgnoreGvgReduction: true
       Range: 9
@@ -10632,15 +10449,14 @@ Body:
     - Id: 369
       Name: PA_GOSPEL
       Description: Battle Chant
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -10710,12 +10526,11 @@ Body:
     - Id: 371
       Name: CH_TIGERFIST
       Description: Glacier Fist
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: -2
       Hit: Multi_Hit
@@ -10751,12 +10566,11 @@ Body:
     - Id: 372
       Name: CH_CHAINCRUSH
       Description: Chain Crush Combo
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: -2
       Hit: Multi_Hit
@@ -10845,13 +10659,12 @@ Body:
     - Id: 374
       Name: PF_SOULCHANGE
       Description: Soul Exhale
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
           PartyOnly: true
           GuildOnly: true
@@ -11091,14 +10904,13 @@ Body:
     - Id: 382
       Name: SN_SHARPSHOOTING
       Description: Focused Arrow Strike
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Critical: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 9
       Hit: Multi_Hit
@@ -11210,14 +11022,13 @@ Body:
     - Id: 384
       Name: WS_MELTDOWN
       Description: Shattering Strike
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       HitCount: 1
       CastCancel: true
@@ -11316,14 +11127,13 @@ Body:
     - Id: 387
       Name: WS_CARTBOOST
       Description: Cart Boost
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -11352,13 +11162,12 @@ Body:
     - Id: 389
       Name: ST_CHASEWALK
       Description: Stealth
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreKagehumi: true
           Toggleable: true
       Hit: Single
@@ -11506,14 +11315,13 @@ Body:
     - Id: 395
       Name: CG_MOONLIT
       Description: Sheltering Bliss
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsEnsemble: true
       HitCount: 1
       SplashArea: 3
@@ -11554,13 +11362,12 @@ Body:
     - Id: 396
       Name: CG_MARIONETTE
       Description: Marionette Control
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
           PartyOnly: true
           IgnoreKagehumi: true
@@ -11575,14 +11382,13 @@ Body:
     - Id: 397
       Name: LK_SPIRALPIERCE
       Description: Spiral Pierce
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 5
       Hit: Multi_Hit
@@ -11707,15 +11513,14 @@ Body:
     - Id: 400
       Name: HW_NAPALMVULCAN
       Description: Napalm Vulcan
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
       DamageFlags:
           Splash: true
           SplashSplit: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 9
       Hit: Multi_Hit
@@ -11824,14 +11629,13 @@ Body:
     - Id: 404
       Name: PF_FOGWALL
       Description: Blinding Mist
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetSelf: true
           TargetHidden: true
       Range: 9
@@ -11882,15 +11686,14 @@ Body:
     - Id: 406
       Name: ASC_METEORASSAULT
       Description: Meteor Assault
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
           IgnoreAtkCard: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           IgnoreAutoGuard: true
           IgnoreCicada: true
@@ -11945,13 +11748,12 @@ Body:
     - Id: 408
       Name: WE_BABY
       Description: Baby
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsWedding: true
       Range: 9
       Hit: Single
@@ -11968,13 +11770,12 @@ Body:
     - Id: 409
       Name: WE_CALLPARENT
       Description: Call Parent
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsWedding: true
       Range: 9
       Hit: Single
@@ -11994,13 +11795,12 @@ Body:
     - Id: 410
       Name: WE_CALLBABY
       Description: Call Baby
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsWedding: true
       Range: 9
       Hit: Single
@@ -12020,14 +11820,13 @@ Body:
     - Id: 411
       Name: TK_RUN
       Description: Running
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -12075,14 +11874,13 @@ Body:
     - Id: 412
       Name: TK_READYSTORM
       Description: Tornado Stance
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -12092,14 +11890,13 @@ Body:
     - Id: 413
       Name: TK_STORMKICK
       Description: Tornado Kick
-			Flags:
-					isQuest: true
       MaxLevel: 7
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
           TargetTrap: true
       Range: -2
@@ -12126,14 +11923,13 @@ Body:
     - Id: 414
       Name: TK_READYDOWN
       Description: Heel Drop Stance
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -12143,12 +11939,11 @@ Body:
     - Id: 415
       Name: TK_DOWNKICK
       Description: Heel Drop
-			Flags:
-					isQuest: true
       MaxLevel: 7
       Type: Weapon
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: -2
       Hit: Multi_Hit
@@ -12175,14 +11970,13 @@ Body:
     - Id: 416
       Name: TK_READYTURN
       Description: Roundhouse Stance
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -12192,14 +11986,13 @@ Body:
     - Id: 417
       Name: TK_TURNKICK
       Description: Roundhouse Kick
-			Flags:
-					isQuest: true
       MaxLevel: 7
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: -2
       Hit: Multi_Hit
@@ -12227,14 +12020,13 @@ Body:
     - Id: 418
       Name: TK_READYCOUNTER
       Description: Counter Kick Stance
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -12244,14 +12036,13 @@ Body:
     - Id: 419
       Name: TK_COUNTER
       Description: Counter Kick
-			Flags:
-					isQuest: true
       MaxLevel: 7
       Type: Weapon
       TargetType: Self
       DamageFlags:
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: -2
       Hit: Multi_Hit
@@ -12434,15 +12225,14 @@ Body:
     - Id: 428
       Name: SG_SUN_WARM
       Description: Warmth of the Sun
-			Flags:
-					isQuest: true
       MaxLevel: 3
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreLandProtector: true
       Range: 1
       Hit: Single
@@ -12470,15 +12260,14 @@ Body:
     - Id: 429
       Name: SG_MOON_WARM
       Description: Warmth of the Moon
-			Flags:
-					isQuest: true
       MaxLevel: 3
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreLandProtector: true
       Range: 1
       Hit: Single
@@ -12506,15 +12295,14 @@ Body:
     - Id: 430
       Name: SG_STAR_WARM
       Description: Warmth of the Stars
-			Flags:
-					isQuest: true
       MaxLevel: 3
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreLandProtector: true
       Range: 1
       Hit: Single
@@ -12716,14 +12504,13 @@ Body:
     - Id: 444
       Name: SG_FUSION
       Description: Union of the Sun Moon and Stars
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -12735,14 +12522,13 @@ Body:
     - Id: 445
       Name: SL_ALCHEMIST
       Description: Spirit of the Alchemist
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -12777,14 +12563,12 @@ Body:
     - Id: 446
       Name: AM_BERSERKPITCHER
       Description: Aid Berserk Potion
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
-          IsSpirit: true
+			Flags:
+					isQuest: true
           PartyOnly: true
           GuildOnly: true
       Range: 9
@@ -12801,14 +12585,13 @@ Body:
     - Id: 447
       Name: SL_MONK
       Description: Spirit of the Monk
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -12843,14 +12626,13 @@ Body:
     - Id: 448
       Name: SL_STAR
       Description: Spirit of the Star Gladiator
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -12885,14 +12667,13 @@ Body:
     - Id: 449
       Name: SL_SAGE
       Description: Spirit of the Sage
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -12927,14 +12708,13 @@ Body:
     - Id: 450
       Name: SL_CRUSADER
       Description: Spirit of the Crusader
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -12969,14 +12749,13 @@ Body:
     - Id: 451
       Name: SL_SUPERNOVICE
       Description: Spirit of the Supernovice
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13011,14 +12790,13 @@ Body:
     - Id: 452
       Name: SL_KNIGHT
       Description: Spirit of the Knight
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13053,14 +12831,13 @@ Body:
     - Id: 453
       Name: SL_WIZARD
       Description: Spirit of the Wizard
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13095,14 +12872,13 @@ Body:
     - Id: 454
       Name: SL_PRIEST
       Description: Spirit of the Priest
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13137,14 +12913,13 @@ Body:
     - Id: 455
       Name: SL_BARDDANCER
       Description: Spirit of the Artist
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13179,14 +12954,13 @@ Body:
     - Id: 456
       Name: SL_ROGUE
       Description: Spirit of the Rogue
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13221,14 +12995,13 @@ Body:
     - Id: 457
       Name: SL_ASSASIN
       Description: Spirit of the Assasin
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13263,14 +13036,13 @@ Body:
     - Id: 458
       Name: SL_BLACKSMITH
       Description: Spirit of the Blacksmith
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13305,16 +13077,14 @@ Body:
     - Id: 459
       Name: BS_ADRENALINE2
       Description: Advanced Adrenaline Rush
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
-          IsSpirit: true
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -13343,14 +13113,13 @@ Body:
     - Id: 460
       Name: SL_HUNTER
       Description: Spirit of the Hunter
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13385,14 +13154,13 @@ Body:
     - Id: 461
       Name: SL_SOULLINKER
       Description: Spirit of the Soul Linker
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -13834,13 +13602,12 @@ Body:
     - Id: 474
       Name: NPC_EMOTION_ON
       Description: Emotion ON
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Status: ModeChange
@@ -13901,14 +13668,13 @@ Body:
     - Id: 477
       Name: WS_WEAPONREFINE
       Description: Upgrade Weapon
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -14080,8 +13846,6 @@ Body:
     - Id: 484
       Name: HW_GRAVITATION
       Description: Gravitation Field
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Ground
@@ -14090,7 +13854,8 @@ Body:
           IgnoreElement: true
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreBgReduction: true
           IgnoreGvgReduction: true
           TargetEmperium: true
@@ -14143,14 +13908,13 @@ Body:
     - Id: 485
       Name: WS_CARTTERMINATION
       Description: Cart Termination
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreAtkCard: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
           IgnoreAutoGuard: true
           IgnoreCicada: true
@@ -14211,14 +13975,13 @@ Body:
     - Id: 486
       Name: WS_OVERTHRUSTMAX
       Description: Maximum Power Thrust
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowOnMado: true
       Hit: Single
       HitCount: 1
@@ -14263,13 +14026,12 @@ Body:
     - Id: 487
       Name: CG_LONGINGFREEDOM
       Description: Longing for Freedom
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenPerforming: true
       Hit: Single
       HitCount: 1
@@ -14280,14 +14042,13 @@ Body:
     - Id: 488
       Name: CG_HERMODE
       Description: Wand of Hermode
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Misc
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSong: true
           IgnoreLandProtector: true
       Hit: Single
@@ -14423,13 +14184,12 @@ Body:
     - Id: 492
       Name: ITEM_ENCHANTARMS
       Description: Weapon Enchantment
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -14515,15 +14275,13 @@ Body:
     - Id: 495
       Name: KN_ONEHAND
       Description: Onehand Quicken
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
-          IsSpirit: true
+			Flags:
+					isQuest: true
       Hit: Single
       HitCount: 1
       Duration1: 300000
@@ -14535,13 +14293,12 @@ Body:
     - Id: 496
       Name: AM_TWILIGHT1
       Description: Twilight Alchemy 1
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSpirit: true
       Hit: Single
       CastTime: 3000
@@ -14556,13 +14313,12 @@ Body:
     - Id: 497
       Name: AM_TWILIGHT2
       Description: Twilight Alchemy 2
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSpirit: true
       Hit: Single
       CastTime: 3000
@@ -14577,13 +14333,12 @@ Body:
     - Id: 498
       Name: AM_TWILIGHT3
       Description: Twilight Alchemy 3
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsSpirit: true
       Hit: Single
       CastTime: 3000
@@ -14598,13 +14353,11 @@ Body:
     - Id: 499
       Name: HT_POWER
       Description: Beast Strafing
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Attack
-      Flags:
-          IsSpirit: true
+			Flags:
+					isQuest: true
           AlterRangeVulture: true
       Range: -9
       Hit: Multi_Hit
@@ -14684,14 +14437,13 @@ Body:
     - Id: 503
       Name: GS_BULLSEYE
       Description: Bulls Eye
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreAtkCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreAutoGuard: true
           IgnoreCicada: true
       Range: -9
@@ -14940,14 +14692,13 @@ Body:
     - Id: 514
       Name: GS_PIERCINGSHOT
       Description: Piercing Shot
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           AlterRangeSnakeEye: true
       Range: -9
       Hit: Single
@@ -14977,12 +14728,11 @@ Body:
     - Id: 515
       Name: GS_RAPIDSHOWER
       Description: Rapid Shower
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           AlterRangeSnakeEye: true
       Range: -9
       Hit: Multi_Hit
@@ -15068,14 +14818,13 @@ Body:
     - Id: 517
       Name: GS_GATLINGFEVER
       Description: Gatling Fever
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           Toggleable: true
       Hit: Single
       HitCount: 1
@@ -15171,12 +14920,11 @@ Body:
     - Id: 519
       Name: GS_FULLBUSTER
       Description: Full Buster
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           AlterRangeSnakeEye: true
       Range: -9
       Hit: Single
@@ -15255,14 +15003,13 @@ Body:
     - Id: 520
       Name: GS_SPREADATTACK
       Description: Spread Attack
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
           AlterRangeSnakeEye: true
       Range: -9
@@ -15320,15 +15067,14 @@ Body:
     - Id: 521
       Name: GS_GROUNDDRIFT
       Description: Ground Drift
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Ground
       DamageFlags:
           Splash: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           AlterRangeSnakeEye: true
       Range: -9
       Hit: Single
@@ -15460,15 +15206,14 @@ Body:
     - Id: 525
       Name: NJ_HUUMA
       Description: Throw Huuma Shuriken
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Splash: true
           SplashSplit: true
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range: 9
       Hit: Multi_Hit
@@ -15505,15 +15250,14 @@ Body:
     - Id: 526
       Name: NJ_ZENYNAGE
       Description: Throw Zeny
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Misc
       TargetType: Attack
       DamageFlags:
           IgnoreElement: true
           IgnoreFlee: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreBgReduction: true
           IgnoreGvgReduction: true
       Range: 9
@@ -15640,13 +15384,12 @@ Body:
     - Id: 529
       Name: NJ_SHADOWJUMP
       Description: Shadow Leap
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenHidden: true
       Range:
           - Level: 1
@@ -15673,14 +15416,13 @@ Body:
     - Id: 530
       Name: NJ_KIRIKAGE
       Description: Shadow Slash
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
       DamageFlags:
           Critical: true
-      Flags:
+			Flags:
+					isQuest: true
           AllowWhenHidden: true
           AlterRangeShadowJump: true
       Range:
@@ -16103,14 +15845,13 @@ Body:
     - Id: 538
       Name: NJ_SUITON
       Description: Hidden Water
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
       Range: 9
       Hit: Single
@@ -16411,12 +16152,11 @@ Body:
     - Id: 542
       Name: NJ_KAMAITACHI
       Description: Kamaitachi
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           TargetTrap: true
       Range:
           - Level: 1
@@ -16627,8 +16367,6 @@ Body:
     - Id: 653
       Name: NPC_EARTHQUAKE
       Description: Earthquake
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
@@ -16636,7 +16374,8 @@ Body:
           Splash: true
           SplashSplit: true
           IgnoreDefense: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetTrap: true
           ShowScale: true
@@ -16695,12 +16434,11 @@ Body:
     - Id: 654
       Name: NPC_FIREBREATH
       Description: Fire Breath
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 6
       Hit: Single
@@ -16711,12 +16449,11 @@ Body:
     - Id: 655
       Name: NPC_ICEBREATH
       Description: Ice Breath
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 6
       Hit: Single
@@ -16729,12 +16466,11 @@ Body:
     - Id: 656
       Name: NPC_THUNDERBREATH
       Description: Thunder Breath
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 6
       Hit: Single
@@ -16745,12 +16481,11 @@ Body:
     - Id: 657
       Name: NPC_ACIDBREATH
       Description: Acid Breath
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 6
       Hit: Single
@@ -16763,12 +16498,11 @@ Body:
     - Id: 658
       Name: NPC_DARKNESSBREATH
       Description: Darkness Breath
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 6
       Hit: Single
@@ -16779,14 +16513,13 @@ Body:
     - Id: 659
       Name: NPC_DRAGONFEAR
       Description: Dragon Fear
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -16814,12 +16547,11 @@ Body:
     - Id: 660
       Name: NPC_BLEEDING
       Description: Bleeding
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -9
       Hit: Single
@@ -16830,14 +16562,13 @@ Body:
     - Id: 661
       Name: NPC_PULSESTRIKE
       Description: Pulse Strike
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetTrap: true
           ShowScale: true
@@ -16849,14 +16580,13 @@ Body:
     - Id: 662
       Name: NPC_HELLJUDGEMENT
       Description: Hell's Judgement
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           TargetTrap: true
           ShowScale: true
@@ -16868,14 +16598,13 @@ Body:
     - Id: 663
       Name: NPC_WIDESILENCE
       Description: Wide Silence
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -16896,14 +16625,13 @@ Body:
     - Id: 664
       Name: NPC_WIDEFREEZE
       Description: Wide Freeze
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -16924,14 +16652,13 @@ Body:
     - Id: 665
       Name: NPC_WIDEBLEEDING
       Description: Wide Bleeding
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -16952,14 +16679,13 @@ Body:
     - Id: 666
       Name: NPC_WIDESTONE
       Description: Wide Petrify
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -16981,14 +16707,13 @@ Body:
     - Id: 667
       Name: NPC_WIDECONFUSE
       Description: Wide Confusion
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17009,14 +16734,13 @@ Body:
     - Id: 668
       Name: NPC_WIDESLEEP
       Description: Wide Sleep
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17037,15 +16761,14 @@ Body:
     - Id: 669
       Name: NPC_WIDESIGHT
       Description: Wide Sight
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17057,8 +16780,6 @@ Body:
     - Id: 670
       Name: NPC_EVILLAND
       Description: Evil Land
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Ground
@@ -17067,7 +16788,8 @@ Body:
           IgnoreElement: true
           IgnoreFlee: true
           IgnoreDefCard: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Range: 7
@@ -17127,14 +16849,13 @@ Body:
     - Id: 671
       Name: NPC_MAGICMIRROR
       Description: Magic Mirror
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17163,14 +16884,13 @@ Body:
     - Id: 672
       Name: NPC_SLOWCAST
       Description: Slow Cast
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17191,12 +16911,11 @@ Body:
     - Id: 673
       Name: NPC_CRITICALWOUND
       Description: Critical Wounds
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -17207,13 +16926,12 @@ Body:
     - Id: 674
       Name: NPC_EXPULSION
       Description: Expulsion
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       Hit: Single
@@ -17222,14 +16940,13 @@ Body:
     - Id: 675
       Name: NPC_STONESKIN
       Description: Stone Skin
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17258,14 +16975,13 @@ Body:
     - Id: 676
       Name: NPC_ANTIMAGIC
       Description: Anti Magic
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17294,14 +17010,13 @@ Body:
     - Id: 677
       Name: NPC_WIDECURSE
       Description: Wide Curse
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17322,14 +17037,13 @@ Body:
     - Id: 678
       Name: NPC_WIDESTUN
       Description: Wide Stun
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17350,14 +17064,13 @@ Body:
     - Id: 679
       Name: NPC_VAMPIRE_GIFT
       Description: Vampire Gift
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17386,14 +17099,13 @@ Body:
     - Id: 680
       Name: NPC_WIDESOULDRAIN
       Description: Wide Soul Drain
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -17422,33 +17134,29 @@ Body:
     - Id: 681
       Name: ALL_INCCARRY
       Description: Increase Weight Limit R
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Flags:
           IsQuest: true
     - Id: 682
       Name: NPC_TALK
       Description: Talk
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
     - Id: 683
       Name: NPC_HELLPOWER
       Description: Hell Power
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Attack
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: -7
       HitCount: 1
@@ -17457,14 +17165,13 @@ Body:
     - Id: 684
       Name: NPC_WIDEHELLDIGNITY
       Description: Hell Dignity
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17474,13 +17181,12 @@ Body:
     - Id: 685
       Name: NPC_INVINCIBLE
       Description: Invincible
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Duration1: -1
@@ -17488,13 +17194,12 @@ Body:
     - Id: 686
       Name: NPC_INVINCIBLEOFF
       Description: Invincible off
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       HitCount: 1
       Duration1: 60000
@@ -17502,13 +17207,12 @@ Body:
     - Id: 687
       Name: NPC_ALLHEAL
       Description: Full Heal
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17516,13 +17220,12 @@ Body:
     - Id: 688
       Name: GM_SANDMAN
       Description: GM Sandman
-			Flags:
-					isQuest: true
       MaxLevel: 10
       TargetType: Support
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           NoTargetSelf: true
       Range: 9
       Hit: Single
@@ -17531,15 +17234,14 @@ Body:
     - Id: 689
       Name: CASH_BLESSING
       Description: Party Blessing
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           IgnoreHovering: true
       Hit: Single
@@ -17571,15 +17273,14 @@ Body:
     - Id: 690
       Name: CASH_INCAGI
       Description: Party Increase AGI
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           IgnoreHovering: true
       Hit: Single
@@ -17611,15 +17312,14 @@ Body:
     - Id: 691
       Name: CASH_ASSUMPTIO
       Description: Party Assumptio
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17640,24 +17340,22 @@ Body:
     - Id: 692
       Name: ALL_CATCRY
       Description: Cat Cry
+      MaxLevel: 9
 			Flags:
 					isQuest: true
-      MaxLevel: 9
-      Flags:
           IsNpc: true
       AfterCastActDelay: 5000
     - Id: 693
       Name: ALL_PARTYFLEE
       Description: Party Flee
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17668,23 +17366,21 @@ Body:
     - Id: 695
       Name: ALL_DREAM_SUMMERNIGHT
       Description: Summer Night Dream
+      MaxLevel: 9
 			Flags:
 					isQuest: true
-      MaxLevel: 9
-      Flags:
           IsNpc: true
       AfterCastActDelay: 12000
     - Id: 697
       Name: ALL_REVERSEORCISH
       Description: Reverse Orcish
-			Flags:
-					isQuest: true
       MaxLevel: 1
       Type: Magic
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range: 9
       Hit: Single
@@ -17694,13 +17390,12 @@ Body:
     - Id: 698
       Name: ALL_WEWISH
       Description: Christmas Carol
-			Flags:
-					isQuest: true
       MaxLevel: 1
       TargetType: Self
       DamageFlags:
           NoDamage: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Hit: Single
       HitCount: 1
@@ -17710,12 +17405,11 @@ Body:
     - Id: 706
       Name: NPC_VENOMFOG
       Description: Venom Fog
-			Flags:
-					isQuest: true
       MaxLevel: 10
       Type: Magic
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           IgnoreLandProtector: true
           ShowScale: true
@@ -17957,13 +17651,12 @@ Body:
     - Id: 739
       Name: NPC_CLOUD_KILL
       Description: Cloud Kill
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Ground
       Range: 9
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -18002,14 +17695,13 @@ Body:
     - Id: 740
       Name: NPC_IGNITIONBREAK
       Description: Ignition Break
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Self
       DamageFlags:
           Splash: true
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
           ShowScale: true
       Hit: Single
@@ -18019,12 +17711,11 @@ Body:
     - Id: 741
       Name: NPC_PHANTOMTHRUST
       Description: Phantom Thrust
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Weapon
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       Range:
           - Level: 1
@@ -18044,12 +17735,11 @@ Body:
     - Id: 742
       Name: NPC_POISON_BUSTER
       Description: Poison Buster
-			Flags:
-					isQuest: true
       MaxLevel: 2
       Type: Magic
       TargetType: Attack
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       DamageFlags:
           Splash: true
@@ -18062,11 +17752,10 @@ Body:
     - Id: 743
       Name: NPC_HALLUCINATIONWALK
       Description: Hallucination Walk
-			Flags:
-					isQuest: true
       MaxLevel: 5
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           IsNpc: true
       DamageFlags:
           NoDamage: true
@@ -18077,12 +17766,11 @@ Body:
     - Id: 744
       Name: NPC_ELECTRICWALK
       Description: Electric Walk
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
           IsNpc: true
       Hit: Single
@@ -18111,12 +17799,11 @@ Body:
     - Id: 745
       Name: NPC_FIREWALK
       Description: Fire Walk
-			Flags:
-					isQuest: true
       MaxLevel: 5
       Type: Magic
       TargetType: Self
-      Flags:
+			Flags:
+					isQuest: true
           IgnoreHovering: true
           IsNpc: true
       Hit: Single
