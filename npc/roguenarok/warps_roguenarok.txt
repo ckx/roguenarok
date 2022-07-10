@@ -1,23 +1,21 @@
 hugel,96,140,0	script	gef420	45,1,1,{
 	OnTouch_:
-		//set .@party_id,getcharid(1);
-		set .@md_name$,"MagmaDun";
-		mes "hello!";
-		//set .@inst_id,instance_generate(.@md_nam	e$);
-		set .@inst_id,instance_generate(.@md_name$);
-		if (.@inst_id > 0) {
-			mes "Generated new instance with ID " + .@inst_id;
-		} else {
-			mes "Something happened. " + .@inst_id;
-		}
-		getmapxy(.@map$,.@x,.@y,BL_PC);
-		setarray .@OptID[0],RDMOPT_VAR_STRAMOUNT,RDMOPT_RACE_TOLERACE_HUMAN;
-		setarray .@OptVal[0],3,5;
-		setarray .@OptParam[0],0;
-		makeitem3 2115,1,.@map$,.@x,.@y,0,0,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;
-		//todo: autowarp into generated instance
-		//warp "0369#000020",0,0;
-		close;
+		// //set .@party_id,getcharid(1);
+		// set .@md_name$,"MagmaDun";
+		// mes "hello!";
+		// //set .@inst_id,instance_generate(.@md_nam	e$);
+		// set .@inst_id,instance_generate(.@md_name$);
+		// if (.@inst_id > 0) {
+		// 	mes "Generated new instance with ID " + .@inst_id;
+		// } else {
+		// 	mes "Something happened. " + .@inst_id;
+		// }
+		// getmapxy(.@map$,.@x,.@y,BL_PC);
+		// setarray .@OptID[0],RDMOPT_VAR_STRAMOUNT,RDMOPT_RACE_TOLERACE_HUMAN;
+		// setarray .@OptVal[0],3,5;
+		// setarray .@OptParam[0],0;
+		// makeitem3 2115,1,.@map$,.@x,.@y,0,0,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;
+		// close;
 		// if (!instance_check_party(.@party_id,1,10)) {
 		// 	mes "u need a party of 2 muh d00d";
 		// 	close;
@@ -27,7 +25,7 @@ hugel,96,140,0	script	gef420	45,1,1,{
 		// 	sleep2 200;
 		// }
 	
-		// switch(instance_enter("Orc's Memory")) {
+		// switch(instance_enter("MagmaDun")) {
 		// 	case IE_OTHER:
 		// 		mes "An unknown error has occurred.";
 		// 		close;
