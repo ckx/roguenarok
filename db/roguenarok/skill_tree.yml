@@ -95,62 +95,62 @@ Body:
             MaxLevel: 10
           - Name: AL_CURE
             MaxLevel: 1
-          # - Name: MC_MAMMONITE
-          #   MaxLevel: 10
-          # - Name: AC_DOUBLE
-          #   MaxLevel: 10
-          # - Name: AC_SHOWER
-          #   MaxLevel: 10
-          # - Name: TF_DOUBLE
-          #   MaxLevel: 10
-          # - Name: TF_STEAL
-          #   MaxLevel: 10
-          # - Name: TF_HIDING
-          #   MaxLevel: 10
-          # - Name: TF_POISON
-          #   MaxLevel: 10
-          # - Name: TF_DETOXIFY
-          #   MaxLevel: 1
-          # - Name: KN_PIERCE
-          #   MaxLevel: 10
-          # - Name: KN_BRANDISHSPEAR
-          #   MaxLevel: 10
-          # - Name: KN_SPEARSTAB
-          #   MaxLevel: 10
-          # - Name: KN_SPEARBOOMERANG
-          #   MaxLevel: 5
-          # - Name: KN_TWOHANDQUICKEN
-          #   MaxLevel: 10
-          # - Name: KN_AUTOCOUNTER
-          #   MaxLevel: 5
-          # - Name: KN_BOWLINGBASH
-          #   MaxLevel: 10
-          # - Name: PR_IMPOSITIO
-          #   MaxLevel: 5
-          # - Name: PR_SUFFRAGIUM
-          #   MaxLevel: 3
-          # - Name: PR_ASPERSIO
-          #   MaxLevel: 5
-          # - Name: PR_BENEDICTIO
-          #   MaxLevel: 5
-          # - Name: PR_SANCTUARY
-          #   MaxLevel: 10
-          # - Name: PR_SLOWPOISON
-          #   MaxLevel: 4
-          # - Name: PR_STRECOVERY
-          #   MaxLevel: 1
-          # - Name: PR_MAGNIFICAT
-          #   MaxLevel: 5
-          # - Name: PR_GLORIA
-          #   MaxLevel: 5
-          # - Name: PR_LEXDIVINA
-          #   MaxLevel: 10
-          # - Name: PR_TURNUNDEAD
-          #   MaxLevel: 10
-          # - Name: PR_LEXAETERNA
-          #   MaxLevel: 1
-          # - Name: PR_MAGNUS
-          #   MaxLevel: 10
+          - Name: MC_MAMMONITE
+            MaxLevel: 10
+          - Name: AC_DOUBLE
+            MaxLevel: 10
+          - Name: AC_SHOWER
+            MaxLevel: 10
+          - Name: TF_DOUBLE
+            MaxLevel: 10
+          - Name: TF_STEAL
+            MaxLevel: 10
+          - Name: TF_HIDING
+            MaxLevel: 10
+          - Name: TF_POISON
+            MaxLevel: 10
+          - Name: TF_DETOXIFY
+            MaxLevel: 1
+          - Name: KN_PIERCE
+            MaxLevel: 10
+          - Name: KN_BRANDISHSPEAR
+            MaxLevel: 10
+          - Name: KN_SPEARSTAB
+            MaxLevel: 10
+          - Name: KN_SPEARBOOMERANG
+            MaxLevel: 5
+          - Name: KN_TWOHANDQUICKEN
+            MaxLevel: 10
+          - Name: KN_AUTOCOUNTER
+            MaxLevel: 5
+          - Name: KN_BOWLINGBASH
+            MaxLevel: 10
+          - Name: PR_IMPOSITIO
+            MaxLevel: 5
+          - Name: PR_SUFFRAGIUM
+            MaxLevel: 3
+          - Name: PR_ASPERSIO
+            MaxLevel: 5
+          - Name: PR_BENEDICTIO
+            MaxLevel: 5
+          - Name: PR_SANCTUARY
+            MaxLevel: 10
+          - Name: PR_SLOWPOISON
+            MaxLevel: 4
+          - Name: PR_STRECOVERY
+            MaxLevel: 1
+          - Name: PR_MAGNIFICAT
+            MaxLevel: 5
+          - Name: PR_GLORIA
+            MaxLevel: 5
+          - Name: PR_LEXDIVINA
+            MaxLevel: 10
+          - Name: PR_TURNUNDEAD
+            MaxLevel: 10
+          - Name: PR_LEXAETERNA
+            MaxLevel: 1
+          - Name: PR_MAGNUS
+            MaxLevel: 10
           # - Name: WZ_FIREPILLAR
           #   MaxLevel: 10
           # - Name: WZ_SIGHTRASHER
