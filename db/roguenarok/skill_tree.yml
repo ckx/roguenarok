@@ -313,6 +313,8 @@ Body:
             MaxLevel: 5
           - Name: SA_SPELLBREAKER
             MaxLevel: 5
+          - Name: SA_FREECAST
+            MaxLevel: 10
           - Name: SA_AUTOSPELL
             MaxLevel: 10
           - Name: SA_FLAMELAUNCHER
