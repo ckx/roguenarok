@@ -47,12 +47,12 @@ Body:
             MaxLevel: 9
           - Name: SM_BASH
             MaxLevel: 10
-          # - Name: SM_PROVOKE
-          #   MaxLevel: 10
-          # - Name: SM_MAGNUM
-          #   MaxLevel: 10
-          # - Name: SM_ENDURE
-          #   MaxLevel: 10
+          - Name: SM_PROVOKE
+            MaxLevel: 10
+          - Name: SM_MAGNUM
+            MaxLevel: 10
+          - Name: SM_ENDURE
+            MaxLevel: 10
           # - Name: MG_SIGHT
           #   MaxLevel: 1
           # - Name: MG_NAPALMBEAT
