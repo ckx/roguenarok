@@ -106,3 +106,45 @@ Body:
       Type: Usable
       Script: |
           getrandgroupitem(IG_skillscrollbox,1);
+  - Id: 600004
+    AegisName: test_clotharmor
+    Name: Cloth Armor
+    Type: Armor
+    Buy: 8000
+    Weight: 400
+    Defense: 3
+    Jobs:
+      All: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    Refineable: true
+    # Script: |
+  - Id: 600004
+    AegisName: test_lightarmor
+    Name: Test Light Armor
+    Type: Armor
+    Buy: 8000
+    Weight: 400
+    Defense: 3
+    Jobs:
+      All: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    Refineable: true
+    # Script: |    
+  - Id: 600005
+    AegisName: test_heavyarmor
+    Name: Test Heavy Armor
+    Type: Armor
+    Buy: 8000
+    Weight: 400
+    Defense: 3
+    Jobs:
+      All: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    Refineable: true
+    # Script: |    
