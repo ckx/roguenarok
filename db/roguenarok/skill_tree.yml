@@ -151,30 +151,30 @@ Body:
             MaxLevel: 1
           - Name: PR_MAGNUS
             MaxLevel: 10
-          # - Name: WZ_FIREPILLAR
-          #   MaxLevel: 10
-          # - Name: WZ_SIGHTRASHER
-          #   MaxLevel: 10
-          # - Name: WZ_METEOR
-          #   MaxLevel:
-          # - Name: WZ_JUPITEL
-          #   MaxLevel: 10
-          # - Name: WZ_VERMILION
-          #   MaxLevel: 10
-          # - Name: WZ_WATERBALL
-          #   MaxLevel: 5
-          # - Name: WZ_ICEWALL
-          #   MaxLevel: 10
-          # - Name: WZ_FROSTNOVA
-          #   MaxLevel: 10
-          # - Name: WZ_STORMGUST
-          #   MaxLevel: 10
-          # - Name: WZ_EARTHSPIKE
-          #   MaxLevel: 5
-          # - Name: WZ_HEAVENDRIVE
-          #   MaxLevel: 5
-          # - Name: WZ_QUAGMIRE
-          #   MaxLevel: 5
+          - Name: WZ_FIREPILLAR
+            MaxLevel: 10
+          - Name: WZ_SIGHTRASHER
+            MaxLevel: 10
+          - Name: WZ_METEOR
+            MaxLevel:
+          - Name: WZ_JUPITEL
+            MaxLevel: 10
+          - Name: WZ_VERMILION
+            MaxLevel: 10
+          - Name: WZ_WATERBALL
+            MaxLevel: 5
+          - Name: WZ_ICEWALL
+            MaxLevel: 10
+          - Name: WZ_FROSTNOVA
+            MaxLevel: 10
+          - Name: WZ_STORMGUST
+            MaxLevel: 10
+          - Name: WZ_EARTHSPIKE
+            MaxLevel: 5
+          - Name: WZ_HEAVENDRIVE
+            MaxLevel: 5
+          - Name: WZ_QUAGMIRE
+            MaxLevel: 5
           # - Name: BS_REPAIRWEAPON
           #   MaxLevel: 1
           # - Name: BS_SKINTEMPER
