@@ -39,9 +39,9 @@ function	script	SelectMob	{
 function	script	SelectMobAmount	{
 	.@mobamount$ = getarg(0);
 	if (.@mobamount$ == "many") {
-		return rand(160,250);
+		return rand(200,300);
 	} else if (.@mobamount$ == "some") {
-		return rand(10,30);
+		return rand(35,45);
 	}
 }
 
