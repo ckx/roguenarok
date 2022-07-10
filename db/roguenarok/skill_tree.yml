@@ -581,7 +581,6 @@ Body:
       Tree:
     - Job: Novice_High
       Inherit:
-          Novice: true
       Tree:
           - Name: NV_TRICKDEAD
             MaxLevel: 1
