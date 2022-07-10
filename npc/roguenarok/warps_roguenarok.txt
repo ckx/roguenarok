@@ -1,4 +1,4 @@
-geffen,125,100,0	script	gef420	45,1,1,{
+hugel,96,140,0	script	gef420	45,1,1,{
 	OnTouch_:
 		//set .@party_id,getcharid(1);
 		set .@md_name$,"MagmaDun";
