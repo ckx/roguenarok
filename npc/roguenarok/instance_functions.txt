@@ -20,9 +20,9 @@ function	script	GetHardMob	{
 	switch (rand(5)) {
 		case 0: return 1065; // strouf
 		case 1: return 1408; // bloody butterfly
-		case 2: return 1735 // Aliza
-		case 3: return 1262 // Mutant dragonoid
-		case 4: return 1259 // Gryphon
+		case 2: return 1735; // Aliza
+		case 3: return 1262; // Mutant dragonoid
+		case 4: return 1259; // Gryphon
 	}
 }
 
