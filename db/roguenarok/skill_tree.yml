@@ -53,30 +53,30 @@ Body:
             MaxLevel: 10
           - Name: SM_ENDURE
             MaxLevel: 10
-          # - Name: MG_SIGHT
-          #   MaxLevel: 1
-          # - Name: MG_NAPALMBEAT
-          #   MaxLevel: 10
-          # - Name: MG_SAFETYWALL
-          #   MaxLevel: 10
-          # - Name: MG_SOULSTRIKE
-          #   MaxLevel: 10
-          # - Name: MG_COLDBOLT
-          #   MaxLevel: 10
-          # - Name: MG_FROSTDIVER
-          #   MaxLevel: 10
-          # - Name: MG_STONECURSE
-          #   MaxLevel: 10
-          # - Name: MG_FIREBALL
-          #   MaxLevel: 10
-          # - Name: MG_FIREWALL
-          #   MaxLevel: 10
-          # - Name: MG_FIREBOLT
-          #   MaxLevel: 10
-          # - Name: MG_LIGHTNINGBOLT
-          #   MaxLevel: 10
-          # - Name: MG_THUNDERSTORM
-          #   MaxLevel: 10
+          - Name: MG_SIGHT
+            MaxLevel: 1
+          - Name: MG_NAPALMBEAT
+            MaxLevel: 10
+          - Name: MG_SAFETYWALL
+            MaxLevel: 10
+          - Name: MG_SOULSTRIKE
+            MaxLevel: 10
+          - Name: MG_COLDBOLT
+            MaxLevel: 10
+          - Name: MG_FROSTDIVER
+            MaxLevel: 10
+          - Name: MG_STONECURSE
+            MaxLevel: 10
+          - Name: MG_FIREBALL
+            MaxLevel: 10
+          - Name: MG_FIREWALL
+            MaxLevel: 10
+          - Name: MG_FIREBOLT
+            MaxLevel: 10
+          - Name: MG_LIGHTNINGBOLT
+            MaxLevel: 10
+          - Name: MG_THUNDERSTORM
+            MaxLevel: 10
           # - Name: AL_RUWACH
           #   MaxLevel: 1
           # - Name: AL_PNEUMA
