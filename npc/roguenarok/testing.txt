@@ -1,4 +1,4 @@
-geffen,110,48,0	script	StaceyMom	101,{
+hugel,101,144,0	script	StaceyMom	101,{
 	setarray .@OptID[0],RDMOPT_VAR_STRAMOUNT;
 	setarray .@OptVal[0],rand(1,90);
 	setarray .@OptParam[0],0;
