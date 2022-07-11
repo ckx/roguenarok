@@ -93,13 +93,13 @@ Body:
       Name: Tao Pls Strawberry
       Type: Usable
       Script: |
-          callfunc "RemoveNamedSkill","AL_HEAL";
+          skill "PR_MACEMASTERY",1,SKILL_PERM_GRANT;
     - Id: 600002
       AegisName: testitem_2
       Name: Gib Tao Banana
       Type: Usable
       Script: |
-          callfunc "AddNamedSkill","AL_HEAL";
+          skill "ASC_KATAR",5,SKILL_PERM_GRANT;
     - Id: 600003
       AegisName: testitem_3
       Name: PN's Test Item

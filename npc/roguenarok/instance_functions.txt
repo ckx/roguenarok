@@ -26,7 +26,6 @@ function	script	GetHardMob	{
 	}
 }
 
-
 function	script	SelectMob	{
 	.@mobtospawn$ = getarg(0);
 	if (.@mobtospawn$ == "easy") {

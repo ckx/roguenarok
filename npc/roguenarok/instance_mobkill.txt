@@ -1,0 +1,27 @@
+function	script	CreateMobKillInstance	{
+	if(instance_id(IM_CHAR) != 0) {
+		instance_destroy(instance_id(IM_CHAR));
+	} 
+	set .@instname$,SelectInstance;
+	set .@instID,instance_create(.@instname$,IM_CHAR,getcharid(0));
+	dispbottom "" + .@instID;
+
+	switch(instance_enter(.@instname$,-1,-1,getcharid(0),.@instID)) {
+		case IE_OTHER:
+			mes "An unknown error has occurred.";
+			close;
+		case IE_NOINSTANCE:
+			mes "Instance does not exist.";
+			close;
+		case IE_OK:
+			dispbottom "OK, entering instance " + .@inst_name$ + " (ID: " + .@instID + ")";
+	}
+
+	dispbottom "instname: " + .@instname$ + "ID: " + .@instID;
+	set .@mapname$,instance_mapname(.@instname$,.@instID);
+	dispbottom "mapname: " + .@mapname$;
+
+	OnInstanceInit: 
+		monster .@mapname$,0,0,"",SelectMob("easy"),SelectMobAmount("many");
+		monster .@mapname$,0,0,"",SelectMob("hard"),SelectMobAmount("some");
+}
