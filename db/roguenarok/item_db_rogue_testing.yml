@@ -119,7 +119,8 @@ Body:
           Armor: true
       ArmorLevel: 1
       Refineable: true
-      # Script: |
+      Script: |
+            callfunc "ClothArmorMastery";
     - Id: 600005
       AegisName: test_lightarmor
       Name: Test Light Armor
