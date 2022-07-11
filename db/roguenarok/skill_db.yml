@@ -1,7 +1,7 @@
-header:
+Header:
     Type: SKILL_DB
     Version: 3
-body:
+Body:
     - Id: 1
       Name: NV_BASIC
       Description: Basic Skill
