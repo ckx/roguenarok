@@ -120,7 +120,7 @@ Body:
       ArmorLevel: 1
       Refineable: true
       # Script: |
-    - Id: 600004
+    - Id: 600005
       AegisName: test_lightarmor
       Name: Test Light Armor
       Type: Armor
@@ -134,7 +134,7 @@ Body:
       ArmorLevel: 1
       Refineable: true
       # Script: |
-    - Id: 600005
+    - Id: 600006
       AegisName: test_heavyarmor
       Name: Test Heavy Armor
       Type: Armor
