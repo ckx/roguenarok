@@ -29,3 +29,9 @@ function	script	RemoveNamedSkill	{
 	resetnamedskill(@skillname$);
 	dispbottom "Reset " + @skillname$ + ", refunding " + @lv + " skill point(s).";
 }
+
+function	script	ClothArmorMastery	{
+	if (Class == 4010) { // Only work on High Wizard
+		bonus bCastrate,-60;
+	}
+}
