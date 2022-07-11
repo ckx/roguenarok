@@ -93,7 +93,7 @@ Body:
       Name: Tao Pls Strawberry
       Type: Usable
       Script: |
-          skill "PR_MACEMASTERY",1,SKILL_PERM_GRANT;
+          callfunc "Neuralyzer";
     - Id: 600002
       AegisName: testitem_2
       Name: Gib Tao Banana
