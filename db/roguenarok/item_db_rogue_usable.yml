@@ -29728,7 +29728,7 @@ Body:
           Sitting: true
       Script: |
           callfunc "RemoveNamedSkill","RGX_DAGGERMASTERY";
-  - Id: 301231
+    - Id: 301231
       AegisName: RGX_ADVSWORDMASTERY_REM
       Name: Advanced Sword Mastery Remover
       Type: Usable
