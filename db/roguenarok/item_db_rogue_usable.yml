@@ -29846,5 +29846,5 @@ Body:
           BuyingStore: true
       NoUse:
       Sitting: true
-          Script: |
+      Script: |
           callfunc "RemoveNamedSkill","RGX_ADVDAGGERMASTERY";
