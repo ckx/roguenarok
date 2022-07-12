@@ -36060,16 +36060,116 @@ Body:
       CastCancel: true
       Duration2: 300000
     - Id: 13000
-      Name: ROGUE_BOWMASTERY
+      Name: RGX_BOWMASTERY
       Description: Bow Mastery
       MaxLevel: 10
       Type: Weapon
       Flags:
           IsQuest: true
     - Id: 13001
-      Name: ROGUE_DAGGERMASTERY
+      Name: RGX_DAGGERMASTERY
       Description: Dagger Mastery
       MaxLevel: 10
       Type: Weapon
+      Flags:
+          IsQuest: true
+    - Id: 13002
+      Name: RGX_ADVSWORDMASTERY
+      Description: Advanced Sword Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13003
+      Name: RGX_ADV2HSMASTERY
+      Description: Advanced Two-Handed Sword Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13004
+      Name: RGX_ADVSPEARMASTERY
+      Description: Advanced Spear Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13005
+      Name: RGX_ADVAXEMASTERY
+      Description: Advanced Axe Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13006
+      Name: RGX_ADVBOOKMASTERY
+      Description: Advanced Book Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13007
+      Name: RGX_ADVINSTRUMENTMASTERY
+      Description: Advanced Instrument Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13008
+      Name: RGX_ADVCLAWMASTERY
+      Description: Advanced Claw Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13009
+      Name: RGX_ADVMACEMASTERY
+      Description: Advanced Mace Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13010
+      Name: RGX_ADVBOWMASTERY
+      Description: Advanced Bow Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
+      Flags:
+          IsQuest: true
+    - Id: 13011
+      Name: RGX_ADVDAGGERMASTERY
+      Description: Advanced Dagger Mastery
+      MaxLevel: 5
+      Type: Weapon
+      DamageFlags:
+          NoDamage: true
+      HitCount: 1
       Flags:
           IsQuest: true

@@ -14825,7 +14825,7 @@ Body:
       Script: |
           callfunc "AddNamedSkill","GD_ITEMEMERGENCYCALL";
     - Id: 201229
-      AegisName: ROGUE_BOWMASTERY_SC
+      AegisName: RGX_BOWMASTERY_SC
       Name: Bow Mastery Scroll
       Type: Usable
       Buy: 1000
@@ -14835,9 +14835,9 @@ Body:
       NoUse:
           Sitting: true
       Script: |
-          callfunc "AddNamedSkill","ROGUE_BOWMASTERY";
+          callfunc "AddNamedSkill","RGX_BOWMASTERY";
     - Id: 201230
-      AegisName: ROGUE_DAGGERMASTERY_SC
+      AegisName: RGX_DAGGERMASTERY_SC
       Name: Dagger Mastery Scroll
       Type: Usable
       Buy: 1000
@@ -14847,7 +14847,127 @@ Body:
       NoUse:
           Sitting: true
       Script: |
-          callfunc "AddNamedSkill","ROGUE_DAGGERMASTERY";
+          callfunc "AddNamedSkill","RGX_DAGGERMASTERY";
+    - Id: 201231
+      AegisName: RGX_ADVSWORDMASTERY_SC
+      Name: Advanced Sword Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVSWORDMASTERY";
+    - Id: 201232
+      AegisName: RGX_ADV2HSMASTERY_SC
+      Name: Advanced Two-Handed Sword Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADV2HSMASTERY";
+    - Id: 201233
+      AegisName: RGX_ADVSPEARMASTERY_SC
+      Name: Advanced Spear Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVSPEARMASTERY";
+    - Id: 201234
+      AegisName: RGX_ADVAXEMASTERY_SC
+      Name: Advanced Axe Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVAXEMASTERY";
+    - Id: 201235
+      AegisName: RGX_ADVBOOKMASTERY_SC
+      Name: Advanced Book Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVBOOKMASTERY";
+    - Id: 201236
+      AegisName: RGX_ADVINSTRUMENTMASTERY_SC
+      Name: Advanced Instrument Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVINSTRUMENTMASTERY";
+    - Id: 201237
+      AegisName: RGX_ADVCLAWMASTERY_SC
+      Name: Advanced Claw Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVCLAWMASTERY";
+    - Id: 201238
+      AegisName: RGX_ADVMACEMASTERY_SC
+      Name: Advanced Mace Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVMACEMASTERY";
+    - Id: 201239
+      AegisName: RGX_ADVBOWMASTERY_SC
+      Name: Advanced Bow Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVBOWMASTERY";
+    - Id: 201240
+      AegisName: RGX_ADVDAGGERMASTERY_SC
+      Name: Advanced Dagger Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","RGX_ADVDAGGERMASTERY";
     - Id: 300001
       AegisName: NV_BASIC_REM
       Name: Basic Skill Remover
@@ -29585,7 +29705,7 @@ Body:
       Script: |
           callfunc "RemoveNamedSkill","GD_ITEMEMERGENCYCALL";
     - Id: 301229
-      AegisName: ROGUE_BOWMASTERY_REM
+      AegisName: RGX_BOWMASTERY_REM
       Name: Bow Mastery Remover
       Type: Usable
       Buy: 1000
@@ -29595,9 +29715,9 @@ Body:
       NoUse:
           Sitting: true
       Script: |
-          callfunc "RemoveNamedSkill","ROGUE_BOWMASTERY";
+          callfunc "RemoveNamedSkill","RGX_BOWMASTERY";
     - Id: 301230
-      AegisName: ROGUE_DAGGERMASTERY_REM
+      AegisName: RGX_DAGGERMASTERY_REM
       Name: Dagger Mastery Remover
       Type: Usable
       Buy: 1000
@@ -29607,4 +29727,124 @@ Body:
       NoUse:
           Sitting: true
       Script: |
-          callfunc "RemoveNamedSkill","ROGUE_DAGGERMASTERY";
+          callfunc "RemoveNamedSkill","RGX_DAGGERMASTERY";
+  - Id: 301231
+      AegisName: RGX_ADVSWORDMASTERY_REM
+      Name: Advanced Sword Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVSWORDMASTERY";
+    - Id: 301232
+      AegisName: RGX_ADV2HSMASTERY_REM
+      Name: Advanced Two-Handed Sword Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADV2HSMASTERY";
+    - Id: 301233
+      AegisName: RGX_ADVSPEARMASTERY_REM
+      Name: Advanced Spear Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVSPEARMASTERY";
+    - Id: 301234
+      AegisName: RGX_ADVAXEMASTERY_REM
+      Name: Advanced Axe Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVAXEMASTERY";
+    - Id: 301235
+      AegisName: RGX_ADVBOOKMASTERY_REM
+      Name: Advanced Book Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVBOOKMASTERY";
+    - Id: 301236
+      AegisName: RGX_ADVINSTRUMENTMASTERY_REM
+      Name: Advanced Instrument Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVINSTRUMENTMASTERY";
+    - Id: 301237
+      AegisName: RGX_ADVCLAWMASTERY_REM
+      Name: Advanced Claw Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVCLAWMASTERY";
+    - Id: 301238
+      AegisName: RGX_ADVMACEMASTERY_REM
+      Name: Advanced Mace Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVMACEMASTERY";
+    - Id: 301239
+      AegisName: RGX_ADVBOWMASTERY_REM
+      Name: Advanced Bow Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVBOWMASTERY";
+    - Id: 301240
+      AegisName: RGX_ADVDAGGERMASTERY_REM
+      Name: Advanced Dagger Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+      Sitting: true
+          Script: |
+          callfunc "RemoveNamedSkill","RGX_ADVDAGGERMASTERY";
