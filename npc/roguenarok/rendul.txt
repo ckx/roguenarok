@@ -53,8 +53,7 @@ function	script	ChangeJob	{
 		setarray .@startingMainSkillLv[0],1;
 		setarray .@startingEtcSkillId$[0],"AM_AXEMASTERY","MC_INCCARRY","MC_DISCOUNT","MC_PUSHCART","BS_UNFAIRLYTRICK","MC_CHANGECART","MC_CARTREVOLUTION";
 		setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1;
-		setarray .@startingItems[0],1301,2104,2312,2313,2506,2406;
-		getitembound 673,500,Bound_Char;
+		setarray .@startingItems[0],1301,2104,2313,2506,2406;
 	} else {
 		mes "What? I am error, therefore pets.";
 		close;
@@ -80,7 +79,7 @@ function	script	ChangeJob	{
 
 	StatusPoint += 100;
 	SkillPoint += 10;
-	
+
 	close;
 }
 
