@@ -1,0 +1,3 @@
+function	script	PleaseWhat	{
+	dispbottom "Why will this error";
+}
