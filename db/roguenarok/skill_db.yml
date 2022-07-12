@@ -36066,3 +36066,10 @@ Body:
       Type: Weapon
       Flags:
           IsQuest: true
+    - Id: 13001
+      Name: ROGUE_DAGGERMASTERY
+      Description: Dagger Mastery
+      MaxLevel: 10
+      Type: Weapon
+      Flags:
+          IsQuest: true
