@@ -1,0 +1,46 @@
+function	script	ChangeJob	{
+	.@jobToBe$ = getarg(0);
+	dispbottom "You will become a " + .@jobToBe$;
+
+	if	(.@jobToBe$ == "Swordman") {
+		jobchange Job_Swordman;
+	}
+	
+	close;
+}
+
+hugel,90,150,6	script	Rendul	621,{
+	if	(Class == 0) {
+		// TODO: message picked from random pool of messages.
+		.@jobSelection$ = "";
+		mes .NPCName$;
+		mes "Ah... Another lost Einherjar hoping to break free, is it? Your soul longs for peace, fervid warrior. Perhaps you should put these foolish ambitions to rest.";
+		menu "Swordman",L_Swordsman,"Magician",L_Magician,"Archer",L_Archer,"Acolyte",L_Acolyte,"Thief",L_Thief,"Merchant",L_Merchant,"Screw off, Rendul.",L_Screw;
+
+		L_Swordsman:
+			.@jobSelection$ = "Swordman";
+		L_Magician:
+			.@jobSelection$ = "Mage";
+		L_Archer:
+			dispbottom "" + .@menu;
+		L_Acolyte:
+			dispbottom "" + .@menu;
+		L_Thief:
+			dispbottom "" + .@menu;
+		L_Merchant:
+			dispbottom "" + .@menu;
+		L_Screw:
+			next;
+			mes "Foul einherjar. I command thee... KNEEL!";
+	} else {
+		mes "Oh, what's this? So you've managed to reclaim some life? What a rare occurence.";
+		mes "..."; 
+		mes "... Is it everything you hoped for?";
+		close;
+	}
+
+	ChangeJob(.@jobSelection$);
+
+	OnInit:
+		.NPCName$ = "Rendul";
+}
