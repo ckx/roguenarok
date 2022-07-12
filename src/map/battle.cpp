@@ -2177,6 +2177,10 @@ int64 battle_addmastery(struct map_session_data *sd,struct block_list *target,in
 			if((skill = pc_checkskill(sd,AS_KATAR)) > 0)
 				damage += (skill * 3);
 			break;
+		case W_BOW:
+			if((skill = pc_checkskill(sd,ROGUE_BOWMASTERY)) > 0)
+				damage += (skill * 3);
+			break;
 	}
 
 	return damage;

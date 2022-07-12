@@ -14824,6 +14824,18 @@ Body:
           Sitting: true
       Script: |
           callfunc "AddNamedSkill","GD_ITEMEMERGENCYCALL";
+    - Id: 201229
+      AegisName: ROGUE_BOWMASTERY_SC
+      Name: Bow Mastery Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","ROGUE_BOWMASTERY";
     - Id: 300001
       AegisName: NV_BASIC_REM
       Name: Basic Skill Remover
@@ -29560,3 +29572,15 @@ Body:
           Sitting: true
       Script: |
           callfunc "RemoveNamedSkill","GD_ITEMEMERGENCYCALL";
+    - Id: 301229
+      AegisName: ROGUE_BOWMASTERY_REM
+      Name: Bow Mastery Remover
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "RemoveNamedSkill","ROGUE_BOWMASTERY";

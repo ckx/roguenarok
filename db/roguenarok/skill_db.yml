@@ -36059,3 +36059,10 @@ Body:
           IsQuest: true
       CastCancel: true
       Duration2: 300000
+    - Id: 13000
+      Name: ROGUE_BOWMASTERY
+      Description: Bow Mastery
+      MaxLevel: 10
+      Type: Weapon
+      Flags:
+          IsQuest: true
