@@ -1,33 +1,36 @@
 function	script	AddNamedSkill	{
-	// TODO: Don't consume item if we don't have enough skill points to learn the skill https://github.com/ckx/roguenarok/issues/1
-	set @skillname$,getarg(0);
-	set @lv,getskilllv(@skillname$);
+	.@skillname$ = getarg(0);
+	.@lv = getskilllv(@skillname$);
+	.@itemname$ = getarg(0) + "_SC";
 
-	if (@lv > 0) {
-		dispbottom "You already know " + @skillname$ + ".";
+	if (.@lv > 0) {
+		dispbottom "You already know " + .@skillname$ + ".";
+		getitem .@itemname$,1;
 		return;
 	}
 
-	if (SkillPoint > 1) {
-        skill @skillname$,1,SKILL_PERM;
+	if (SkillPoint >= 1) {
+        skill .@skillname$,1,SKILL_PERM;
         SkillPoint -= 1;
       } else { 
         dispbottom "You require more skill points.";
+		getitem .@itemname$,1;
       }
 }
 
 function	script	RemoveNamedSkill	{
-	// TODO: Don't consume item if skill isn't known https://github.com/ckx/roguenarok/issues/1
-	set @skillname$,getarg(0);
-	set @lv,getskilllv(@skillname$);
+	.@skillname$ = getarg(0);
+	.@lv = getskilllv(@skillname$);
+	.@itemname$ = getarg(0) + "_REM";
 
-	if (@lv < 1) {
-		dispbottom "You don't have any points in " + @skillname$;
+	if (.@lv < 1) {
+		dispbottom "You don't have any points in " + .@skillname$;
+		getitem .@itemname$,1;
 		return;
 	}
 
-	resetnamedskill(@skillname$);
-	dispbottom "Reset " + @skillname$ + ", refunding " + @lv + " skill point(s).";
+	resetnamedskill(.@skillname$);
+	dispbottom "Reset " + .@skillname$ + ", refunding " + .@lv + " skill point(s).";
 }
 
 function	script	ClothArmorMastery	{
