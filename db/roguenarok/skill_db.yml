@@ -2017,7 +2017,7 @@ Body:
       Requires:
           SpCost: 60
           ItemCost:
-              - Item: Blue_Gemstone
+              - Item: Thread_Skein
                 Amount: 1
       Flags:
           IsQuest: true
