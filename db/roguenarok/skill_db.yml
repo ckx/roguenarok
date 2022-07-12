@@ -7316,7 +7316,7 @@ Body:
           IsQuest: true
     - Id: 259
       Name: MO_IRONHAND
-      Description: Iron Fists
+      Description: Claw Mastery
       MaxLevel: 10
       Type: Weapon
       Flags:
@@ -7773,7 +7773,7 @@ Body:
           SpiritSphereCost: 1
     - Id: 274
       Name: SA_ADVANCEDBOOK
-      Description: Study
+      Description: Book Mastery
       MaxLevel: 10
       Type: Weapon
       Flags:
