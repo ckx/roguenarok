@@ -883,55 +883,8 @@ int battle_calc_cardfix(int attack_type, struct block_list *src, struct block_li
 						cardfix = cardfix * (100 + sd->right_weapon.addclass[tstatus->class_] + sd->left_weapon.addclass[tstatus->class_] +
 							sd->right_weapon.addclass[CLASS_ALL] + sd->left_weapon.addclass[CLASS_ALL]) / 100;
 					}
-					switch(sd->status.weapon) {
-						case W_KATAR:
-							if((skill = pc_checkskill(sd,ASC_KATAR)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_1HSWORD:
-							if((skill = pc_checkskill(sd,RGX_ADVSWORDMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_2HSWORD:
-							if((skill = pc_checkskill(sd,RGX_ADV2HSMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_1HSPEAR:
-						case W_2HSPEAR:
-							if((skill = pc_checkskill(sd,RGX_ADVSPEARMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_1HAXE:
-						case W_2HAXE:
-							if((skill = pc_checkskill(sd,RGX_ADVAXEMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_MACE:
-						case W_2HMACE:
-							if((skill = pc_checkskill(sd,RGX_ADVMACEMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_FIST:
-						case W_KNUCKLE:
-							if((skill = pc_checkskill(sd,RGX_ADVCLAWMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_MUSICAL:
-						case W_WHIP:
-							if((skill = pc_checkskill(sd,RGX_ADVINSTRUMENTMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_BOOK:
-							if((skill = pc_checkskill(sd,RGX_ADVBOOKMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-						case W_BOW:
-							if((skill = pc_checkskill(sd,RGX_ADVBOWMASTERY)) > 0)
-								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
-							break;
-					}
-					// if( sd->status.weapon == W_KATAR && (skill = pc_checkskill(sd,ASC_KATAR)) > 0 ) // Adv. Katar Mastery functions similar to a +%ATK card on official [helvetica]
-					// 	cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
+					if( sd->status.weapon == W_KATAR && (skill = pc_checkskill(sd,ASC_KATAR)) > 0 ) // Adv. Katar Mastery functions similar to a +%ATK card on official [helvetica]
+						cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
 				}
 
 				//! CHECKME: These right & left hand weapon ignores 'left_cardfix_to_right'?
