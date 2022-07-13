@@ -1,6 +1,3 @@
-hugel,101,144,0	script	StaceyMom	101,{
-	setarray .@OptID[0],RDMOPT_VAR_STRAMOUNT;
-	setarray .@OptVal[0],rand(1,90);
-	setarray .@OptParam[0],0;
-	getitem3 2115,1,1,rand(0,10),0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;
+hugel,99,152,4	script	StaceyMom	101,{
+	skill "RGX_DAGGERMASTERY",4,SKILL_PERM;
 }

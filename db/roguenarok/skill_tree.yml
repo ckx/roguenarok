@@ -470,10 +470,6 @@ Body:
             MaxLevel: 1
           - Name: MO_BALKYOUNG
             MaxLevel: 1
-          - Name: RGX_DAGGERMASTERY
-            MaxLevel: 10
-          - Name: RGX_ADVDAGGERMASTERY
-            MaxLevel: 5
     - Job: Swordman
       Inherit:
           Novice: true
