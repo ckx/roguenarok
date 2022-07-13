@@ -1,6 +1,6 @@
 function	script	AddNamedSkill	{
 	.@skillname$ = getarg(0);
-	.@lv = getskilllv(@skillname$);
+	.@lv = getskilllv(.@skillname$);
 	.@itemname$ = getarg(0) + "_SC";
 
 	if (.@lv > 0) {
