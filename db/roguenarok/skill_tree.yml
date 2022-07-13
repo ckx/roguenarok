@@ -473,7 +473,8 @@ Body:
     - Job: Swordman
       Inherit:
           Novice: true
-    - Job: Mage # TODO: MODIFIED TEST CLASS, MOVE TO IMPORTANT
+      Tree:
+    - Job: Mage
       Inherit:
           Novice: true
       Tree:
@@ -481,6 +482,8 @@ Body:
       Inherit:
           Novice: true
       Tree:
+          - Name: AC_CONCENTRATION
+            MaxLevel: 10
     - Job: Acolyte
       Inherit:
           Novice: true
@@ -492,6 +495,7 @@ Body:
     - Job: Thief
       Inherit:
           Novice: true
+      Tree:
     - Job: Knight
       Inherit:
           Novice: true

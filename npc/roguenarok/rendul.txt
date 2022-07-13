@@ -25,9 +25,9 @@ function	script	ChangeJob	{
 	} else if (.@jobToBe$ == "Archer") {
 		jobchange Job_Archer;
 		SetStartingStats(bDex, bAgi);
-		setarray .@startingMainSkillId$[0],"AC_DOUBLE";
-		setarray .@startingMainSkillLv[0],5;
-		setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE","AC_CONCENTRATION";
+		setarray .@startingMainSkillId$[0],"AC_DOUBLE","AC_CONCENTRATION";
+		setarray .@startingMainSkillLv[0],5,5;
+		setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE";
 		setarray .@startingEtcSkillLv[0],10,10,3;
 		setarray .@startingItems[0],1701,2331,2502,2404,1750;
 	} else if (.@jobToBe$ == "Acolyte") {
