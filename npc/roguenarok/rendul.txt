@@ -25,10 +25,10 @@ function	script	ChangeJob	{
 	} else if (.@jobToBe$ == "Archer") {
 		jobchange Job_Archer;
 		SetStartingStats(bDex, bAgi);
-		setarray .@startingMainSkillId$[0],"AC_DOUBLE","AC_CONCENTRATION";
-		setarray .@startingMainSkillLv[0],5,5;
-		setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE";
-		setarray .@startingEtcSkillLv[0],10,10,3;
+		setarray .@startingMainSkillId$[0],"AC_DOUBLE";
+		setarray .@startingMainSkillLv[0],10;
+		setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE","AC_CONCENTRATION";
+		setarray .@startingEtcSkillLv[0],10,10,5;
 		setarray .@startingItems[0],1701,2331,2502,2404,1750;
 	} else if (.@jobToBe$ == "Acolyte") {
 		jobchange Job_Acolyte;
@@ -50,7 +50,7 @@ function	script	ChangeJob	{
 		jobchange Job_Merchant;
 		SetStartingStats(bDex, bStr);
 		setarray .@startingMainSkillId$[0],"MC_MAMMONITE";
-		setarray .@startingMainSkillLv[0],1;
+		setarray .@startingMainSkillLv[0],10;
 		setarray .@startingEtcSkillId$[0],"AM_AXEMASTERY","MC_INCCARRY","MC_DISCOUNT","MC_PUSHCART","BS_UNFAIRLYTRICK","MC_CHANGECART","MC_CARTREVOLUTION";
 		setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1;
 		setarray .@startingItems[0],1301,2104,2313,2506,2406;
@@ -79,7 +79,10 @@ function	script	ChangeJob	{
 	}
 
 	StatusPoint += 100;
-	SkillPoint += 10;
+
+	if (BaseClass != Job_Archer && BaseClass != Job_Merchant) { 
+		SkillPoint += 9;
+	}
 
 	close;
 }

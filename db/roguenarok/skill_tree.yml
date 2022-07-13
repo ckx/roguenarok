@@ -482,8 +482,6 @@ Body:
       Inherit:
           Novice: true
       Tree:
-          - Name: AC_CONCENTRATION
-            MaxLevel: 10
     - Job: Acolyte
       Inherit:
           Novice: true
