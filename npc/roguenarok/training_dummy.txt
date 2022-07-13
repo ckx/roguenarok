@@ -1,0 +1,15 @@
+-	script	TrainingDummy	-1,{
+	OnInit:
+	monster "hugel",100,147,"Training Dummy",1905,1,"Training Dummy::OnDummyKill";
+	setmapflag( "hugel",mf_monster_noteleport );
+	end;
+	
+	OnDummyKill:
+	monster "hugel",100,147,"Training Dummy",1905,1,"Training Dummy::OnDummyKill";
+	end;
+
+	OnPCAttackEvent:	
+	if ( !@test_punch ) end;
+	@dps_damage += @damage;
+	end;
+	}
