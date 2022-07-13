@@ -888,6 +888,10 @@ int battle_calc_cardfix(int attack_type, struct block_list *src, struct block_li
 							if((skill = pc_checkskill(sd,ASC_KATAR)) > 0)
 								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
 							break;
+						case W_DAGGER:
+							if((skill = pc_checkskill(sd,RGX_ADVDAGGERMASTERY)) > 0)
+								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
+							break;
 						case W_1HSWORD:
 							if((skill = pc_checkskill(sd,RGX_ADVSWORDMASTERY)) > 0)
 								cardfix = cardfix * (100 + (10 + 2 * skill)) / 100;
