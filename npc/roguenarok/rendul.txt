@@ -43,8 +43,8 @@ function	script	ChangeJob	{
 		SetStartingStats(bAgi, bDex);
 		setarray .@startingMainSkillId$[0],"TF_HIDING","TF_STEAL","TF_BACKSLIDING","TF_DOUBLE";
 		setarray .@startingMainSkillLv[0],1,1,1,3;
-		setarray .@startingEtcSkillId$[0],"AS_RIGHT","AS_LEFT","TF_MISS";
-		setarray .@startingEtcSkillLv[0],5,2,10,10;
+		setarray .@startingEtcSkillId$[0],"RGX_DAGGERMASTERY","TF_MISS";
+		setarray .@startingEtcSkillLv[0],10,10;
 		setarray .@startingItems[0],1201,2304,2502,2404;
 	} else if (.@jobToBe$ == "Merchant") {
 		jobchange Job_Merchant;
