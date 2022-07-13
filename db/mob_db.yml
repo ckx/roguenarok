@@ -76,14 +76,14 @@
 ###########################################################################
 
 Header:
-  Type: MOB_DB
-  Version: 3
+    Type: MOB_DB
+    Version: 3
 
 Footer:
-  Imports:
-  - Path: db/roguenarok/mob_db_rogue.yml
-  #- Path: db/pre-re/mob_db.yml
-  #  Mode: Prerenewal
-  - Path: db/re/mob_db.yml
-    Mode: Renewal
-  - Path: db/import/mob_db.yml
+    Imports:
+        - Path: db/roguenarok/mob_db_rogue.yml
+    #- Path: db/pre-re/mob_db.yml
+    #  Mode: Prerenewal
+    # - Path: db/re/mob_db.yml
+    #   Mode: Renewal
+    # - Path: db/import/mob_db.yml
