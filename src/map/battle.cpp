@@ -2170,7 +2170,7 @@ int64 battle_addmastery(struct map_session_data *sd,struct block_list *target,in
 				damage += skill * 10;
 			break;
 		case W_DAGGER:
-			if((skill = pc_checkskill(sd,ROGUE_DAGGERMASTERY)) > 0)
+			if((skill = pc_checkskill(sd,RGX_DAGGERMASTERY)) > 0)
 				damage += (skill * 4);
 			break;
 		case W_2HSWORD:
@@ -2228,7 +2228,7 @@ int64 battle_addmastery(struct map_session_data *sd,struct block_list *target,in
 				damage += (skill * 3);
 			break;
 		case W_BOW:
-			if((skill = pc_checkskill(sd,ROGUE_BOWMASTERY)) > 0)
+			if((skill = pc_checkskill(sd,RGX_BOWMASTERY)) > 0)
 				damage += (skill * 3);
 			break;
 	}
