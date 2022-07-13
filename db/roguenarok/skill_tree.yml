@@ -473,11 +473,6 @@ Body:
     - Job: Swordman
       Inherit:
           Novice: true
-      Tree:
-          - Name: SM_SWORD
-            MaxLevel: 10
-          - Name: RGX_ADVSWORDMASTERY
-            MaxLevel: 5
     - Job: Mage # TODO: MODIFIED TEST CLASS, MOVE TO IMPORTANT
       Inherit:
           Novice: true
@@ -497,11 +492,6 @@ Body:
     - Job: Thief
       Inherit:
           Novice: true
-      Tree:
-          - Name: RGX_DAGGERMASTERY
-            MaxLevel: 10
-          - Name: RGX_ADVDAGGERMASTERY
-            MaxLevel: 5
     - Job: Knight
       Inherit:
           Novice: true
@@ -588,11 +578,6 @@ Body:
     - Job: Ninja
       Inherit:
           Novice: true
-      Tree:
-          - Name: RGX_DAGGERMASTERY
-            MaxLevel: 10
-          - Name: RGX_ADVDAGGERMASTERY
-            MaxLevel: 5
     - Job: Novice_High
       Inherit:
           Novice: true
