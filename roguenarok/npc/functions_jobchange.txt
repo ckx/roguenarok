@@ -1,3 +1,35 @@
+function	script	Transcend	{
+	switch (Class) {
+		case Job_Knight:
+			jobchange 4008; //lk
+			setarray .@transcMainSkillId$[0],"LK_CONCENTRATION","LK_AURABLADE","LK_BERSERK";
+			setarray .@transcMainSkillLv[0],1,1,1;
+			setarray .@transcEtcSkillId$[0],"RGX_ADVSWORDMASTERY","RGX_ADV2HSMASTERY","RGX_ADVSPEARMASTERY","LK_TENSIONRELAX";
+			setarray .@transcEtcSkillLv[0],5,5,5,1;
+			break;
+	}
+
+	.@numberOfMainSkills = getarraysize(.@transcMainSkillId$);
+	.@numberOfEtcSkills = getarraysize(.@transcEtcSkillId$);
+
+	// Give actives (perm skills)
+	if (.@numberOfMainSkills > 0) {
+		for (.@i = 0; .@i < .@numberOfMainSkills; .@i++) {
+			skill .@transcMainSkillId$[.@i],.@transcMainSkillLv[.@i],SKILL_PERM;
+		}
+	}
+	// Give passives (grant skills)
+	if (.@numberOfEtcSkills > 0) {
+		for (.@i = 0; .@i < .@numberOfEtcSkills; .@i++) {
+			skill .@transcEtcSkillId$[.@i],.@transcEtcSkillLv[.@i],SKILL_PERM_GRANT;
+		}
+	}
+
+
+	JobLevel += 49;
+	SkillPoint -= 49;
+}
+
 function	script	SecondJobChange	{
 	// ensure max basic skill
 	if (getskilllv("NV_BASIC") < 9) {
@@ -11,7 +43,7 @@ function	script	SecondJobChange	{
 			setarray .@secondMainSkillId$[0],"KN_CHARGEATK";
 			setarray .@secondMainSkillLv[0],1;
 			setarray .@secondEtcSkillId$[0],"RGX_ADVSWORDMASTERY","RGX_ADV2HSMASTERY","RGX_ADVSPEARMASTERY","KN_RIDING","KN_CAVALIERMASTERY";
-			setarray .@secondEtcSkil1lLv[0],1,1,1,1,5;
+			setarray .@secondEtcSkillLv[0],1,1,1,1,5;
 			//todo: give peco whistle
 			break;
 		case Job_Crusader:
