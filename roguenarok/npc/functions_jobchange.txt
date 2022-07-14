@@ -40,6 +40,7 @@ function	script	SecondJobChange	{
 			setarray .@secondMainSkillLv[0],1,1,1;
 			setarray .@secondEtcSkillId$[0],"RGX_BOWMASTERY","HT_FALCON","HT_STEELCROW","HT_DETECTING","HT_BLITZBEAT","HT_SPRINGTRAP";
 			setarray .@secondEtcSkillLv[0],10,1,10,4,5,5;
+			getitem 1065,50;
 			//todo: falcon whistle
 			break;
 		case Job_Bard:
@@ -69,8 +70,8 @@ function	script	SecondJobChange	{
 			setarray .@secondMainSkillLv[0],1,10;
 			setarray .@secondEtcSkillId$[0],"AS_KATAR","AS_CLOAKING";
 			setarray .@secondEtcSkillLv[0],10,10;
-			getitem 5267,1; // naruto
-			equip 5267;
+			getitem 2280,1; // naruto
+			equip 2280;
 			break;
 		case Job_Rogue:
 			setarray .@secondMainSkillId$[0],"RG_BACKSTAP";
@@ -139,6 +140,7 @@ function	script	ChangeJob	{
 	if (getskilllv("NV_BASIC") < 9) {
 		skill "NV_BASIC",9,SKILL_PERM;
 	}
+	skill "NV_FIRSTAID",1,SKILL_PERM_GRANT;
 
 	.@jobToBe = getarg(0);
 	// actually change the job
