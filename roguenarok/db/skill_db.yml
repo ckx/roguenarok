@@ -8597,7 +8597,6 @@ Body:
       DamageFlags:
           NoDamage: true
       Flags:
-          IsEnsemble: true
           IsQuest: true
       Hit: Single
       HitCount: 1
@@ -8614,7 +8613,6 @@ Body:
           Interval: -1
           Target: Enemy
           Flag:
-              Ensemble: true
       Status: EternalChaos
     - Id: 309
       Name: BD_DRUMBATTLEFIELD
@@ -8663,7 +8661,6 @@ Body:
       DamageFlags:
           NoDamage: true
       Flags:
-          IsEnsemble: true
           IsQuest: true
       Hit: Single
       HitCount: 1
@@ -8690,7 +8687,6 @@ Body:
           Interval: -1
           Target: Party
           Flag:
-              Ensemble: true
       Status: Nibelungen
     - Id: 311
       Name: BD_ROKISWEIL
@@ -8728,7 +8724,6 @@ Body:
       DamageFlags:
           NoDamage: true
       Flags:
-          IsEnsemble: true
           IsQuest: true
       Hit: Single
       HitCount: 1
@@ -8746,7 +8741,6 @@ Body:
           Target: Party
           Flag:
               NoMob: true
-              Ensemble: true
       Status: IntoAbyss
     - Id: 313
       Name: BD_SIEGFRIED

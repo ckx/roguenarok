@@ -59,8 +59,8 @@ function	script	SecondJobChange	{
 			getitem 7285,1; //holy thread (res catalyst)
 			break;
 		case Job_Monk:
-			setarray .@secondMainSkillId$[0],"MO_CALLSPIRITS","MO_EXPLOSIONSPIRITS","MO_TRIPLEATTACK","MO_CHAINCOMBO","MO_INVESTIGATE";
-			setarray .@secondMainSkillLv[0],5,5,3,1,1;
+			setarray .@secondMainSkillId$[0],"MO_CALLSPIRITS","MO_ABSORBSPIRITS","MO_EXPLOSIONSPIRITS","MO_TRIPLEATTACK","MO_CHAINCOMBO","MO_INVESTIGATE";
+			setarray .@secondMainSkillLv[0],5,1,5,3,1,1;
 			setarray .@secondEtcSkillId$[0],"MO_IRONHAND","MO_DODGE","MO_SPIRITSRECOVERY";
 			setarray .@secondEtcSkillLv[0],10,10,5;
 			//todo: buff spirit recovery
