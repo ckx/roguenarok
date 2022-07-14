@@ -81,7 +81,7 @@ Header:
 
 Footer:
     Imports:
-        - Path: db/roguenarok/mob_db_rogue.yml
+        - Path: roguenarok/db/mob_db_rogue.yml
     #- Path: db/pre-re/mob_db.yml
     #  Mode: Prerenewal
     # - Path: db/re/mob_db.yml

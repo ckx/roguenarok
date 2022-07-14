@@ -144,8 +144,8 @@ Header:
 
 Footer:
     Imports:
-        - Path: db/roguenarok/skill_db.yml
-        - Path: db/roguenarok/skill_db_other.yml
+        - Path: roguenarok/db/skill_db.yml
+        - Path: roguenarok/db/skill_db_other.yml
         # - Path: db/pre-re/skill_db.yml
         #   Mode: Prerenewal
         # - Path: db/re/skill_db.yml
