@@ -88,6 +88,72 @@ Header:
     Version: 2
 
 Body:
+    - Id: 100001
+      AegisName: SWORDSMAN_CHANGER
+      Name: Swordsman Effigy
+      Type: Usable
+      Buy: 1
+      Weight: 0
+      Flags:
+      Script: |
+          callfunc "SecondJobSelect",Job_Knight,Job_Crusader;
+    - Id: 100002
+      AegisName: MAGICIAN_CHANGER
+      Name: Magician Effigy
+      Type: Usable
+      Buy: 1
+      Weight: 0
+      Flags:
+      Script: |
+          callfunc "SecondJobSelect",Job_Wizard,Job_Sage;
+    - Id: 100003
+      AegisName: ARCHER_CHANGER
+      Name: Archer Effigy
+      Type: Usable
+      Buy: 1
+      Weight: 0
+      Flags:
+      Script: |
+          callfunc "SecondJobSelect",Job_Hunter,Job_Bard;
+    - Id: 100004
+      AegisName: ACOLYTE_CHANGER
+      Name: Acolyte Effigy
+      Type: Usable
+      Buy: 1
+      Weight: 0
+      Flags:
+      Script: |
+          callfunc "SecondJobSelect",Job_Priest,Job_Monk;
+    - Id: 100005
+      AegisName: MERCHANT_CHANGER
+      Name: Merchant Effigy
+      Type: Usable
+      Buy: 1
+      Weight: 0
+      Flags:
+      Script: |
+          callfunc "SecondJobSelect",Job_Blacksmith,Job_Alchemist;
+    - Id: 100006
+      AegisName: THIEF_CHANGER
+      Name: Thief Effigy
+      Type: Usable
+      Buy: 1
+      Weight: 0
+      Flags:
+      Script: |
+          callfunc "SecondJobSelect",Job_Assassin,Job_Rogue;
+    - Id: 200001
+      AegisName: NV_BASIC_SC
+      Name: Basic Skill Scroll
+      Type: Usable
+      Buy: 1000
+      Weight: 10
+      Flags:
+          BuyingStore: true
+      NoUse:
+          Sitting: true
+      Script: |
+          callfunc "AddNamedSkill","NV_BASIC";
     - Id: 200001
       AegisName: NV_BASIC_SC
       Name: Basic Skill Scroll

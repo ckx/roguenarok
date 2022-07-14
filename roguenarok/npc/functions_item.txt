@@ -55,8 +55,13 @@ function	script	Neuralyzer	{
 }
 
 function	script	SecondJobSelect	{
+	
 	.@arg1$ = jobname(getarg(0));
-	.@arg2$ = jobname(getarg(1));	
+	.@arg2$ = jobname(getarg(1));
+	//parse gender for Bard/Dancer
+	if(getarg(1) == Job_Bard && Sex == SEX_FEMALE) {
+			.@arg2$ = jobname(Job_Dancer);
+	}
 	switch(select(.@arg1$,.@arg2$)) {
 		case 1: 
 			SecondJobChange(getarg(0));
