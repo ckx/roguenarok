@@ -96,3 +96,4 @@ Footer:
         - Path: db/import/item_db.yml
         - Path: roguenarok/db/item_db_rogue_usable.yml
         - Path: roguenarok/db/item_db_rogue_testing.yml
+        - Path: roguenarok/db/item_db_rogue_etc.yml

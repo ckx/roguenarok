@@ -87,6 +87,9 @@ Header:
     Type: ITEM_DB
     Version: 2
 
+#100000-199999 -> general custom consumables
+#200000-299999 -> skill scrolls
+#300000-399999 -> skill removers
 Body:
     - Id: 100001
       AegisName: SWORDSMAN_CHANGER

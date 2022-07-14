@@ -87,66 +87,47 @@ Header:
     Type: ITEM_DB
     Version: 2
 
-#600000-699999 = testing items
 Body:
-    - Id: 600001
-      AegisName: testitem_1
-      Name: Tao Pls Strawberry
-      Type: Usable
-      Script: |
-          callfunc "Neuralyzer";
-    - Id: 600002
-      AegisName: testitem_2
-      Name: Gib Tao Banana
-      Type: Usable
-      Script: |
-          callfunc "SecondJobSelect",Job_Knight,Job_Crusader;
-    - Id: 600003
-      AegisName: testitem_3
-      Name: PN's Test Item
-      Type: Usable
-      Script: |
-          getrandgroupitem(IG_skillscrollbox,1);
-    - Id: 600004
-      AegisName: test_clotharmor
-      Name: Cloth Armor
-      Type: Armor
-      Buy: 8000
-      Weight: 400
-      Defense: 3
-      Jobs:
-          All: true
-      Locations:
-          Armor: true
-      ArmorLevel: 1
-      Refineable: true
-      Script: |
-          callfunc "ClothArmorMastery";
-    - Id: 600005
-      AegisName: test_lightarmor
-      Name: Test Light Armor
-      Type: Armor
-      Buy: 8000
-      Weight: 400
-      Defense: 3
-      Jobs:
-          All: true
-      Locations:
-          Armor: true
-      ArmorLevel: 1
-      Refineable: true
-      # Script: |
-    - Id: 600006
-      AegisName: test_heavyarmor
-      Name: Test Heavy Armor
-      Type: Armor
-      Buy: 8000
-      Weight: 400
-      Defense: 3
-      Jobs:
-          All: true
-      Locations:
-          Armor: true
-      ArmorLevel: 1
-      Refineable: true
-      # Script: |
+    # 800000-899999 = etc items
+    - Id: 800001
+      AegisName: Rusty_Coin_RGX
+      Name: Rusty Coin
+      Type: Etc
+      Sell: 1
+      Weight: 0
+    - Id: 800002
+      AegisName: Bronze_Coin_RGX
+      Name: Bronze Coin
+      Type: Etc
+      Sell: 5
+      Weight: 0
+    - Id: 800003
+      AegisName: Silver_Coin_RGX
+      Name: Silver Coin
+      Type: Etc
+      Sell: 20
+      Weight: 0
+    - Id: 800004
+      AegisName: Gold_Coin_RGX
+      Name: Gold Coin
+      Type: Etc
+      Sell: 100
+      Weight: 0
+    - Id: 800005
+      AegisName: Platinum_Coin_RGX
+      Name: Platinum Coin
+      Type: Etc
+      Sell: 1000
+      Weight: 0
+    - Id: 800006
+      AegisName: Mithril_Coin_RGX
+      Name: Mithril Coin
+      Type: Etc
+      Sell: 10000
+      Weight: 0
+    - Id: 800007
+      AegisName: Antique_Junk
+      Name: Antique Junk
+      Type: Etc
+      Sell: 1
+      Weight: 10
