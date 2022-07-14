@@ -8543,7 +8543,7 @@ Body:
       DamageFlags:
           NoDamage: true
       Flags:
-          IsEnsemble: true
+          IsEnsemble: false
           IsQuest: true
       Hit: Single
       HitCount: 1
@@ -8560,7 +8560,7 @@ Body:
           Interval: 6000
           Target: Enemy
           Flag:
-              Ensemble: true
+              Ensemble: false
     - Id: 307
       Name: BD_RICHMANKIM
       Description: Mental Sensing

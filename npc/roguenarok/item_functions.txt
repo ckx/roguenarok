@@ -33,8 +33,134 @@ function	script	RemoveNamedSkill	{
 	dispbottom "Reset " + .@skillname$ + ", refunding " + .@lv + " skill point(s).";
 }
 
+function	script	SecondJobChange	{
+	jobchange getarg(0);
+
+	//todo: armor masteries
+	switch (Class) {
+		case Job_Knight:
+			setarray .@secondMainSkillId$[0],"KN_CHARGEATK";
+			setarray .@secondMainSkillLv[0],1;
+			setarray .@secondEtcSkillId$[0],"RGX_ADVSWORDMASTERY","RGX_ADV2HSMASTERY","RGX_ADVSPEARMASTERY","KN_RIDING","KN_CAVALIERMASTERY";
+			setarray .@secondEtcSkillLv[0],1,1,1,1,5;
+			//todo: give peco whistle
+			break;
+		case Job_Crusader:
+			setarray .@secondMainSkillId$[0],"CR_AUTOGUARD","CR_SHRINK","CR_SHIELDBOOMERANG","CR_PROVIDENCE";
+			setarray .@secondMainSkillLv[0],1,1,1,3;
+			setarray .@secondEtcSkillId$[0],"CR_TRUST","CR_DEVOTION","KN_RIDING","KN_CAVALIERMASTERY";
+			setarray .@secondEtcSkillLv[0],10,5,1,5;
+			//todo: give peco whistle
+			break;
+		case Job_Wizard:
+			SkillPoint += 5;
+			setarray .@secondMainSkillId$[0],"WZ_STORMGUST","WZ_VERMILION","WZ_JUPITEL","WZ_EARTHSPIKE","WZ_QUAGMIRE","WZ_SIGHTBLASTER";
+			setarray .@secondMainSkillLv[0],1,1,5,1,1,1;
+			break;
+		case Job_Sage:
+			setarray .@secondMainSkillId$[0],"SA_FREECAST","SA_SPELLBREAKER","SA_AUTOSPELL","SA_FLAMELAUNCHER","SA_FROSTWEAPON","SA_LIGHTNINGLOADER","SA_SEISMICWEAPON";
+			setarray .@secondMainSkillLv[0],1,1,2,5,5,5,5;
+			setarray .@secondEtcSkillId$[0],"SA_ADVANCEDBOOK";
+			setarray .@secondEtcSkillLv[0],10;
+			getitem 715,30; // yellow gems
+			getitem 716,30; // red gems
+			getitem 717,30; // blue gems
+			break;
+		case Job_Hunter:
+			setarray .@secondMainSkillId$[0],"HT_LANDMINE","HT_SANDMAN","HT_REMOVETRAP";
+			setarray .@secondMainSkillLv[0],1,1,1;
+			setarray .@secondEtcSkillId$[0],"RGX_BOWMASTERY","HT_FALCON","HT_STEELCROW","HT_DETECTING","HT_BLITZBEAT","HT_SPRINGTRAP";
+			setarray .@secondEtcSkillLv[0],10,1,10,4,5,5;
+			//todo: falcon whistle
+			break;
+		case Job_Bard:
+		case Job_Dancer:
+			setarray .@secondMainSkillId$[0],"BD_ENCORE","BA_MUSICALSTRIKE","DC_THROWARROW","BA_DISSONANCE","DC_SERVICEFORYOU","BD_LULLABY";
+			setarray .@secondMainSkillLv[0],1,5,5,1,1,1;
+			setarray .@secondEtcSkillId$[0],"BA_MUSICALLESSON","DC_DANCINGLESSON","BD_ADAPTATION";
+			setarray .@secondEtcSkillLv[0],10,10,1;
+			//todo: combine the bard/dancer job bonus charts
+			break;
+		case Job_Priest:
+			setarray .@secondMainSkillId$[0],"PR_IMPOSITIO","PR_SUFFRAGIUM","PR_STRECOVERY";
+			setarray .@secondMainSkillLv[0],1,1,1;
+			setarray .@secondEtcSkillId$[0],"HP_MANARECHARGE","PR_KYRIE","ALL_RESURRECTION";
+			setarray .@secondEtcSkillLv[0],3,10,5;
+			getitem 7285,1; //holy thread (res catalyst)
+			break;
+		case Job_Monk:
+			setarray .@secondMainSkillId$[0],"MO_CALLSPIRITS","MO_EXPLOSIONSPIRITS","MO_TRIPLEATTACK","MO_CHAINCOMBO","MO_INVESTIGATE";
+			setarray .@secondMainSkillLv[0],5,5,3,1,1;
+			setarray .@secondEtcSkillId$[0],"MO_IRONHAND","MO_DODGE","MO_SPIRITSRECOVERY";
+			setarray .@secondEtcSkillLv[0],10,10,5;
+			//todo: buff spirit recovery
+			break;
+		case Job_Assassin:
+			setarray .@secondMainSkillId$[0],"AS_ENCHANTPOISON","AS_POISONREACT";
+			setarray .@secondMainSkillLv[0],1,10;
+			setarray .@secondEtcSkillId$[0],"AS_KATAR","AS_CLOAKING";
+			setarray .@secondEtcSkillLv[0],10,10;
+			getitem 5267,1;
+			equip 5267;
+			break;
+		case Job_Rogue:
+			setarray .@secondMainSkillId$[0],"RG_BACKSTAP";
+			setarray .@secondMainSkillLv[0],1;
+			setarray .@secondEtcSkillId$[0],"RGX_BOWMASTERY","SM_SWORD","AS_RIGHT","AS_LEFT","RG_SNATCHER","RG_TUNNELDRIVE","RG_PLAGIARISM";
+			setarray .@secondEtcSkillLv[0],10,10,5,3,5,5,5;
+			break;
+		case Job_Blacksmith:
+			setarray .@secondMainSkillId$[0],"BS_ADRENALINE","BS_MAXIMIZE","BS_REPAIRWEAPON","BS_HAMMERFALL";
+			setarray .@secondMainSkillLv[0],3,1,1,3;
+			setarray .@secondEtcSkillId$[0],"RGX_ADVAXEMASTERY","BS_WEAPONRESEARCH","BS_SKINTEMPER","ALL_INCCARRY";
+			setarray .@secondEtcSkillLv[0],1,10,5,5;
+			getitem 14511,3;
+			break;
+	}
+
+	.@numberOfMainSkills = getarraysize(.@secondMainSkillId$);
+	.@numberOfEtcSkills = getarraysize(.@secondEtcSkillId$);
+
+	// Give actives (perm skills)
+	if (.@numberOfMainSkills > 0) {
+		for (.@i = 0; .@i < .@numberOfMainSkills; .@i++) {
+			skill .@secondMainSkillId$[.@i],.@secondMainSkillLv[.@i],SKILL_PERM;
+		}
+	}
+	// Give passives (grant skills)
+	if (.@numberOfEtcSkills > 0) {
+		for (.@i = 0; .@i < .@numberOfEtcSkills; .@i++) {
+			skill .@secondEtcSkillId$[.@i],.@secondEtcSkillLv[.@i],SKILL_PERM_GRANT;
+		}
+	}
+
+	// give out the rentals
+	if (Class == Job_Knight || Class == Job_Crusader) { 
+		setriding;
+	}
+
+	if (Class == Job_Hunter) {
+		setfalcon;
+	}
+}
+
 function	script	ClothArmorMastery	{
 	if (Class == 4010) { // Only work on High Wizard
 		bonus bCastrate,-60;
 	}
+}
+
+function	script	Neuralyzer	{
+	//remove rentals
+	if (checkriding()) setriding 0;
+	if (checkfalcon()) setfalcon 0;
+	if (checkcart()) setcart 0;
+	//get/remove all skills
+	getskilllist(getcharid(0));
+	for (.@i = 0; .@i < @skilllist_count; .@i++ ) {
+		dispbottom "Resetting skill ID: " + @skilllist_id[.@i] + " was level: " + @skilllist_lv[.@i];
+		skill @skilllist_id[.@i],0,0;
+	}
+	//remove all skill points
+	SkillPoint = 0;
 }

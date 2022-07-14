@@ -99,7 +99,7 @@ Body:
       Name: Gib Tao Banana
       Type: Usable
       Script: |
-          skill "ASC_KATAR",5,SKILL_PERM_GRANT;
+          callfunc("SecondJobChange",Job_Sage);
     - Id: 600003
       AegisName: testitem_3
       Name: PN's Test Item

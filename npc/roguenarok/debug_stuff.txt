@@ -1,7 +1,0 @@
-function	script	Neuralyzer	{
-	getskilllist(getcharid(0));
-	for (.@i = 1; .@i < @skilllist_count; .@i++ ) {
-		dispbottom "Resetting skill ID: " + @skilllist_id[.@i] + " was level: " + @skilllist_lv[.@i];
-		skill @skilllist_id[.@i],0,0;
-	}
-}
