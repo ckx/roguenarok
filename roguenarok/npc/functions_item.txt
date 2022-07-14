@@ -70,5 +70,6 @@ function	script	SecondJobSelect	{
 			SecondJobChange(getarg(1));
 			end;
 	}
+	close;
 	return;
 }
