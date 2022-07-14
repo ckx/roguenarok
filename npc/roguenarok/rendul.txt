@@ -133,3 +133,4 @@ hugel,90,150,6	script	Rendul	495,{
 	OnInit:
 		.NPCName$ = "Rendul";
 }
+

@@ -99,7 +99,7 @@ Body:
       Name: Gib Tao Banana
       Type: Usable
       Script: |
-          callfunc("SecondJobChange",Job_Sage);
+          callfunc "SecondJobSelect",Job_Blacksmith,Job_Alchemist;
     - Id: 600003
       AegisName: testitem_3
       Name: PN's Test Item
