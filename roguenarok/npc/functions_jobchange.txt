@@ -264,5 +264,5 @@ function	script	SecondJobChange	{
 	if (Class == Job_Hunter) {
 		setfalcon;
 	}
-	end;
+	return;
 }

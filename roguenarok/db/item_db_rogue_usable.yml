@@ -95,6 +95,7 @@ Body:
       Buy: 1
       Weight: 0
       Flags:
+          NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Knight,Job_Crusader;
     - Id: 100002
@@ -104,6 +105,7 @@ Body:
       Buy: 1
       Weight: 0
       Flags:
+          NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Wizard,Job_Sage;
     - Id: 100003
@@ -113,6 +115,7 @@ Body:
       Buy: 1
       Weight: 0
       Flags:
+          NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Hunter,Job_Bard;
     - Id: 100004
@@ -122,6 +125,7 @@ Body:
       Buy: 1
       Weight: 0
       Flags:
+          NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Priest,Job_Monk;
     - Id: 100005
@@ -131,6 +135,7 @@ Body:
       Buy: 1
       Weight: 0
       Flags:
+          NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Blacksmith,Job_Alchemist;
     - Id: 100006
@@ -140,6 +145,7 @@ Body:
       Buy: 1
       Weight: 0
       Flags:
+          NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Assassin,Job_Rogue;
     - Id: 200001
@@ -378,6 +384,7 @@ Body:
       Weight: 10
       Flags:
           BuyingStore: true
+          NoConsume: true
       NoUse:
           Sitting: true
       Script: |
@@ -15258,6 +15265,7 @@ Body:
       Weight: 10
       Flags:
           BuyingStore: true
+          NoConsume: true
       NoUse:
           Sitting: true
       Script: |

@@ -5,16 +5,17 @@ function	script	AddNamedSkill	{
 
 	if (.@lv > 0) {
 		dispbottom "You already know " + .@skillname$ + ".";
-		getitem .@itemname$,1;
 		return;
 	}
 
 	if (SkillPoint >= 1) {
         skill .@skillname$,1,SKILL_PERM;
         SkillPoint -= 1;
+		delitem .@itemname$,1;
+		return;
       } else { 
         dispbottom "You require more skill points.";
-		getitem .@itemname$,1;
+		return;
       }
 }
 
@@ -25,12 +26,13 @@ function	script	RemoveNamedSkill	{
 
 	if (.@lv < 1) {
 		dispbottom "You don't have any points in " + .@skillname$;
-		getitem .@itemname$,1;
 		return;
 	}
 
 	resetnamedskill(.@skillname$);
+	delitem .@itemname$,1;
 	dispbottom "Reset " + .@skillname$ + ", refunding " + .@lv + " skill point(s).";
+	return;
 }
 
 function	script	ClothArmorMastery	{
@@ -65,11 +67,12 @@ function	script	SecondJobSelect	{
 	switch(select(.@arg1$,.@arg2$)) {
 		case 1: 
 			SecondJobChange(getarg(0));
+			delitem jobname(BaseClass)+"_CHANGER",1;
 			end;
 		case 2: 
 			SecondJobChange(getarg(1));
+			delitem jobname(BaseClass)+"_CHANGER",1;
 			end;
 	}
-	close;
-	return;
+	end;
 }
