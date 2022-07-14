@@ -20,7 +20,7 @@ function	script	AddNamedSkill	{
 
 function	script	RemoveNamedSkill	{
 	.@skillname$ = getarg(0);
-	.@lv = getskilllv(@skillname$);
+	.@lv = getskilllv(.@skillname$);
 	.@itemname$ = getarg(0) + "_REM";
 
 	if (.@lv < 1) {
