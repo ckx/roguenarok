@@ -1,6 +1,6 @@
 function	script	CreateFloor0	{
 	@instname$ = "ecl_tdun02";
-	set @instID,instance_create(@instname$,IM_CHAR,getcharid(0));
+	@instID = instance_create(@instname$,IM_CHAR,getcharid(0));
 	dispbottom "" + @instID;
 
 	switch(instance_enter(@instname$,60,90,getcharid(0),@instID)) {
@@ -16,25 +16,55 @@ function	script	CreateFloor0	{
 
 	dispbottom "instname: " + @instname$ + "ID: " + @instID;
 	@mapname$ = instance_mapname(@instname$,@instID);
-	
-	OnInstanceInit:
-		monster @mapname$,0,0,"Zombie",1015,20;
-		donpcevent instance_npcname("#ins_tdun02_mobs")+"::OnEnable";
-		end;
+}
+
+ecl_tdun02,64,91,4	script	Flower#start	978,{
+	mapannounce strnpcinfo(4),"You picked the flower.",bc_map;
+	percentheal 100,100;
+	donpcevent instance_npcname("#ins_tdun02_mobs")+"::OnEnable";
+	disablenpc instance_npcname(strnpcinfo(0));
+	end;
 }
 
 ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	end;
 	OnEnable:
+		.mobKills = 0;
+		.mobsNeeded = 3;
+		.map$ = instance_mapname("ecl_tdun02");
 		initnpctimer;
 	 	end;
 	OnTimer1000:
-		monster @mapname$,0,0,"Skeleton",1076,10;
-		monster @mapname$,0,0,"Zombie",1015,20;
-		monster @mapname$,0,0,"Mandragora",1859,15;
-		monster @mapname$,0,0,"Spore",1014,10;
-		monster @mapname$,0,0,"Skeleton Archer",1016,3;
-		monster @mapname$,0,0,"Poison Spore",1077,2;
+		stopnpctimer;
+		.@label$ = instance_npcname(strnpcinfo(0))+"::OnMobDead";
+		monster .map$,0,0,"Skeleton",1076,10,.@label$;
+		monster .map$,0,0,"Zombie",1015,20,.@label$;
+		monster .map$,0,0,"Mandragora",1859,15,.@label$;
+		monster .map$,0,0,"Spore",1014,10,.@label$;
+		monster .map$,0,0,"Skeleton Archer",1016,3,.@label$;
+		monster .map$,0,0,"Poison Spore",1077,2,.@label$;
+		end;
+	OnMobDead:
+		.mobKills += 1;
+		dispbottom "Mob kills: " + .mobKills;
+
+		if (.mobKills >= .mobsNeeded) { 
+			.@label$ = instance_npcname(strnpcinfo(0))+"::OnBossDead";
+			killmonsterall instance_mapname("ecl_tdun02");
+			monster .map$,60,60,"Mastering",1090,1,.@label$;
+			mapannounce strnpcinfo(4),"The boss has spawned.",bc_map;
+			end;
+		}
+		end;
+
+	OnBossDead:
+		//todo: this
+		mapannounce strnpcinfo(4),"You beat the game.",bc_map;
+		end;
+	OnInit:  // hide the NPC on the normal map
+		disablenpc strnpcinfo(0);
+		end;
+	OnInstanceInit:  // initialize the NPC when the instance is created
 		end;
 	// OnSpawnMobs:
 	// 	end;

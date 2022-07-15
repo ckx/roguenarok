@@ -68,3 +68,12 @@ Body:
       Map: iz_dun00
       X: 0
       Y: 0
+  - Id: 11111
+    Name: Abyss Lake Instance
+    TimeLimit: 9999999
+    IdleTimeOut: 9999999
+    Destroyable: false
+    Enter:
+      Map: abyss_03
+      X: 160
+      Y: 155
