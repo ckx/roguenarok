@@ -150,6 +150,7 @@ Body:
       ArmorLevel: 1
       Refineable: true
       # Script: |
+          callfunc "HeavyArmorMastery";
     - Id: 600007
       AegisName: Test_Knife
       Name: Test Knife
