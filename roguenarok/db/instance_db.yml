@@ -43,6 +43,15 @@ Header:
 
 Body:
   - Id: 10000
+    Name: ecl_tdun02
+    TimeLimit: 9999999
+    IdleTimeOut: 9999999
+    Destroyable: false
+    Enter:
+      Map: ecl_tdun02
+      X: 0
+      Y: 0
+  - Id: 10001
     Name: mag_dun01
     TimeLimit: 9999999
     IdleTimeOut: 9999999
@@ -51,7 +60,7 @@ Body:
       Map: mag_dun01
       X: 0
       Y: 0
-  - Id: 10001
+  - Id: 10002
     Name: iz_dun00
     TimeLimit: 9999999
     IdleTimeOut: 9999999
@@ -59,3 +68,12 @@ Body:
       Map: iz_dun00
       X: 0
       Y: 0
+  - Id: 11111
+    Name: Abyss Lake Instance
+    TimeLimit: 9999999
+    IdleTimeOut: 9999999
+    Destroyable: false
+    Enter:
+      Map: abyss_03
+      X: 160
+      Y: 155

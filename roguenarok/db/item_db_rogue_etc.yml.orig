@@ -130,4 +130,8 @@ Body:
       Name: Fool's Gold
       Type: Etc
       Sell: 1
+<<<<<<< HEAD
       Weight: 1000
+=======
+      Weight: 100
+>>>>>>> 747c5d08dff040e80844e64b00be0d37e5e44336

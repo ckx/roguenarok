@@ -41,6 +41,19 @@ function	script	ClothArmorMastery	{
 	}
 }
 
+function	script	HeavyArmorMastery	{
+	switch (Class) {
+		case Job_Swordman:
+		case Job_Merchant:
+			bonus bMaxHP,100;
+			bonus bHPrecovRate,20;
+			bonus bDef,20;
+			break;
+		default: 
+			return;
+	}
+}
+
 function	script	Neuralyzer	{
 	//remove rentals
 	if (checkriding()) setriding 0;
