@@ -64,7 +64,6 @@ function	script	ChangeJob	{
 			setarray .@startingEtcSkillId$[0],"AM_AXEMASTERY","MC_INCCARRY","MC_DISCOUNT","MC_PUSHCART","BS_UNFAIRLYTRICK","MC_CHANGECART","MC_CARTREVOLUTION";
 			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1;
 			setarray .@startingItems[0],1301,2104,2313,2506,2406;
-			getitembound 673,500,Bound_Char;
 			break;
 		default: 
 			mes "I dunno what job that is. Sorry. Gimme pets instead?";
@@ -99,6 +98,7 @@ function	script	ChangeJob	{
 	//merchants get a cart & cart item
 	if (Class == Job_Merchant) {
 		setcart;
+		getitembound 800007,40,Bound_Char; // Antique Junk coin
 		//todo: cart whistle
 	}
 	close;

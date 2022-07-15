@@ -1,0 +1,49 @@
+function	script	CreateFloor0	{
+	@instname$ = "ecl_tdun02";
+	set @instID,instance_create(@instname$,IM_CHAR,getcharid(0));
+	dispbottom "" + @instID;
+
+	switch(instance_enter(@instname$,60,90,getcharid(0),@instID)) {
+		case IE_OTHER:
+			mes "An unknown error has occurred.";
+			close;
+		case IE_NOINSTANCE:
+			mes "Instance does not exist.";
+			close;
+		case IE_OK:
+			dispbottom "OK, entering instance " + @inst_name$ + " (ID: " + @instID + ")";
+	}
+
+	dispbottom "instname: " + @instname$ + "ID: " + @instID;
+	@mapname$ = instance_mapname(@instname$,@instID);
+	
+	OnInstanceInit:
+		monster @mapname$,0,0,"Zombie",1015,20;
+		donpcevent instance_npcname("#ins_tdun02_mobs")+"::OnEnable";
+		end;
+}
+
+ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
+	end;
+	OnEnable:
+		initnpctimer;
+	 	end;
+	OnTimer1000:
+		monster @mapname$,0,0,"Skeleton",1076,10;
+		monster @mapname$,0,0,"Zombie",1015,20;
+		monster @mapname$,0,0,"Mandragora",1859,15;
+		monster @mapname$,0,0,"Spore",1014,10;
+		monster @mapname$,0,0,"Skeleton Archer",1016,3;
+		monster @mapname$,0,0,"Poison Spore",1077,2;
+		end;
+	// OnSpawnMobs:
+	// 	end;
+	// OnSpawnMastering:
+	// 	killmonster .@mapname$,";
+	// 	monster .@mapname$,0,0,"Mastering",1090,1;
+	// 	end;
+	// OnNPCKillEvent:
+	// 	mapannounce .@mapname$,"hello!!",bc_map;
+	// 	makeitem 200019,1,.@mapname$,60,90;
+	// 	end;
+}

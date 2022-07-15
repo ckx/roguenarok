@@ -149,4 +149,5 @@ Body:
           Armor: true
       ArmorLevel: 1
       Refineable: true
-      # Script: |
+      Script: |
+          callfunc "HeavyArmorMastery";

@@ -1,3 +1,18 @@
+hugel,99,152,4	script	StaceyMom	101,{
+	Transcend;
+}
+
+hugel,101,140,4	script	Toad, World Destroyer	614,{
+	if(instance_id(IM_CHAR) != 0) {
+		instance_destroy(instance_id(IM_CHAR));
+		dispbottom "Instance destroyed.";
+		end;
+	} else {
+		dispbottom "No instance to destroy.";
+		end;
+	}
+}
+
 -	script	TrainingDummy	-1,{
 	OnInit:
 	monster "hugel",100,147,"Training Dummy",1905,1,"Training Dummy::OnDummyKill";

@@ -1,3 +1,0 @@
-hugel,99,152,4	script	StaceyMom	101,{
-	Transcend;
-}
