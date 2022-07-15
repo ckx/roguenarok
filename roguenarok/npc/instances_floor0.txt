@@ -30,7 +30,7 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	end;
 	OnEnable:
 		.mobKills = 0;
-		.mobsNeeded = 20;
+		.mobsNeeded = 2;
 		.map$ = instance_mapname("ecl_tdun02");
 		initnpctimer;
 	 	end;
@@ -52,6 +52,11 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 			.@label$ = instance_npcname(strnpcinfo(0))+"::OnBossDead";
 			killmonsterall instance_mapname("ecl_tdun02");
 			monster .map$,60,60,"Mastering",1090,1,.@label$;
+			.GID = $@mobid[0];
+			getunitdata .GID,.boss_data;
+			'x_boss = .boss_data[UMOB_X];
+			'y_boss = .boss_data[UMOB_Y];
+			dispbottom "hello mastering of " + .GID + "spawned at" + 'x_boss + " " + 'y_boss;
 			mapannounce strnpcinfo(4),"The boss has spawned.",bc_map;
 			end;
 		}
@@ -59,7 +64,9 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 
 	OnBossDead:
 		//todo: this
-		mapannounce strnpcinfo(4),"You beat the game.",bc_map;
+		specialeffect2 EF_MVP;
+		mapannounce strnpcinfo(4),"You beat the boss.",bc_map;
+		donpcevent instance_npcname("#ins_tdun02_warps")+"::OnEnable";
 		end;
 	OnInit:  // hide the NPC on the normal map
 		disablenpc strnpcinfo(0);
@@ -76,4 +83,11 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	// 	mapannounce .@mapname$,"hello!!",bc_map;
 	// 	makeitem 200019,1,.@mapname$,60,90;
 	// 	end;
+}
+
+ecl_tdun02,0,0,0	script	#ins_tdun02_warps	-1,{
+	end;
+	OnEnable:
+		warpportal 'x_boss,'y_boss,"hugel",0,0;
+		end;
 }
