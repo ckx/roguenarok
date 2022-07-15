@@ -37,9 +37,9 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	OnTimer1000:
 		stopnpctimer;
 		.@label$ = instance_npcname(strnpcinfo(0))+"::OnMobDead";
+		monster .map$,0,0,"Mandragora",1859,15;
 		monster .map$,0,0,"Skeleton",1076,10,.@label$;
 		monster .map$,0,0,"Zombie",1015,20,.@label$;
-		monster .map$,0,0,"Mandragora",1859,15,.@label$;
 		monster .map$,0,0,"Spore",1014,10,.@label$;
 		monster .map$,0,0,"Skeleton Archer",1016,3,.@label$;
 		monster .map$,0,0,"Poison Spore",1077,2,.@label$;
