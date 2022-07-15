@@ -18411,7 +18411,7 @@ int skill_castfix(struct block_list *bl, uint16 skill_id, uint16 skill_lv) {
 			if (scale > 0)	// not instant cast
 				time = time * (float)scale / battle_config.castrate_dex_scale;
 			else
-				return 0; // instant cast
+				time = time * (float)1 / battle_config.castrate_dex_scale;
 		}
 
 		// Calculate cast time reduced by item/card bonuses
