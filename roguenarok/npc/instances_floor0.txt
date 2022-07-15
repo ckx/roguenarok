@@ -30,7 +30,7 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	end;
 	OnEnable:
 		.mobKills = 0;
-		.mobsNeeded = 3;
+		.mobsNeeded = 20;
 		.map$ = instance_mapname("ecl_tdun02");
 		initnpctimer;
 	 	end;
