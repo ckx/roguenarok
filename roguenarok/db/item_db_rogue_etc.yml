@@ -126,8 +126,8 @@ Body:
       Sell: 10000
       Weight: 0
     - Id: 800007
-      AegisName: Antique_Junk
-      Name: Antique Junk
+      AegisName: Fools_Gold
+      Name: Fool's Gold
       Type: Etc
       Sell: 1
-      Weight: 10
+      Weight: 100
