@@ -150,3 +150,210 @@ Body:
       ArmorLevel: 1
       Refineable: true
       # Script: |
+    - Id: 600007
+      AegisName: Test_Knife
+      Name: Test Knife
+      Type: Weapon
+      SubType: Dagger
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600008
+      AegisName: Test_Sword
+      Name: Test Sword
+      Type: Weapon
+      SubType: 1hSword
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600009
+      AegisName: Test_2HSword
+      Name: Test 2HSword
+      Type: Weapon
+      SubType: 2hSword
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Both_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600010
+      AegisName: Test_Spear
+      Name: Test Spear
+      Type: Weapon
+      SubType: 1hSpear
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600011
+      AegisName: Test_Axe
+      Name: Test Axe
+      Type: Weapon
+      SubType: 1hAxe
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600012
+      AegisName: Test_Mace
+      Name: Test Mace
+      Type: Weapon
+      SubType: Mace
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600013
+      AegisName: Test_Book
+      Name: Test Book
+      Type: Weapon
+      SubType: Book
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600014
+      AegisName: Test_Fist
+      Name: Test Fist
+      Type: Weapon
+      SubType: Knuckle
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Both_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600015
+      AegisName: Test_Instrument
+      Name: Test Instrument
+      Type: Weapon
+      SubType: Musical
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600016
+      AegisName: Test_Whip
+      Name: Test Whip
+      Type: Weapon
+      SubType: Whip
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Gender: Both
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600017
+      AegisName: Test_Bow
+      Name: Test Bow
+      Type: Weapon
+      SubType: Bow
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Both_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600018
+      AegisName: Test_Katar
+      Name: Test Katar
+      Type: Weapon
+      SubType: Katar
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Both_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600019
+      AegisName: Test_Staff
+      Name: Test Staff
+      Type: Weapon
+      SubType: Staff
+      Buy: 50
+      Weight: 400
+      Attack: 17
+      Range: 1
+      Slots: 3
+      Locations:
+          Right_Hand: true
+      WeaponLevel: 1
+      EquipLevelMin: 1
+      Refineable: true
+    - Id: 600020
+      AegisName: Test_Arrow
+      Name: Test Arrow
+      Type: Ammo
+      SubType: Arrow
+      Buy: 1
+      Weight: 1
+      Attack: 25
+      Locations:
+          Ammo: true
+      EquipLevelMin: 1

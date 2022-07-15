@@ -87,14 +87,4 @@ Header:
     Type: ITEM_DB
     Version: 2
 
-Footer:
-    Imports:
-        - Path: db/pre-re/item_db.yml
-          Mode: Prerenewal
-        - Path: db/re/item_db.yml
-          Mode: Renewal
-        - Path: db/import/item_db.yml
-        - Path: roguenarok/db/item_db_rogue_usable.yml
-        - Path: roguenarok/db/item_db_rogue_equip.yml
-        - Path: roguenarok/db/item_db_rogue_etc.yml
-        - Path: roguenarok/db/item_db_rogue_testing.yml
+Body:
