@@ -1,71 +1,75 @@
 hugel,99,152,4	script	StaceyMom	101,{
-	.@instance$ = "Abyss Lake Instance";
-	
-		if (instance_live_info(ILI_NAME, instance_id(IM_PARTY)) == .@instance$) {  // the instance "Abyss Lake Instance" is running
-			mes "[Sample Instance]";
-			mes "You are already part of an instance.";
-			next;
-			switch(select("Enter Instance.:Cancel.")) {
-			case 1:
-				break;
-			case 2:
-				mes "[Sample Instance]";
-				mes "You don't want to try again?";
-				emotion ET_CRY;
-				close;
-			}
-		}
-		else if (instance_id(IM_PARTY)) {	// another instance is running
-			mes "[Sample Instance]";
-			mes "You are part of the instance " + instance_live_info(ILI_NAME, instance_id(IM_PARTY)) + ".";
-			close;
-		}
-		else {
-			mes "[Sample Instance]";
-			mes "Would you like to try the sample instance in Abyss Lake 3?";
-			next;
-			switch(select("Create Instance.:Cancel.")) {
-			case 1:
-				.@instId = instance_create(.@instance$,IM_CHAR,getcharid(0));
-				if (.@instId < 0) {
-					mes "[Sample Instance]";
-					switch (.@instId) {
-						case -1: mes "ERROR: Invalid type."; break;
-						case -2: mes "ERROR: Party not found."; break;
-						case -3: mes "ERROR: Instance already exists."; break;
-						case -4: mes "ERROR: No free instances."; break;
-					}
-					mes " ";
-					mes "Instance creation ^FF0000failed^000000.";
-					emotion ET_HUK;
-					close;
-				}
-				mes "[Sample Instance]";
-				mes "Instance created.";
-				mes " ";
-				mes "Now entering the instance...";
-				next;
-				break;
-			case 2:
-				mes "[Sample Instance]";
-				mes "Okay. Maybe next time!";
-				close;
-			}
-		}
-		.@enter = instance_enter(.@instance$,-1,-1,getcharid(0),.@instId);
-		if (.@enter != 0) {
-			mes "[Sample Instance]";
-			switch (.@enter) {
-				case 1: mes "ERROR: Party not found."; break;
-				case 2: mes "ERROR: Party does not have an instance."; break;
-				case 3: mes "ERROR: Unknown error."; break;
-			}
-			mes " ";
-			mes "Instance entry ^FF0000failed^000000.";
-			emotion ET_HUK;
-			close;
-		}
-		close;
+	getitem 599,30;
+	getitem 11502,5;
+	getitem 506,10;
+	getitem 600006,1;
+	equip 600006;
+	//.@instance$ = "Abyss Lake Instance";
+		// if (instance_live_info(ILI_NAME, instance_id(IM_PARTY)) == .@instance$) {  // the instance "Abyss Lake Instance" is running
+		// 	mes "[Sample Instance]";
+		// 	mes "You are already part of an instance.";
+		// 	next;
+		// 	switch(select("Enter Instance.:Cancel.")) {
+		// 	case 1:
+		// 		break;
+		// 	case 2:
+		// 		mes "[Sample Instance]";
+		// 		mes "You don't want to try again?";
+		// 		emotion ET_CRY;
+		// 		close;
+		// 	}
+		// }
+		// else if (instance_id(IM_PARTY)) {	// another instance is running
+		// 	mes "[Sample Instance]";
+		// 	mes "You are part of the instance " + instance_live_info(ILI_NAME, instance_id(IM_PARTY)) + ".";
+		// 	close;
+		// }
+		// else {
+		// 	mes "[Sample Instance]";
+		// 	mes "Would you like to try the sample instance in Abyss Lake 3?";
+		// 	next;
+		// 	switch(select("Create Instance.:Cancel.")) {
+		// 	case 1:
+		// 		.@instId = instance_create(.@instance$,IM_CHAR,getcharid(0));
+		// 		if (.@instId < 0) {
+		// 			mes "[Sample Instance]";
+		// 			switch (.@instId) {
+		// 				case -1: mes "ERROR: Invalid type."; break;
+		// 				case -2: mes "ERROR: Party not found."; break;
+		// 				case -3: mes "ERROR: Instance already exists."; break;
+		// 				case -4: mes "ERROR: No free instances."; break;
+		// 			}
+		// 			mes " ";
+		// 			mes "Instance creation ^FF0000failed^000000.";
+		// 			emotion ET_HUK;
+		// 			close;
+		// 		}
+		// 		mes "[Sample Instance]";
+		// 		mes "Instance created.";
+		// 		mes " ";
+		// 		mes "Now entering the instance...";
+		// 		next;
+		// 		break;
+		// 	case 2:
+		// 		mes "[Sample Instance]";
+		// 		mes "Okay. Maybe next time!";
+		// 		close;
+		// 	}
+		// }
+		// .@enter = instance_enter(.@instance$,-1,-1,getcharid(0),.@instId);
+		// if (.@enter != 0) {
+		// 	mes "[Sample Instance]";
+		// 	switch (.@enter) {
+		// 		case 1: mes "ERROR: Party not found."; break;
+		// 		case 2: mes "ERROR: Party does not have an instance."; break;
+		// 		case 3: mes "ERROR: Unknown error."; break;
+		// 	}
+		// 	mes " ";
+		// 	mes "Instance entry ^FF0000failed^000000.";
+		// 	emotion ET_HUK;
+		// 	close;
+		// }
+		// close;
 	}
 	
 	// Instance Scripts
