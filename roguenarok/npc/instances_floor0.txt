@@ -46,7 +46,7 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 		end;
 	OnMobDead:
 		.mobKills += 1;
-		dispbottom "Mob kills: " + .mobKills;
+		dispbottom "Mob kills: " + .mobKills + "/" + .mobsNeeded;
 
 		if (.mobKills >= .mobsNeeded) { 
 			.@label$ = instance_npcname(strnpcinfo(0))+"::OnBossDead";
