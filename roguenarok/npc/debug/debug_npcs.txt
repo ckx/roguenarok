@@ -1,3 +1,7 @@
+hugel,99,153,4	script	StaceyMom2	101,{
+	changebase Job_Acolyte;
+}
+
 hugel,99,152,4	script	StaceyMom	101,{
 	getitem 599,30;
 	getitem 11502,5;

@@ -91,3 +91,16 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_warps	-1,{
 		warpportal 'x_boss,'y_boss,"hugel",0,0;
 		end;
 }
+
+ecl_tdun02,0,0,0	script	hugel420s	45,1,1,{
+	end;
+	OnEnable:
+
+	OnTouch_:
+		// If an instance already exists, re-enter it
+		if(instance_id(IM_CHAR) != 0) {
+			instance_enter(@instname$,-1,-1,getcharid(0),instance_id(IM_CHAR));
+			end;
+		} 
+		CreateFloor0;
+}
