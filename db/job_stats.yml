@@ -77,28 +77,30 @@
 ###########################################################################
 
 Header:
-  Type: JOB_STATS
-  Version: 2
+    Type: JOB_STATS
+    Version: 2
 
 Footer:
-  Imports:
-  # Import base information first
-  - Path: db/pre-re/job_stats.yml
-    Mode: Prerenewal
-  - Path: db/re/job_stats.yml
-    Mode: Renewal
+    Imports:
+        # Import base information first
+        # - Path: db/pre-re/job_stats.yml
+        #   Mode: Prerenewal
+        - Path: roguenarok/db/job_stats.yml
+          Mode: Prerenewal
+        - Path: db/re/job_stats.yml
+          Mode: Renewal
 
-  # Next, populate with experience information
-  - Path: db/pre-re/job_exp.yml
-    Mode: Prerenewal
-  - Path: db/re/job_exp.yml
-    Mode: Renewal
+        # Next, populate with experience information
+        - Path: db/pre-re/job_exp.yml
+          Mode: Prerenewal
+        - Path: db/re/job_exp.yml
+          Mode: Renewal
 
-  # Next, populate HP/SP/AP information
-  - Path: db/pre-re/job_basepoints.yml
-    Mode: Prerenewal
-  - Path: db/re/job_basepoints.yml
-    Mode: Renewal
+        # Next, populate HP/SP/AP information
+        - Path: db/pre-re/job_basepoints.yml
+          Mode: Prerenewal
+        - Path: db/re/job_basepoints.yml
+          Mode: Renewal
 
-  # Finally, import custom information
-  - Path: db/import/job_stats.yml
+        # Finally, import custom information
+        - Path: db/import/job_stats.yml
