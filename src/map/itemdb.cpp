@@ -1183,23 +1183,23 @@ e_sex ItemDatabase::defaultGender( const ryml::NodeRef& node, std::shared_ptr<it
 		return SEX_MALE;
 	if (id->nameid == WEDDING_RING_F) //Bride Ring
 		return SEX_FEMALE;
-	if( id->type == IT_WEAPON ){
-		if( id->subtype == W_MUSICAL ){
-			if( id->sex != SEX_MALE ){
-				this->invalidWarning( node, "Musical instruments are always male-only, defaulting to SEX_MALE.\n" );
-			}
+	// if( id->type == IT_WEAPON ){
+	// 	if( id->subtype == W_MUSICAL ){
+	// 		if( id->sex != SEX_MALE ){
+	// 			this->invalidWarning( node, "Musical instruments are always male-only, defaulting to SEX_MALE.\n" );
+	// 		}
 
-			return SEX_MALE;
-		}
+	// 		return SEX_MALE;
+	// 	}
 
-		if( id->subtype == W_WHIP ){
-			if( id->sex != SEX_FEMALE ){
-				this->invalidWarning( node, "Whips are always female-only, defaulting to SEX_FEMALE.\n" );
-			}
+	// 	if( id->subtype == W_WHIP ){
+	// 		if( id->sex != SEX_FEMALE ){
+	// 			this->invalidWarning( node, "Whips are always female-only, defaulting to SEX_FEMALE.\n" );
+	// 		}
 
-			return SEX_FEMALE;
-		}
-	}
+	// 		return SEX_FEMALE;
+	// 	}
+	// }
 
 	return static_cast<e_sex>( id->sex );
 }
