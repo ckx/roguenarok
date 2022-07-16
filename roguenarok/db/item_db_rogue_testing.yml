@@ -359,3 +359,11 @@ Body:
       Locations:
           Ammo: true
       EquipLevelMin: 1
+    - Id: 600021
+      AegisName: Neuralyzer
+      Name: Neuralyzer
+      Type: Usable
+      Flags:
+          NoConsume: true
+      Script: |
+          callfunc "Neuralyzer";
