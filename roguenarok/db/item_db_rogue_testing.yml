@@ -354,6 +354,8 @@ Body:
       Buy: 1
       Weight: 1
       Attack: 25
+      Jobs:
+          All: true
       Locations:
           Ammo: true
       EquipLevelMin: 1
