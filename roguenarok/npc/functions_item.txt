@@ -1,3 +1,60 @@
+function	script	ClothArmorMastery	{
+	.@maxHpBonus = 80;
+	.@maxSpBonus = 100;
+	.@spRecovBonus = 20;
+	.@castSpdBonus = 15;
+
+	switch (Class) {
+		case Job_Mage:
+		case Job_Acolyte:
+			bonus bMaxHP,.@maxHpBonus;
+			bonus bMaxSP,.@maxSpBonus;
+			bonus bSPrecovRate,.@spRecovBonus;
+			bonus bCastrate,-.@castSpdBonus;
+			break;
+		default:
+			return;
+	}
+}
+
+function	script	LightArmorMastery	{
+	.@maxHpBonus = 100;
+
+	switch (Class) {
+		case Job_Thief:
+		case Job_Archer:
+			bonus bMaxHP,.@maxHpBonus;
+			break;
+		default:
+			return;
+	}
+}
+
+function	script	HeavyArmorMastery	{
+	.@maxHpBonus = 120;
+	.@hpRecovBonus = 20;
+	.@bonusDef = 15;
+
+	switch (Class) {
+		case Job_Swordman:
+		case Job_Merchant:
+			bonus bMaxHP,.@maxHpBonus;
+			bonus bHPrecovRate,.@hpRecovBonus;
+			bonus bDef,.@bonusDef;
+			break;
+		case Job_Knight:
+		case Job_Crusader:
+		case Job_Blacksmith:
+		case Job_Alchemist:
+			bonus bMaxHP,.@maxHpBonus * 2;
+			bonus bHPrecovRate,.@hpRecovBonus * 2;
+			bonus bDef,.@bonusDef * 2;
+			break;
+		default: 
+			return;
+	}
+}
+
 function	script	AddNamedSkill	{
 	.@skillname$ = getarg(0);
 	.@lv = getskilllv(.@skillname$);
@@ -32,46 +89,6 @@ function	script	RemoveNamedSkill	{
 	resetnamedskill(.@skillname$);
 	delitem .@itemname$,1;
 	dispbottom "Reset " + .@skillname$ + ", refunding " + .@lv + " skill point(s).";
-	return;
-}
-
-function	script	ClothArmorMastery	{
-	if (Class == 4010) { // Only work on High Wizard
-		bonus bCastrate,-60;
-	}
-}
-
-function	script	HeavyArmorMastery	{
-	switch (Class) {
-		case Job_Swordman:
-		case Job_Merchant:
-			bonus bMaxHP,100;
-			bonus bHPrecovRate,20;
-			bonus bDef,20;
-			break;
-		default: 
-			return;
-	}
-}
-
-function	script	Neuralyzer	{
-	//remove rentals
-	if (checkriding()) setriding 0;
-	if (checkfalcon()) setfalcon 0;
-	if (checkcart()) setcart 0;
-	//get/remove all skills
-	getskilllist(getcharid(0));
-	for (.@i = 0; .@i < @skilllist_count; .@i++ ) {
-		// don't reset basic skill
-		if (@skilllist_id[.@i] == 1) {
-			continue;
-		}
-		dispbottom "Resetting skill ID: " + @skilllist_id[.@i] + " was level: " + @skilllist_lv[.@i];
-		skill @skilllist_id[.@i],0,0;
-	}
-	//remove all skill points
-	SkillPoint = 0;
-	StatusPoint = 0;
 	return;
 }
 

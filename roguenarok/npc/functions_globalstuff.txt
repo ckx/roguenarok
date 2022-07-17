@@ -1,3 +1,48 @@
+function	script	Neuralyzer	{
+	//remove rentals
+	if (checkriding()) setriding 0;
+	if (checkfalcon()) setfalcon 0;
+	if (checkcart()) setcart 0;
+	//get/remove all skills
+	getskilllist(getcharid(0));
+	for (.@i = 0; .@i < @skilllist_count; .@i++ ) {
+		// don't reset basic skill
+		if (@skilllist_id[.@i] == 1) {
+			continue;
+		}
+		dispbottom "Resetting skill ID: " + @skilllist_id[.@i] + " was level: " + @skilllist_lv[.@i];
+		skill @skilllist_id[.@i],0,0;
+	}
+	//remove all skill/stat/zeny points
+	SkillPoint = 0;
+	StatusPoint = 0;
+	Zeny = 0;
+
+	resetlvl 1;
+	resetstatus;
+
+	return;
+}
+
+function	script	GiveRentals	{
+	//todo: all the whistles
+	switch (Class) {
+		case Job_Merchant:
+			setcart;
+			break;
+		case Job_Knight:
+		case Job_Crusader:
+			setriding;
+			break;
+		case Job_Hunter:
+			setfalcon;
+			break;
+		default:
+			return;
+	}
+	return;
+}
+
 function	script	DeleteInventory	{
 	getinventorylist();
 	for (.@i = 0; .@i < @inventorylist_count; ++.@i) {
