@@ -10,9 +10,9 @@ function	script	StartingBonuses	{
 		SkillPoint += 9;
 	}
 
-	if (Class == Merchant) {
+	if (Class == Job_Merchant) {
 		getitembound 800007,40,Bound_Char; // Antique Junk coin
-		Zeny = 100;
+		Zeny += 100;
 	}
 	return;
 }

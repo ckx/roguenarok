@@ -18234,14 +18234,13 @@ struct s_skill_condition skill_get_requirement(struct map_session_data* sd, uint
 	// Check for cost reductions due to skills & SCs
 	switch(skill_id) {
 		case MC_MAMMONITE:
-#ifdef RENEWAL
 		case WS_CARTTERMINATION:
-#endif
+		case WS_OVERTHRUSTMAX:
 			if(pc_checkskill(sd,BS_UNFAIRLYTRICK)>0)
 #ifdef RENEWAL
 				req.zeny -= req.zeny*20/100;
 #else
-				req.zeny -= req.zeny*10/100;
+				req.zeny -= req.zeny*90/100;
 #endif
 			break;
 		case AL_HOLYLIGHT:

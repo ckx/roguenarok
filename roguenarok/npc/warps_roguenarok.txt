@@ -2,7 +2,12 @@ hugel,96,140,0	script	hugel420	45,1,1,{
 	OnTouch_:
 		//if char is dead, they cant play.
 		if (@isGhost) {
-			dispbottom "Sorry, no ghosts allowed in the labyrinth.";
+			dispbottom "Sorry, no ghosts allowed in the Labyrinth.";
+			end;
+		}
+
+		if (Class == Job_Novice) { 
+			dispbottom "You must job change before you can enter the Labyrinth. Talk to Rendul.";
 			end;
 		}
 		// If an instance already exists, re-enter it
