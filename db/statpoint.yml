@@ -33,7 +33,9 @@ Header:
 
 Footer:
   Imports:
-  - Path: db/pre-re/statpoint.yml
+  #- Path: db/pre-re/statpoint.yml
+  #  Mode: Prerenewal
+  - Path: roguenarok/db/statpoint.yml
     Mode: Prerenewal
   - Path: db/re/statpoint.yml
     Mode: Renewal
