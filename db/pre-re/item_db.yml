@@ -90,5 +90,5 @@ Header:
 Footer:
     Imports:
         - Path: db/pre-re/item_db_usable.yml
-        - Path: db/pre-re/item_db_equip.yml
+        - Path: roguenarok/db/item_db_equip.yml
         - Path: db/pre-re/item_db_etc.yml
