@@ -46,6 +46,10 @@ Thumbs.db
 /yaml2sql
 /yamlupgrade
 
+# rA logs
+atcommandlog
+picklog
+
 # /3rdparty/libconfig/
 /3rdparty/libconfig/Makefile
 /3rdparty/libconfig/*.o

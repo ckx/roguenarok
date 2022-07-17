@@ -7,8 +7,11 @@ function	script	SetStartingStats	{
 function	script	ChangeJob	{
 	// ensure max basic skill
 	if (getskilllv("NV_BASIC") < 9) {
-		skill "NV_BASIC",9,SKILL_PERM;
+		dispbottom "wut";
+		skill "NV_BASIC",9,SKILL_PERM_GRANT;
 	}
+
+	// everyone gets free first aid, maybe we should put this in Main tab and just not drop a scroll for it?
 	skill "NV_FIRSTAID",1,SKILL_PERM_GRANT;
 
 	.@jobToBe = getarg(0);

@@ -71,6 +71,8 @@ function	script	Neuralyzer	{
 	}
 	//remove all skill points
 	SkillPoint = 0;
+	StatusPoint = 0;
+	return;
 }
 
 function	script	SecondJobSelect	{

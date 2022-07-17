@@ -1,4 +1,23 @@
+hugel,0,0,0	script	HugelController	-1,{
+	OnPCLoadMapEvent:
+		// This is the stuff to do if a player is super ded.
+		if (@isGhost == true) { 
+			debugmes getcharid(0) + " is hella dead."; 
+			disguise 1652,getcharid(0);
+		}
+		debugmes "Character loaded in Hugel: " + getcharid(0);
+	end;
+}
+
 hugel,90,150,6	script	Rendul	495,{
+	if (@isGhost == true) { 
+		mes "Well. You're quite dead now, aren't you? Let me fix that for you.";
+		Neuralyzer();
+		jobchange Job_Novice;
+		@isGhost = false;
+		close;
+	}
+
 	if	(Class == 0) {
 		// TODO: message picked from random pool of messages.
 		mes .NPCName$;
@@ -29,7 +48,6 @@ hugel,90,150,6	script	Rendul	495,{
 	}
 
 	ChangeJob(.@jobSelection);
-
 	OnInit:
 		.NPCName$ = "Rendul";
 }

@@ -1,5 +1,4 @@
 function	script	CreateFloor0	{
-	dispbottom "" + getcharid(0);
 	@instname$ = "ecl_tdun02";
 	@instID = instance_create(@instname$,IM_NONE,getcharid(0));
 	dispbottom "" + @instID;
@@ -27,6 +26,13 @@ ecl_tdun02,64,91,4	script	Flower#start	978,{
 	end;
 }
 
+-	script	Controller	-1,{
+	OnPCDieEvent:
+		@isGhost = true;
+		warp "hugel",96,145;
+		end;
+}
+
 ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	end;
 	OnEnable:
@@ -48,7 +54,6 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	OnMobDead:
 		.mobKills += 1;
 		dispbottom "Mob kills: " + .mobKills + "/" + .mobsNeeded;
-
 		if (.mobKills >= .mobsNeeded) { 
 			.@label$ = instance_npcname(strnpcinfo(0))+"::OnBossDead";
 			killmonsterall instance_mapname("ecl_tdun02");
@@ -64,7 +69,6 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 		end;
 
 	OnBossDead:
-		//todo: this
 		specialeffect2 EF_MVP;
 		mapannounce strnpcinfo(4),"You beat the boss.",bc_map;
 		donpcevent instance_npcname("#ins_tdun02_warps")+"::OnEnable";
@@ -74,28 +78,17 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 		end;
 	OnInstanceInit:  // initialize the NPC when the instance is created
 		end;
-	// OnSpawnMobs:
-	// 	end;
-	// OnSpawnMastering:
-	// 	killmonster .@mapname$,";
-	// 	monster .@mapname$,0,0,"Mastering",1090,1;
-	// 	end;
-	// OnNPCKillEvent:
-	// 	mapannounce .@mapname$,"hello!!",bc_map;
-	// 	makeitem 200019,1,.@mapname$,60,90;
-	// 	end;
 }
 
 ecl_tdun02,0,0,0	script	#ins_tdun02_warps	-1,{
 	end;
 	OnEnable:
-		warpportal 'x_boss,'y_boss,"hugel",0,0;
-		movenpc "#ins_tdun02_warp01",60,60;
+		movenpc instance_npcname("#ins_tdun02_warp01"),60,60;
 		end;
 }
 
-ecl_tdun02,66,88,0	script	#ins_tdun02_warp01	45,1,1,{
-
+ecl_tdun02,0,0,0	script	#ins_tdun02_warp01	45,1,1,{
+	end;
 	OnTouch:
 		.@characId = getcharid(0);
 		.@newInstname$ = "mag_dun01";
