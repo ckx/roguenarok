@@ -11,7 +11,7 @@ function	script	StartingBonuses	{
 	}
 
 	if (Class == Merchant) {
-		getitembound 800007,40,Bound_Char; // Antique Junk coin
+		getitembound 80007,40,Bound_Char; // Antique Junk coin
 		Zeny = 100;
 	}
 	return;
