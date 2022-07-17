@@ -131,3 +131,9 @@ Body:
       Type: Etc
       Sell: 1
       Weight: 1000
+    - Id: 800007
+      AegisName: RGX_Poring_Coin
+      Name: Poring Coin
+      Type: Etc
+      Sell: 0
+      Weight: 1000
