@@ -1,4 +1,4 @@
-hugel,99,152,4	script	StaceyMom	101,{
+hugel,99,152,4	script	Stacey's Mom	10377,{
 	mes "You know... I just don't really got it going on right now...";
 	close;
 }
