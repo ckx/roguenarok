@@ -46,6 +46,10 @@ function	script	GiveRentals	{
 function	script	DeleteInventory	{
 	getinventorylist();
 	for (.@i = 0; .@i < @inventorylist_count; ++.@i) {
+		// Don't delete poring coins
+		if (@inventorylist_id[.@i] == 800008) {
+			continue;
+		}
 		delitemidx @inventorylist_idx[.@i];
 	}
 	return;
