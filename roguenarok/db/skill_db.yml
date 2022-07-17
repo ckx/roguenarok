@@ -18167,3 +18167,21 @@ Body:
       HitCount: 1
       Flags:
           IsQuest: true
+    - Id: 1032
+      Name: RGX_ARMORMASTERYCLOTH
+      Description: Cloth Armor Mastery
+      MaxLevel: 3
+      Flags:
+          IsQuest: true
+    - Id: 1033
+      Name: RGX_ARMORMASTERYLIGHT
+      Description: Light Armor Mastery
+      MaxLevel: 3
+      Flags:
+          IsQuest: true
+    - Id: 1034
+      Name: RGX_ARMORMASTERYHEAVY
+      Description: Heavy Armor Mastery
+      MaxLevel: 3
+      Flags:
+          IsQuest: true
