@@ -130,8 +130,8 @@ Body:
       Name: Fool's Gold
       Type: Etc
       Sell: 1
-      Weight: 1000
-    - Id: 800007
+      Weight: 100
+    - Id: 800008
       AegisName: RGX_Poring_Coin
       Name: Poring Coin
       Type: Etc
