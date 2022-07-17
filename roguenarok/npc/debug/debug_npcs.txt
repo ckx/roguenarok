@@ -1,5 +1,6 @@
 hugel,99,153,4	script	StaceyMom2	101,{
-	changebase Job_Acolyte;
+	skill "HT_FALCON",1,SKILL_PERM_GRANT;
+	setfalcon;
 }
 
 hugel,99,152,4	script	StaceyMom	101,{

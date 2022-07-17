@@ -9,7 +9,7 @@ function	script	AddNamedSkill	{
 	}
 
 	if (SkillPoint >= 1) {
-        skill .@skillname$,1,SKILL_PERM;
+        skill .@skillname$,1,SKILL_PERM_GRANT;
         SkillPoint -= 1;
 		delitem .@itemname$,1;
 		return;

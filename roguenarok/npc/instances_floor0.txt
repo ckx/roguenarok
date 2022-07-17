@@ -1,6 +1,7 @@
 function	script	CreateFloor0	{
+	dispbottom "" + getcharid(0);
 	@instname$ = "ecl_tdun02";
-	@instID = instance_create(@instname$,IM_CHAR,getcharid(0));
+	@instID = instance_create(@instname$,IM_NONE,getcharid(0));
 	dispbottom "" + @instID;
 
 	switch(instance_enter(@instname$,60,90,getcharid(0),@instID)) {
@@ -89,18 +90,25 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_warps	-1,{
 	end;
 	OnEnable:
 		warpportal 'x_boss,'y_boss,"hugel",0,0;
+		movenpc "#ins_tdun02_warp01",60,60;
 		end;
 }
 
-ecl_tdun02,0,0,0	script	hugel420s	45,1,1,{
-	end;
-	OnEnable:
+ecl_tdun02,66,88,0	script	#ins_tdun02_warp01	45,1,1,{
 
-	OnTouch_:
-		// If an instance already exists, re-enter it
-		if(instance_id(IM_CHAR) != 0) {
-			instance_enter(@instname$,-1,-1,getcharid(0),instance_id(IM_CHAR));
-			end;
-		} 
-		CreateFloor0;
+	OnTouch:
+		.@characId = getcharid(0);
+		.@newInstname$ = "mag_dun01";
+		switch(.@newInstID = instance_create(.@newInstname$,IM_NONE,.@characId)) {
+			dispbottom "" + .@newInstID;
+			case IE_OTHER:
+				mes "An unknown error has occurred.";
+				close;
+			case IE_NOINSTANCE:
+				mes "Instance does not exist.";
+				close;
+			case IE_OK:
+				dispbottom "OK, entering instance " + .@newInstname$ + " (ID: " + .@newInstID + ")";
+		}
+		instance_enter(.@newInstname$,-1,-1,.@characId,.@newInstID);
 }
