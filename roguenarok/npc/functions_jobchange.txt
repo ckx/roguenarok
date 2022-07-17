@@ -4,9 +4,28 @@ function	script	SetStartingStats	{
 	return;
 }
 
+function	script	StartingBonuses	{
+	StatusPoint += 100;
+
+	//everyone except archer/merch get 9 skill points (their actives just come maxed)
+	if (Class != Job_Archer && Class != Job_Merchant) { 
+		SkillPoint += 9;
+	}
+
+	if (Class == Merchant) {
+		getitembound 800007,40,Bound_Char; // Antique Junk coin
+		Zeny = 100;
+	}
+	return;
+}
+
 // Give it a job to be as an argument.
 function	script	ChangeJob	{
 	.@jobToBe = getarg(0);
+
+	// Wipe it all
+	Neuralyzer();
+
 	// ensure max basic skill
 	if (getskilllv("NV_BASIC") < 9) {
 		dispbottom "wut";
@@ -101,20 +120,9 @@ function	script	ChangeJob	{
 	}
 	
 
-	//everyone gets 100 status points
-	StatusPoint += 100;
-
-	//everyone except archer/merch get 9 skill points (their actives just come maxed)
-	if (Class != Job_Archer && Class != Job_Merchant) { 
-		SkillPoint += 9;
-	}
-
-	//merchants get a cart & cart item
-	if (Class == Job_Merchant) {
-		setcart;
-		getitembound 800007,40,Bound_Char; // Antique Junk coin
-		//todo: cart whistle
-	}
+	//everyone gets 100 status points and some stat bonuses
+	StartingBonuses();
+	GiveRentals();
 
 	percentheal 100,100;
 	close;
@@ -239,15 +247,7 @@ function	script	SecondJobChange	{
 			skill .@secondEtcSkillId$[.@i],.@secondEtcSkillLv[.@i],SKILL_PERM_GRANT;
 		}
 	}
-
-	// give out the rentals
-	if (Class == Job_Knight || Class == Job_Crusader) { 
-		setriding;
-	}
-
-	if (Class == Job_Hunter) {
-		setfalcon;
-	}
+	GiveRentals();
 	return;
 }
 
