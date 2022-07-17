@@ -1,5 +1,10 @@
 hugel,96,140,0	script	hugel420	45,1,1,{
 	OnTouch_:
+		//if char is dead, they cant play.
+		if (@isGhost) {
+			dispbottom "Sorry, no ghosts allowed in the labyrinth.";
+			end;
+		}
 		// If an instance already exists, re-enter it
 		if(instance_id(IM_CHAR) != 0) {
 			instance_enter(@instname$,-1,-1,getcharid(0),instance_id(IM_CHAR));

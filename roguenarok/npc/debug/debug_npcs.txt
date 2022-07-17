@@ -1,9 +1,6 @@
 hugel,99,152,4	script	StaceyMom	101,{
-	getitem 599,30;
-	getitem 11502,5;
-	getitem 506,10;
-	getitem 600006,1;
-	equip 600006;
+	mes "You know... I just don't really got it going on right now...";
+	close;
 }
 	
 

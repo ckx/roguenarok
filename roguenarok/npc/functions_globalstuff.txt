@@ -1,0 +1,47 @@
+function	script	DeleteInventory	{
+	getinventorylist();
+	for (.@i = 0; .@i < @inventorylist_count; ++.@i) {
+		delitemidx @inventorylist_idx[.@i];
+	}
+	return;
+}
+
+function	script	BecomeGhost	{
+	.@charid = getcharid(0);
+	//todo: make the player sprite have a bio mob effect instead of just using bio mobs
+	//todo: finish this, add novice mob The Last One (2441)
+	//todo: lock all gears, etc (maybe do this on the map side?)
+	switch (Class) {
+		case Job_Novice:
+		case Job_Swordman:
+			disguise 1652,.@charid;
+			break;
+		case Job_Mage:
+			disguise 1657,.@charid;
+			break;
+		case Job_Acolyte:
+			disguise 1655,.@charid;
+			break;
+		case Job_Archer:
+			disguise 1656,.@charid;
+			break;
+		case Job_Thief:
+			disguise 1653,.@charid;
+			break;
+		case Job_Merchant:
+			disguise 1654,.@charid;
+			break;
+		default:
+			disguise 1651,.@charid;
+			break;
+	}
+	return;
+}
+
+function	script	RemoveGhost	{
+	@isGhost = false;
+	undisguise;	
+	jobchange Job_Novice;
+	DeleteInventory();
+	return;
+}

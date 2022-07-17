@@ -1,27 +1,26 @@
 hugel,0,0,0	script	HugelController	-1,{
 	OnPCLoadMapEvent:
-		// This is the stuff to do if a player is super ded.
+		.@charName = strcharinfo(0, getcharid(0));
 		if (@isGhost == true) { 
-			debugmes getcharid(0) + " is hella dead."; 
-			disguise 1652,getcharid(0);
+			BecomeGhost();
 		}
-		debugmes "Character loaded in Hugel: " + getcharid(0);
+
+		debugmes "Character loaded in Hugel: " + .@charName + " (" + getcharid(0) + ")";
 	end;
 }
 
 hugel,90,150,6	script	Rendul	495,{
-	if (@isGhost == true) { 
-		mes "Well. You're quite dead now, aren't you? Let me fix that for you.";
+	if (@isGhost == true) {
+		mes "Nyaaa... You're quite dead now, nya? Let me fix that for you.";
+		RemoveGhost(); 
 		Neuralyzer();
-		jobchange Job_Novice;
-		@isGhost = false;
 		close;
 	}
 
 	if	(Class == 0) {
 		// TODO: message picked from random pool of messages.
 		mes .NPCName$;
-		mes "Ah... Another lost Einherjar hoping to break free, nya? Your soul longs for peace, fervid warrior. Perhaps you should put these foolish ambitions to rest, nya?";
+		mes "Nyan.. Another lost Einherjar hoping to break free, nya? Your soul longs for peace, fervid warrior. Perhaps you should put these foolish ambitions to rest, nya?";
 		menu "Swordman:Mage:Archer:Acolyte:Thief:Merchant:Pet",-;
 			if (@menu == 1) {
 				.@jobSelection = Job_Swordman;
@@ -43,7 +42,7 @@ hugel,90,150,6	script	Rendul	495,{
 	} else {
 		mes "Nya? What's this? So you've managed to reclaim some life? What a rare occurence.";
 		mes "..."; 
-		mes "... Is it everything you hoped for, norman?";
+		mes "... Is it everything you hoped for, nyaman?";
 		close;
 	}
 

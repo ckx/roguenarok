@@ -4,18 +4,18 @@ function	script	SetStartingStats	{
 	return;
 }
 
+// Give it a job to be as an argument.
 function	script	ChangeJob	{
+	.@jobToBe = getarg(0);
 	// ensure max basic skill
 	if (getskilllv("NV_BASIC") < 9) {
 		dispbottom "wut";
 		skill "NV_BASIC",9,SKILL_PERM_GRANT;
 	}
-
+	
 	// everyone gets free first aid, maybe we should put this in Main tab and just not drop a scroll for it?
 	skill "NV_FIRSTAID",1,SKILL_PERM_GRANT;
 
-	.@jobToBe = getarg(0);
-	// actually change the job
 	jobchange .@jobToBe;
 
 	switch (Class) {
@@ -26,7 +26,8 @@ function	script	ChangeJob	{
 			setarray .@startingMainSkillLv[0],3,3,3;
 			setarray .@startingEtcSkillId$[0],"SM_SWORD","KN_SPEARMASTERY","SM_TWOHAND","SM_RECOVERY","SM_MOVINGRECOVERY","SM_FATALBLOW";
 			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1;
-			setarray .@startingItems[0],1101,2106,2315,2506,2406;
+			setarray .@startingClassItems[0],1101,2106,2315,2506,2406,600006;
+			// todo: remove testing armor
 			break;
 		case Job_Mage:
 			SetStartingStats(bInt, bDex);
@@ -34,7 +35,7 @@ function	script	ChangeJob	{
 			setarray .@startingMainSkillLv[0],3,3,3,2,1;
 			setarray .@startingEtcSkillId$[0],"MG_SRECOVERY","MG_ENERGYCOAT";
 			setarray .@startingEtcSkillLv[0],10,1;
-			setarray .@startingItems[0],1601,2102,2302,2502,2402;
+			setarray .@startingClassItems[0],1601,2102,2302,2502,2402;
 			break;
 		case Job_Archer:
 			SetStartingStats(bDex, bAgi);
@@ -42,7 +43,7 @@ function	script	ChangeJob	{
 			setarray .@startingMainSkillLv[0],10;
 			setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE","AC_CONCENTRATION";
 			setarray .@startingEtcSkillLv[0],10,10,5;
-			setarray .@startingItems[0],1701,2331,2502,2404,1750;
+			setarray .@startingClassItems[0],1701,2331,2502,2404,1750;
 			break;
 		case Job_Acolyte:
 			SetStartingStats(bDex, bVit);
@@ -50,7 +51,7 @@ function	script	ChangeJob	{
 			setarray .@startingMainSkillLv[0],1,5,5,1,3,1,1;
 			setarray .@startingEtcSkillId$[0],"PR_MACEMASTERY","MG_SRECOVERY";
 			setarray .@startingEtcSkillLv[0],10,10;
-			setarray .@startingItems[0],1504,2102,2322,2502,2404;
+			setarray .@startingClassItems[0],1504,2102,2322,2502,2404;
 			break;
 		case Job_Thief:
 			SetStartingStats(bAgi, bDex);
@@ -58,7 +59,7 @@ function	script	ChangeJob	{
 			setarray .@startingMainSkillLv[0],1,1,1,1;
 			setarray .@startingEtcSkillId$[0],"RGX_DAGGERMASTERY","TF_MISS";
 			setarray .@startingEtcSkillLv[0],10,10;
-			setarray .@startingItems[0],1201,2304,2502,2404;
+			setarray .@startingClassItems[0],1201,2304,2502,2404;
 			break;
 		case Job_Merchant:
 			SetStartingStats(bDex, bStr);
@@ -66,13 +67,17 @@ function	script	ChangeJob	{
 			setarray .@startingMainSkillLv[0],10;
 			setarray .@startingEtcSkillId$[0],"AM_AXEMASTERY","MC_INCCARRY","MC_DISCOUNT","MC_PUSHCART","BS_UNFAIRLYTRICK","MC_CHANGECART","MC_CARTREVOLUTION";
 			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1;
-			setarray .@startingItems[0],1301,2104,2313,2506,2406;
+			setarray .@startingClassItems[0],1301,2104,2313,2506,2406;
 			break;
 		default: 
 			mes "I dunno what job that is. Sorry. Gimme pets instead?";
 			close;
 			break;
 	}
+
+	//light yellow pots, light blue pots, green pots 
+	setarray .@startingUniversalItems[0],599,11502,506;
+	setarray .@startingUniversalItemAmt[0],30,5,10;
 
 	// Give actives (perm skills)
 	for (.@i = 0; .@i < getarraysize(.@startingMainSkillId$); .@i++) {
@@ -85,10 +90,16 @@ function	script	ChangeJob	{
 	}
 
 	// Give & equip items
-	for (.@i = 0; .@i < getarraysize(.@startingItems); .@i++) {
-		getitembound .@startingItems[.@i],1,Bound_Char;
-		equip .@startingItems[.@i];
+	for (.@i = 0; .@i < getarraysize(.@startingClassItems); .@i++) {
+		getitembound .@startingClassItems[.@i],1,Bound_Char;
+		equip .@startingClassItems[.@i];
 	}
+
+	// Give universal items
+	for (.@i = 0; .@i < getarraysize(.@startingUniversalItems); .@i++) {
+		getitem .@startingUniversalItems[.@i],.@startingUniversalItemAmt[.@i];
+	}
+	
 
 	//everyone gets 100 status points
 	StatusPoint += 100;
@@ -104,39 +115,9 @@ function	script	ChangeJob	{
 		getitembound 800007,40,Bound_Char; // Antique Junk coin
 		//todo: cart whistle
 	}
+
+	percentheal 100,100;
 	close;
-}
-
-function	script	Transcend	{
-	switch (Class) {
-		case Job_Knight:
-			jobchange 4008; //lk
-			setarray .@transcMainSkillId$[0],"LK_CONCENTRATION","LK_AURABLADE","LK_BERSERK";
-			setarray .@transcMainSkillLv[0],1,1,1;
-			setarray .@transcEtcSkillId$[0],"RGX_ADVSWORDMASTERY","RGX_ADV2HSMASTERY","RGX_ADVSPEARMASTERY","LK_TENSIONRELAX";
-			setarray .@transcEtcSkillLv[0],5,5,5,1;
-			break;
-	}
-
-	.@numberOfMainSkills = getarraysize(.@transcMainSkillId$);
-	.@numberOfEtcSkills = getarraysize(.@transcEtcSkillId$);
-
-	// Give actives (perm skills)
-	if (.@numberOfMainSkills > 0) {
-		for (.@i = 0; .@i < .@numberOfMainSkills; .@i++) {
-			skill .@transcMainSkillId$[.@i],.@transcMainSkillLv[.@i],SKILL_PERM;
-		}
-	}
-	// Give passives (grant skills)
-	if (.@numberOfEtcSkills > 0) {
-		for (.@i = 0; .@i < .@numberOfEtcSkills; .@i++) {
-			skill .@transcEtcSkillId$[.@i],.@transcEtcSkillLv[.@i],SKILL_PERM_GRANT;
-		}
-	}
-
-
-	JobLevel += 49;
-	SkillPoint -= 49;
 }
 
 function	script	SecondJobChange	{
@@ -268,4 +249,36 @@ function	script	SecondJobChange	{
 		setfalcon;
 	}
 	return;
+}
+
+function	script	Transcend	{
+	switch (Class) {
+		case Job_Knight:
+			jobchange 4008; //lk
+			setarray .@transcMainSkillId$[0],"LK_CONCENTRATION","LK_AURABLADE","LK_BERSERK";
+			setarray .@transcMainSkillLv[0],1,1,1;
+			setarray .@transcEtcSkillId$[0],"RGX_ADVSWORDMASTERY","RGX_ADV2HSMASTERY","RGX_ADVSPEARMASTERY","LK_TENSIONRELAX";
+			setarray .@transcEtcSkillLv[0],5,5,5,1;
+			break;
+	}
+
+	.@numberOfMainSkills = getarraysize(.@transcMainSkillId$);
+	.@numberOfEtcSkills = getarraysize(.@transcEtcSkillId$);
+
+	// Give actives (perm skills)
+	if (.@numberOfMainSkills > 0) {
+		for (.@i = 0; .@i < .@numberOfMainSkills; .@i++) {
+			skill .@transcMainSkillId$[.@i],.@transcMainSkillLv[.@i],SKILL_PERM;
+		}
+	}
+	// Give passives (grant skills)
+	if (.@numberOfEtcSkills > 0) {
+		for (.@i = 0; .@i < .@numberOfEtcSkills; .@i++) {
+			skill .@transcEtcSkillId$[.@i],.@transcEtcSkillLv[.@i],SKILL_PERM_GRANT;
+		}
+	}
+
+
+	JobLevel += 49;
+	SkillPoint -= 49;
 }
