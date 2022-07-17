@@ -26,17 +26,6 @@ ecl_tdun02,64,91,4	script	Flower#start	978,{
 	end;
 }
 
--	script	Controller	-1,{
-	OnPCDieEvent:
-		//todo: process death function, set instance ID to 0, destroy instance, and more...
-		@isGhost = true;
-		@killerId = killerrid;
-		warp "hugel",96,145;
-		.@deathMes$ = strcharinfo(0, getcharid(0)) + ", the level " + BaseLevel + "/" + JobLevel + " " + jobname(Class) + " was horrifically slain by a " + rid2name(@killerId) +  "!";
-		announce .@deathMes$,bc_all;
-		end;
-}
-
 ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	end;
 	OnEnable:

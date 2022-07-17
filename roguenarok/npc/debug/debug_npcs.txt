@@ -20,15 +20,15 @@ hugel,101,140,4	script	Toad, World Destroyer	614,{
 	OnInit:
 		monster "hugel",100,147,"Training Dummy",1905,1,"TrainingDummy::OnDummyKill";
 		setmapflag( "hugel",mf_monster_noteleport );
-		end;
+	end;
 	
 	OnDummyKill:
 		sleep 1200;
 		monster "hugel",100,147,"Training Dummy",1905,1,"TrainingDummy::OnDummyKill";
-		end;
+	end;
 
 	OnPCAttackEvent:	
 		if ( !@test_punch ) end;
 		@dps_damage += @damage;
-		end;
+	end;
 }
