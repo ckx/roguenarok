@@ -119,6 +119,7 @@ Body:
       Locations:
           Armor: true
       ArmorLevel: 1
+      ArmorType: Cloth
       Refineable: true
       Script: |
           callfunc "ClothArmorMastery";
@@ -134,6 +135,7 @@ Body:
       Locations:
           Armor: true
       ArmorLevel: 1
+      ArmorType: Light
       Refineable: true
     - Id: 600006
       AegisName: test_heavyarmor
@@ -147,6 +149,7 @@ Body:
       Locations:
           Armor: true
       ArmorLevel: 1
+      ArmorType: Heavy
       Refineable: true
       Script: |
           callfunc "HeavyArmorMastery";
