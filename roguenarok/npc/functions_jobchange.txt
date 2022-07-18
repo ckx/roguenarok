@@ -38,8 +38,8 @@ function	script	ChangeJob	{
 			SetStartingStats(bStr, bDex);
 			setarray .@startingMainSkillId$[0],"SM_BASH","SM_ENDURE","SM_PROVOKE";
 			setarray .@startingMainSkillLv[0],3,3,3;
-			setarray .@startingEtcSkillId$[0],"SM_SWORD","KN_SPEARMASTERY","SM_TWOHAND","SM_RECOVERY","SM_MOVINGRECOVERY","SM_FATALBLOW";
-			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1;
+			setarray .@startingEtcSkillId$[0],"SM_SWORD","KN_SPEARMASTERY","SM_TWOHAND","SM_RECOVERY","SM_MOVINGRECOVERY","SM_FATALBLOW","RGX_ARMORMASTERYHEAVY";
+			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1;
 			setarray .@startingClassItems[0],1101,2106,2315,2506,2406,600006;
 			// todo: remove testing armor
 			break;
@@ -47,40 +47,40 @@ function	script	ChangeJob	{
 			SetStartingStats(bInt, bDex);
 			setarray .@startingMainSkillId$[0],"MG_FROSTDIVER","MG_FIREBOLT","MG_LIGHTNINGBOLT","MG_SOULSTRIKE","MG_SIGHT";
 			setarray .@startingMainSkillLv[0],3,3,3,2,1;
-			setarray .@startingEtcSkillId$[0],"MG_SRECOVERY","MG_ENERGYCOAT";
-			setarray .@startingEtcSkillLv[0],10,1;
+			setarray .@startingEtcSkillId$[0],"MG_SRECOVERY","MG_ENERGYCOAT","RGX_ARMORMASTERYCLOTH";
+			setarray .@startingEtcSkillLv[0],10,1,1;
 			setarray .@startingClassItems[0],1601,2102,2302,2502,2402;
 			break;
 		case Job_Archer:
 			SetStartingStats(bDex, bAgi);
 			setarray .@startingMainSkillId$[0],"AC_DOUBLE";
 			setarray .@startingMainSkillLv[0],10;
-			setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE","AC_CONCENTRATION";
-			setarray .@startingEtcSkillLv[0],10,10,5;
+			setarray .@startingEtcSkillId$[0],"AC_OWL","AC_VULTURE","AC_CONCENTRATION","RGX_ARMORMASTERYLIGHT";
+			setarray .@startingEtcSkillLv[0],10,10,5,1;
 			setarray .@startingClassItems[0],1701,2331,2502,2404,1750;
 			break;
 		case Job_Acolyte:
 			SetStartingStats(bDex, bVit);
 			setarray .@startingMainSkillId$[0],"AL_HEAL","AL_BLESSING","AL_INCAGI","AL_PNEUMA","AL_ANGELUS","AL_RUWACH","AL_HOLYLIGHT";
 			setarray .@startingMainSkillLv[0],1,5,5,1,3,1,1;
-			setarray .@startingEtcSkillId$[0],"PR_MACEMASTERY","MG_SRECOVERY";
-			setarray .@startingEtcSkillLv[0],10,10;
+			setarray .@startingEtcSkillId$[0],"PR_MACEMASTERY","MG_SRECOVERY","RGX_ARMORMASTERYCLOTH";
+			setarray .@startingEtcSkillLv[0],10,10,1;
 			setarray .@startingClassItems[0],1504,2102,2322,2502,2404;
 			break;
 		case Job_Thief:
 			SetStartingStats(bAgi, bDex);
 			setarray .@startingMainSkillId$[0],"TF_HIDING","TF_STEAL","TF_BACKSLIDING","TF_DOUBLE";
 			setarray .@startingMainSkillLv[0],1,1,1,1;
-			setarray .@startingEtcSkillId$[0],"RGX_DAGGERMASTERY","TF_MISS";
-			setarray .@startingEtcSkillLv[0],10,10;
+			setarray .@startingEtcSkillId$[0],"RGX_DAGGERMASTERY","TF_MISS","RGX_ARMORMASTERYLIGHT";
+			setarray .@startingEtcSkillLv[0],10,10,1;
 			setarray .@startingClassItems[0],1201,2304,2502,2404;
 			break;
 		case Job_Merchant:
 			SetStartingStats(bDex, bStr);
 			setarray .@startingMainSkillId$[0],"MC_MAMMONITE";
 			setarray .@startingMainSkillLv[0],10;
-			setarray .@startingEtcSkillId$[0],"AM_AXEMASTERY","MC_INCCARRY","MC_DISCOUNT","MC_PUSHCART","BS_UNFAIRLYTRICK","MC_CHANGECART","MC_CARTREVOLUTION";
-			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1;
+			setarray .@startingEtcSkillId$[0],"AM_AXEMASTERY","MC_INCCARRY","MC_DISCOUNT","MC_PUSHCART","BS_UNFAIRLYTRICK","MC_CHANGECART","MC_CARTREVOLUTION","RGX_ARMORMASTERYHEAVY";
+			setarray .@startingEtcSkillLv[0],10,10,10,10,1,1,1,1;
 			setarray .@startingClassItems[0],1301,2104,2313,2506,2406;
 			break;
 		default: 
