@@ -121,7 +121,7 @@ Body:
       ArmorLevel: 1
       Refineable: true
       Script: |
-          ClothArmorMastery();
+          callfunc "ClothArmorMastery";
     - Id: 600005
       AegisName: test_lightarmor
       Name: Test Light Armor
@@ -136,7 +136,7 @@ Body:
       ArmorLevel: 1
       Refineable: true
       Script: |
-          LightArmorMastery();
+          callfunc "LightArmorMastery";
     - Id: 600006
       AegisName: test_heavyarmor
       Name: Test Heavy Armor
@@ -151,7 +151,7 @@ Body:
       ArmorLevel: 1
       Refineable: true
       Script: |
-          HeavyArmorMastery();
+          callfunc "HeavyArmorMastery";
     - Id: 600007
       AegisName: Test_Knife
       Name: Test Knife
