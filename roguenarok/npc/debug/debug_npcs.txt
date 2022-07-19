@@ -1,5 +1,6 @@
 hugel,99,152,4	script	Stacey's Mom	10377,{
 	mes "You know... I just don't really got it going on right now...";
+	skill "RGX_ADVSHIELDMASTERY",5,SKILL_PERM_GRANT;
 	close;
 }
 	
