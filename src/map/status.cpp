@@ -4261,6 +4261,12 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 	if(pc_ismadogear(sd) && pc_checkskill(sd, NC_MAINFRAME) > 0)
 		base_status->def += 20 + (pc_checkskill(sd, NC_MAINFRAME) * 20);
 
+	if (skill = pc_checkskill(sd, RGX_ADVSHIELDMASTERY) > 0) {
+		short index = sd->equip_index[EQI_HAND_L];
+		if (index >= 0 && sd->inventory_data[index] && sd->inventory_data[index]->type == IT_ARMOR) {
+			base_status->def += ((sd->inventory_data[index]->def + sd->inventory.u.items_inventory[index].refine * 2 / 3) * (10 + 2 * skill)) / 100;
+		}
+	}
 #ifndef RENEWAL
 	if (!battle_config.weapon_defense_type && base_status->def > battle_config.max_def) {
 		base_status->def2 += battle_config.over_def_bonus*(base_status->def -battle_config.max_def);

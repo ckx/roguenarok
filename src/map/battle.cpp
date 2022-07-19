@@ -3677,7 +3677,10 @@ static void battle_calc_skill_base_damage(struct Damage* wd, struct block_list *
 				short index = sd->equip_index[EQI_HAND_L];
 
 				if (index >= 0 && sd->inventory_data[index] && sd->inventory_data[index]->type == IT_ARMOR) {
-					ATK_ADD(wd->damage, wd->damage2, sd->inventory_data[index]->weight / 10);
+					int shieldweight = sd->inventory_data[index]->weight;
+					if (pc_checkskill(sd, RGX_ADVSHIELDMASTERY) > 0)
+						shieldweight += (shieldweight * (10 + 2 * pc_checkskill(sd, RGX_ADVSHIELDMASTERY))) / 100;
+					ATK_ADD(wd->damage, wd->damage2, shieldweight / 10);
 #ifdef RENEWAL
 					ATK_ADD(wd->weaponAtk, wd->weaponAtk2, sd->inventory_data[index]->weight / 10);
 #endif
