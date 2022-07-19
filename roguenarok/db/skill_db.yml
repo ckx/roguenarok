@@ -18185,3 +18185,9 @@ Body:
       MaxLevel: 3
       Flags:
           IsQuest: true
+    - Id: 1035
+      Name: RGX_ADVSHIELDMASTERY
+      Description: Advanced Shield Mastery
+      MaxLevel: 5
+      Flags:
+          IsQuest: true
