@@ -3953,7 +3953,7 @@ int status_calc_pc_sub(struct map_session_data* sd, uint8 opt)
 		sd->left_weapon.atkmods[SZ_MEDIUM] = sd->left_weapon.atkmods[SZ_BIG];
 	}
 
-	if (pc_checkskill(sd, SA_FREECAST) > 0) {
+	if (pc_checkskill(sd, CR_FULLPROTECTION) > 0) {
 		clif_status_load(&sd->bl, EFST_PROTECTARMOR, 1);
 		clif_status_load(&sd->bl, EFST_PROTECTHELM, 1);
 		clif_status_load(&sd->bl, EFST_PROTECTSHIELD, 1);

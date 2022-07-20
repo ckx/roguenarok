@@ -2716,7 +2716,7 @@ int skill_break_equip(struct block_list *src, struct block_list *bl, unsigned sh
 		sc = NULL;
 
 	if (sd) {
-		if (pc_checkskill(sd, SA_FREECAST) > 0) {
+		if (pc_checkskill(sd, CR_FULLPROTECTION) > 0) {
 			return 0;
 		}
 		if (sd->bonus.unbreakable_equip)
