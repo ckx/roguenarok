@@ -2716,8 +2716,16 @@ int skill_break_equip(struct block_list *src, struct block_list *bl, unsigned sh
 		sc = NULL;
 
 	if (sd) {
-		if (pc_checkskill(sd, CR_FULLPROTECTION) > 0) {
-			return 0;
+		//remove locations from possible break locations if protected by Chemical Skin
+		if (pc_checkskill(sd, RGX_CHEMICALSKIN) >= 1 && where&EQP_ARMOR)
+			where &= ~EQP_ARMOR;
+		if (pc_checkskill(sd, RGX_CHEMICALSKIN) >= 2) {
+			if(where&EQP_HELM)
+				where &= ~EQP_HELM;
+			if(where&EQP_SHIELD)
+				where &= ~EQP_SHIELD;
+			if(where&EQP_WEAPON)
+				where &= ~EQP_WEAPON;
 		}
 		if (sd->bonus.unbreakable_equip)
 			where &= ~sd->bonus.unbreakable_equip;
@@ -2942,6 +2950,21 @@ bool skill_strip_equip(struct block_list *src, struct block_list *target, uint16
 		case ABC_STRIP_SHADOW:
 			location = EQP_SHADOW_GEAR;
 			break;
+	}
+
+	TBL_PC *sd;
+	sd = BL_CAST(BL_PC, target);
+
+	//remove locations if protected by Chemical Skin
+	if (pc_checkskill(sd, RGX_CHEMICALSKIN) >= 1 && location&EQP_ARMOR)
+		location &= ~EQP_ARMOR;
+	if (pc_checkskill(sd, RGX_CHEMICALSKIN) >= 2) {
+		if(location&EQP_HELM)
+			location &= ~EQP_HELM;
+		if(location&EQP_SHIELD)
+			location &= ~EQP_SHIELD;
+		if(location&EQP_WEAPON)
+			location &= ~EQP_WEAPON;
 	}
 
 	for (uint8 i = 0; i < ARRAYLENGTH(pos); i++) {
