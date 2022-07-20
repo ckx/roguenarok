@@ -212,12 +212,11 @@ function	script	SecondJobChange	{
 			getitem 14511,3;
 			break;
 		case Job_Alchemist:
-			//todo: custom chem protect armor passive
 			//todo: spirit ball pitcher
 			setarray .@secondMainSkillId$[0],"AM_POTIONPITCHER","AM_CANNIBALIZE","AM_ACIDTERROR";
 			setarray .@secondMainSkillLv[0],5,1,1;
-			setarray .@secondEtcSkillId$[0],"AM_LEARNINGPOTION","ALL_INCCARRY";
-			setarray .@secondEtcSkillLv[0],10,5;
+			setarray .@secondEtcSkillId$[0],"AM_LEARNINGPOTION","RGX_CHEMICALSKIN","ALL_INCCARRY";
+			setarray .@secondEtcSkillLv[0],10,1,5;
 			getitem 547,100; // slim whites
 			getitem 505,50; // blues
 			getitem 7136,100; // acid bottles
