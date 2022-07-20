@@ -1229,6 +1229,11 @@ enum sc_type : int16 {
 	SC_M_LIFEPOTION,
 	SC_S_MANAPOTION,
 
+	//Roguenarok states
+	// SC_ARMORMASTERYCLOTH,
+	// SC_ARMORMASTERYLIGHT,
+	// SC_ARMORMASTERYHEAVY,
+
 #ifdef RENEWAL
 	SC_EXTREMITYFIST2, //! NOTE: This SC should be right before SC_MAX, so it doesn't disturb if RENEWAL is disabled
 #endif
