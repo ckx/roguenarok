@@ -136,4 +136,10 @@ Body:
       Name: Poring Coin
       Type: Etc
       Sell: 0
-      Weight: 1000
+      Weight: 0
+    - Id: 800009
+      AegisName: Spirit_Bottle
+      Name: Spirit Bottle
+      Type: Etc
+      Sell: 0
+      Weight: 10

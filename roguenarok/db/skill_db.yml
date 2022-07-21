@@ -18197,3 +18197,18 @@ Body:
       MaxLevel: 2
       Flags:
           IsQuest: true
+    - Id: 1037
+      Name: RGX_BALLPITCHER
+      Description: Ball Pitcher
+      Description: Ki Translation
+      MaxLevel: 1
+      Type: Weapon
+      TargetType: Support
+      DamageFlags:
+          NoDamage: true
+      Flags:
+          IsQuest: true
+          PartyOnly: true
+      Range: 9
+      Hit: Single
+      HitCount: 1
