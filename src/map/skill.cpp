@@ -4601,7 +4601,11 @@ static TIMER_FUNC(skill_timerskill){
 						}
 						skill_attack(skl->type,src,src,target,skl->skill_id,skl->skill_lv,tick,skl->flag);
 						break;
-					}
+					
+				case RGX_TESTSKILL:
+				{
+					break;
+				}
 				// For SR_FLASHCOMBO
 				case SR_DRAGONCOMBO:
 				case SR_FALLENEMPIRE:
@@ -4973,6 +4977,10 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 	map_freeblock_lock();
 
 	switch(skill_id) {
+	case RGX_TESTSKILL:
+	{
+		break;
+	}
 	case MER_CRASH:
 	case SM_BASH:
 	case MS_BASH:
@@ -7700,7 +7708,8 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 		skill_castend_damage_id(src, bl, skill_id, skill_lv, tick, 0);
 		clif_skill_nodamage(src, bl, skill_id, skill_lv, sc_start2(src, bl, type, 100, skill_lv, src->id, skill_get_time(skill_id, skill_lv)));
 		break;
-
+	case RGX_TESTSKILL:
+		break;
 	case AG_VIOLENT_QUAKE:
 	case AG_ALL_BLOOM:
 		sc_start(src, bl, type, 100, skill_lv, skill_get_time2(skill_id, skill_lv));
@@ -9032,17 +9041,17 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 		if(dstsd && ((dstsd->class_&MAPID_BASEMASK) != MAPID_GUNSLINGER && (dstsd->class_&MAPID_UPPERMASK) != MAPID_REBELLION) && dstsd->spiritball < 5) {
 			pc_addspiritball(dstsd,600000,5);
 			
-			//one set of skill effects for casting on yourself, one for casting on others
-			//refer to clientside skilleffectinfo.lub for other effects (such as sfx)
-			if( src == bl ) {
-				clif_skill_nodamage(src,bl,skill_id,0,1);
-			}
-			else {
+			//calls skilleffectinfo logic for RGX_BALLPITCHER, allowing for sounds
+			clif_skill_nodamage(src,bl,skill_id,0,1);
+			//throw potion if targeting other, overwriting normal cast animation
+			if( src != bl ) {
 				clif_skill_nodamage(src, bl, AM_POTIONPITCHER, 0, 1);
-				clif_skill_nodamage(src, src, skill_id, 0, 1);
-				clif_skill_nodamage(NULL,bl, PF_SOULBURN,0,1);
+				clif_showscript(src, "Ball Pitcher !!", AREA);
 			}
+			//finally, target flashes blue because hell yea get spirit son
+			clif_specialeffect(bl, EF_BLINK_BODY, AREA);
 		}
+		//skill failure
 		else {
 			if(sd)
 				clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);

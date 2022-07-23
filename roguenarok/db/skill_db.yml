@@ -7,9 +7,9 @@ Body:
       Description: Basic Skill
       MaxLevel: 9
 
-###########################################################################
-#                    BASE ROGUENAROK SKILLS BEGIN HERE                    #
-###########################################################################
+    ###########################################################################
+    #                    BASE ROGUENAROK SKILLS BEGIN HERE                    #
+    ###########################################################################
     - Id: 2
       Name: SM_SWORD
       Description: Sword Mastery
@@ -18057,10 +18057,10 @@ Body:
               - Item: Elemental_Wind
                 Amount: 1
       Status: ElementalChange
-      
-###########################################################################
-#                  CUSTOM ROGUENAROK SKILLS BEGIN HERE                    #
-###########################################################################
+
+    ###########################################################################
+    #                  CUSTOM ROGUENAROK SKILLS BEGIN HERE                    #
+    ###########################################################################
     - Id: 1020
       Name: RGX_BOWMASTERY
       Description: Bow Mastery
@@ -18223,3 +18223,13 @@ Body:
           ItemCost:
               - Item: Spirit_Bottle
                 Amount: 1
+    - Id: 1038
+      Name: RGX_TESTSKILL
+      Description: Test Skill
+      MaxLevel: 1
+      Type: Weapon
+      TargetType: Support
+      DamageFlags:
+          NoDamage: true
+      Hit: Single
+      HitCount: 1
