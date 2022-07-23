@@ -66,6 +66,27 @@ function	script	AddNamedSkill	{
 	}
 
 	if (SkillPoint >= 1) {
+        skill .@skillname$,1,SKILL_PERM;
+        SkillPoint -= 1;
+		delitem .@itemname$,1;
+		return;
+      } else { 
+        dispbottom "You require more skill points.";
+		return;
+      }
+}
+
+function	script	PermAddNamedSkill	{
+	.@skillname$ = getarg(0);
+	.@lv = getskilllv(.@skillname$);
+	.@itemname$ = getarg(0) + "_SC";
+
+	if (.@lv > 0) {
+		dispbottom "You already know " + .@skillname$ + ".";
+		return;
+	}
+
+	if (SkillPoint >= 1) {
         skill .@skillname$,1,SKILL_PERM_GRANT;
         SkillPoint -= 1;
 		delitem .@itemname$,1;
