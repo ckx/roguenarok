@@ -4591,16 +4591,17 @@ static TIMER_FUNC(skill_timerskill){
 					skill_attack(BF_WEAPON, src, src, target, skl->skill_id, skl->skill_lv, tick, skl->flag|SD_LEVEL);
 					break;
 				case CH_PALMSTRIKE:
-					{
-						struct status_change* tsc = status_get_sc(target);
-						struct status_change* sc = status_get_sc(src);
-						if( ( tsc && tsc->option&OPTION_HIDE ) ||
-							( sc && sc->option&OPTION_HIDE ) ){
-							skill_blown(src,target,skill_get_blewcount(skl->skill_id, skl->skill_lv), -1, BLOWN_NONE);
-							break;
-						}
-						skill_attack(skl->type,src,src,target,skl->skill_id,skl->skill_lv,tick,skl->flag);
+				{
+					struct status_change* tsc = status_get_sc(target);
+					struct status_change* sc = status_get_sc(src);
+					if ((tsc && tsc->option & OPTION_HIDE) ||
+						(sc && sc->option & OPTION_HIDE)) {
+						skill_blown(src, target, skill_get_blewcount(skl->skill_id, skl->skill_lv), -1, BLOWN_NONE);
 						break;
+					}
+					skill_attack(skl->type, src, src, target, skl->skill_id, skl->skill_lv, tick, skl->flag);
+					break;
+				}
 					
 				case RGX_TESTSKILL:
 				{
