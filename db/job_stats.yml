@@ -91,10 +91,11 @@ Footer:
           Mode: Renewal
 
         # Next, populate with experience information
-        - Path: db/pre-re/job_exp.yml
-          Mode: Prerenewal
+        # - Path: db/pre-re/job_exp.yml
+        #   Mode: Prerenewal
         - Path: db/re/job_exp.yml
           Mode: Renewal
+        - Path: roguenarok/db/job_exp.yml
 
         # Next, populate HP/SP/AP information
         - Path: db/pre-re/job_basepoints.yml
