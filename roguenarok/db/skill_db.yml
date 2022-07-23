@@ -6,6 +6,10 @@ Body:
       Name: NV_BASIC
       Description: Basic Skill
       MaxLevel: 9
+
+###########################################################################
+#                    BASE ROGUENAROK SKILLS BEGIN HERE                    #
+###########################################################################
     - Id: 2
       Name: SM_SWORD
       Description: Sword Mastery
@@ -18053,6 +18057,10 @@ Body:
               - Item: Elemental_Wind
                 Amount: 1
       Status: ElementalChange
+      
+###########################################################################
+#                  CUSTOM ROGUENAROK SKILLS BEGIN HERE                    #
+###########################################################################
     - Id: 1020
       Name: RGX_BOWMASTERY
       Description: Bow Mastery
@@ -18200,9 +18208,7 @@ Body:
     - Id: 1037
       Name: RGX_BALLPITCHER
       Description: Ball Pitcher
-      Description: Ki Translation
       MaxLevel: 1
-      Type: Weapon
       TargetType: Support
       DamageFlags:
           NoDamage: true
@@ -18212,3 +18218,8 @@ Body:
       Range: 9
       Hit: Single
       HitCount: 1
+      Requires:
+          SpCost: 8
+          ItemCost:
+              - Item: Spirit_Bottle
+                Amount: 1
