@@ -9030,14 +9030,23 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case RGX_BALLPITCHER: {
 		
 		if(dstsd && ((dstsd->class_&MAPID_BASEMASK) != MAPID_GUNSLINGER && (dstsd->class_&MAPID_UPPERMASK) != MAPID_REBELLION) && dstsd->spiritball < 5) {
-			ShowDebug("Ball pitcher attempt, successful if\n");
 			pc_addspiritball(dstsd,600000,5);
-			clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
-		} else {
+			
+			//one set of skill effects for casting on yourself, one for casting on others
+			//refer to clientside skilleffectinfo.lub for other effects (such as sfx)
+			if( src == bl ) {
+				clif_skill_nodamage(src,bl,skill_id,0,1);
+			}
+			else {
+				clif_skill_nodamage(src, bl, AM_POTIONPITCHER, 0, 1);
+				clif_skill_nodamage(src, src, skill_id, 0, 1);
+				clif_skill_nodamage(NULL,bl, PF_SOULBURN,0,1);
+			}
+		}
+		else {
 			if(sd)
 				clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
 			map_freeblock_unlock();
-			ShowDebug("Ball pitcher attempt, unsuccessful if\n");
 			return 0;
 		}
 		break;
