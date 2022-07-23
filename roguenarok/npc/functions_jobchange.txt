@@ -213,7 +213,7 @@ function	script	SecondJobChange	{
 			break;
 		case Job_Alchemist:
 			//todo: spirit ball pitcher
-			setarray .@secondMainSkillId$[0],"AM_POTIONPITCHER","AM_CANNIBALIZE","AM_ACIDTERROR";
+			setarray .@secondMainSkillId$[0],"AM_POTIONPITCHER","AM_CANNIBALIZE","AM_ACIDTERROR","RGX_BALLPITCHER";
 			setarray .@secondMainSkillLv[0],5,1,1;
 			setarray .@secondEtcSkillId$[0],"AM_LEARNINGPOTION","RGX_CHEMICALSKIN","ALL_INCCARRY";
 			setarray .@secondEtcSkillLv[0],10,1,5;
