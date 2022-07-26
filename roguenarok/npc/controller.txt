@@ -1,5 +1,10 @@
 // Global controller
 -	script	Controller	-1,{
+	OnPCLoginEvent:
+		// This sets up the job and sex for each character for the client.
+		opendressroom(1);
+		atcommand "@refresh";
+	end;
 	OnPCDieEvent:
 		//todo: process death function, set instance ID to 0, destroy instance, and more...
 		@isGhost = true;
