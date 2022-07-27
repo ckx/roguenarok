@@ -272,6 +272,7 @@ function	script	ClearSkillScrollChoices	{
 			break;
 		case 3:
 			deletearray scrollChoicesTier3$[0],getarraysize(scrollChoicesTier3$);
+			break;
 		default:
 			debugmes "Dunno what skill choice array you want me to clear.";
 			break;
@@ -281,7 +282,7 @@ function	script	ClearSkillScrollChoices	{
 
 function	script	SkillScrollBoxTier1	{
 	.@skillScrollBoxTier = 1;
-	.@skillScrollBoxItemId = 600001;
+	.@skillScrollBoxItemId = 100007;
 
 	if (getarraysize(scrollChoicesTier1$) == 0) {
 		GetScrollChoices(.@skillScrollBoxTier);
@@ -311,7 +312,7 @@ function	script	SkillScrollBoxTier1	{
 
 function	script	SkillScrollBoxTier2	{
 	.@skillScrollBoxTier = 2;
-	.@skillScrollBoxItemId = 600002;
+	.@skillScrollBoxItemId = 100008;
 
 	if (getarraysize(scrollChoicesTier2$) == 0) {
 		GetScrollChoices(.@skillScrollBoxTier);
@@ -341,7 +342,7 @@ function	script	SkillScrollBoxTier2	{
 
 function	script	SkillScrollBoxTier3	{
 	.@skillScrollBoxTier = 3;
-	.@skillScrollBoxItemId = 600003;
+	.@skillScrollBoxItemId = 100009;
 
 	if (getarraysize(scrollChoicesTier3$) == 0) {
 		GetScrollChoices(.@skillScrollBoxTier);

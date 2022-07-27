@@ -66,6 +66,7 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	OnBossDead:
 		specialeffect2 EF_MVP;
 		mapannounce strnpcinfo(4),"You beat the boss.",bc_map;
+		makeitem 100007,2,'map$,'x_boss,'y_boss; // Two T1 skill scroll boxes
 		donpcevent instance_npcname("#ins_tdun02_warps")+"::OnEnable";
 		end;
 	OnInit:  // hide the NPC on the normal map
