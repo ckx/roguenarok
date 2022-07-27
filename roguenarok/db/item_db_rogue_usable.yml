@@ -156,7 +156,7 @@ Body:
       Name: Skill Scroll Box 1
       Type: Usable
       Buy: 1
-      Weight: 100
+      Weight: 0
       Flags:
         NoConsume: true
       Script: |
@@ -166,7 +166,7 @@ Body:
       Name: Skill Scroll Box 2
       Type: Usable
       Buy: 1
-      Weight: 100
+      Weight: 0
       Flags:
         NoConsume: true
       Script: |
@@ -176,7 +176,7 @@ Body:
       Name: Skill Scroll Box 3
       Type: Usable
       Buy: 1
-      Weight: 100
+      Weight: 0
       Flags:
         NoConsume: true
       Script: |

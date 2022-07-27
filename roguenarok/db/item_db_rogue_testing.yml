@@ -101,12 +101,16 @@ Body:
       AegisName: testitem_2
       Name: Gib Tao Banana
       Type: Usable
+      Flags:
+        NoConsume: true
       Script: |
           callfunc "SkillScrollBoxTier2";
     - Id: 600003
       AegisName: testitem_3
       Name: PN's Test Item
       Type: Usable
+      Flags:
+        NoConsume: true
       Script: |
           callfunc "SkillScrollBoxTier3";
     - Id: 600004
