@@ -44,3 +44,12 @@ function	script	SelectMobAmount	{
 	}
 }
 
+function	script	GetDrops	{
+	.@dropTier = getarg(0);
+	switch (.@dropTier) {
+		case 1: 
+			debugmes "you get a tier " + .@dropTier + " drop";
+		return;
+	}
+	return;
+}

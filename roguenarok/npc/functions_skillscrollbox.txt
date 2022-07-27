@@ -1,0 +1,166 @@
+function	script	GetScrollChoices	{
+	.@scrollTier = getarg(0);
+	.@scrollsuffix$ = "_SC";
+	setarray .@firstTierSkills$[0],
+		"AL_HEAL",
+		"AL_BLESSING",
+		"SM_ENDURE",
+		"MG_FIREBOLT";
+
+	setarray .@secondTierSkills$[0],
+		"KN_PIERCE",
+		"PR_IMPOSITIO",
+		"WZ_METEOR",
+		"BS_HAMMERFALL";
+
+	setarray .@thirdTierskills$[0],
+		"HW_MAGICCRASHER",
+		"PA_PRESSURE",
+		"PF_SOULCHANGE",
+		"SN_WINDWALK";
+
+	switch (.@scrollTier) {
+		case 1:
+			.@numberOfOptions = 3;
+			copyarray .@workingArray$[0],.@firstTierSkills$[0],getarraysize(.@firstTierSkills$);
+			for (.@i = 0; .@i < .@numberOfOptions; .@i++) {
+				.@arrayLength = getarraysize(.@workingArray$);
+				.@option = rand(.@arrayLength);
+				setarray scrollChoicesTier1$[.@i],getitemname(.@workingArray$[.@option]+"_SC"); // get a scroll name
+				deletearray .@workingArray$[.@option],1;
+			}
+			break;
+		case 2:
+			.@numberOfOptions = 3;
+			copyarray .@workingArray$[0],.@secondTierSkills$[0],getarraysize(.@secondTierSkills$);
+			for (.@i = 0; .@i < .@numberOfOptions; .@i++) {
+				.@arrayLength = getarraysize(.@workingArray$);
+				.@option = rand(.@arrayLength);
+				setarray scrollChoicesTier2$[.@i],getitemname(.@workingArray$[.@option]+"_SC"); // get a scroll name
+				deletearray .@workingArray$[.@option],1;
+			}
+			break;
+		case 3:
+			.@numberOfOptions = 2;
+			copyarray .@workingArray$[0],.@thirdTierSkills$[0],getarraysize(.@thirdTierSkills$);
+			for (.@i = 0; .@i < .@numberOfOptions; .@i++) {
+				.@arrayLength = getarraysize(.@workingArray$);
+				.@option = rand(.@arrayLength);
+				setarray scrollChoicesTier3$[.@i],getitemname(.@workingArray$[.@option]+"_SC"); // get a scroll name
+				deletearray .@workingArray$[.@option],1;
+			}
+			break;
+		default:
+			debugmes "Something bad happened when getting skill scroll choices.";
+			break;
+	}
+	return;
+}
+
+function	script	ClearSkillScrollChoices	{
+	.@boxTier = getarg(0);
+	switch (.@boxTier) {
+		case 1:
+			deletearray scrollChoicesTier1$[0],getarraysize(scrollChoicesTier1$);
+			break;
+		case 2:
+			deletearray scrollChoicesTier2$[0],getarraysize(scrollChoicesTier2$);
+			break;
+		case 3:
+			deletearray scrollChoicesTier3$[0],getarraysize(scrollChoicesTier3$);
+		default:
+			debugmes "Dunno what skill choice array you want me to clear.";
+			break;
+	}
+	return;
+}
+
+function	script	SkillScrollBoxTier1	{
+	.@skillScrollBoxTier = 1;
+	.@skillScrollBoxItemId = 600001;
+
+	if (getarraysize(scrollChoicesTier1$) == 0) {
+		GetScrollChoices(.@skillScrollBoxTier);
+	}
+
+	switch(prompt(scrollChoicesTier1$[0],scrollChoicesTier1$[1],scrollChoicesTier1$[2])) {
+		case 1: 
+			getitem scrollChoicesTier1$[0],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 2:
+			getitem scrollChoicesTier1$[1],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 3:
+			getitem scrollChoicesTier1$[2],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 255:
+			dispbottom "Scroll not used, choices maintained.";
+			end;
+	}
+}
+
+function	script	SkillScrollBoxTier2	{
+	.@skillScrollBoxTier = 2;
+	.@skillScrollBoxItemId = 600002;
+
+	if (getarraysize(scrollChoicesTier2$) == 0) {
+		GetScrollChoices(.@skillScrollBoxTier);
+	}
+
+	switch(prompt(scrollChoicesTier2$[0],scrollChoicesTier2$[1],scrollChoicesTier2$[2])) {
+		case 1: 
+			getitem scrollChoicesTier2$[0],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 2:
+			getitem scrollChoicesTier1$[1],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 3:
+			getitem scrollChoicesTier1$[2],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 255:
+			dispbottom "Scroll not used, choices maintained.";
+			end;
+	}
+}
+
+function	script	SkillScrollBoxTier3	{
+	.@skillScrollBoxTier = 3;
+	.@skillScrollBoxItemId = 600003;
+
+	if (getarraysize(scrollChoicesTier3$) == 0) {
+		GetScrollChoices(.@skillScrollBoxTier);
+	}
+
+	switch(prompt(scrollChoicesTier3$[0],scrollChoicesTier3$[1])) {
+		case 1: 
+			getitem scrollChoicesTier3$[0],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 2:
+			getitem scrollChoicesTier3$[1],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 3:
+			getitem scrollChoicesTier3$[2],1;
+			delitem .@skillScrollBoxItemId,1;
+			ClearSkillScrollChoices(.@skillScrollBoxTier);
+			end;
+		case 255:
+			dispbottom "Scroll not used, choices maintained.";
+			end;
+	}
+}

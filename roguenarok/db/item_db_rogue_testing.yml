@@ -93,20 +93,22 @@ Body:
       AegisName: testitem_1
       Name: Tao Pls Strawberry
       Type: Usable
+      Flags:
+        NoConsume: true
       Script: |
-          callfunc "Neuralyzer";
+          callfunc "SkillScrollBoxTier1";
     - Id: 600002
       AegisName: testitem_2
       Name: Gib Tao Banana
       Type: Usable
       Script: |
-          callfunc "SecondJobSelect",Job_Knight,Job_Crusader;
+          callfunc "SkillScrollBoxTier2";
     - Id: 600003
       AegisName: testitem_3
       Name: PN's Test Item
       Type: Usable
       Script: |
-          getrandgroupitem(IG_skillscrollbox,1);
+          callfunc "SkillScrollBoxTier3";
     - Id: 600004
       AegisName: test_clotharmor
       Name: Cloth Armor
@@ -205,7 +207,7 @@ Body:
       Buy: 50
       Weight: 400
       Attack: 17
-      Range: 1
+      Range: 10
       Slots: 3
       Locations:
           Right_Hand: true

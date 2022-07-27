@@ -10,6 +10,11 @@ hugel,96,140,0	script	hugel420	45,1,1,{
 			dispbottom "You must job change before you can enter the Labyrinth. Talk to Rendul.";
 			end;
 		}
+
+		if (SkillPoint > 0) {
+			dispbottom "You must use all your skill points before you can enter the Labyrinth.";
+			end;
+		}
 		// If an instance already exists, re-enter it
 		if(instance_id(IM_CHAR) != 0) {
 			instance_enter(@instname$,-1,-1,getcharid(0),instance_id(IM_CHAR));

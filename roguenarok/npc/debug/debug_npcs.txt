@@ -1,4 +1,9 @@
 hugel,99,152,4	script	Stacey's Mom	10377,{
+	SkillPoint = 0;
+	getitem 2199,1;
+	getitem 1599,1;
+	equip 2199;
+	equip 1599;
 	end;
 }
 	

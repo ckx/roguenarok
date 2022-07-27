@@ -4,6 +4,9 @@ function	script	ClothArmorMastery	{
 	.@spRecovBonus = 20;
 	.@castSpdBonus = 15;
 
+	.@secondJobMultiplier = 2;
+	.@transcMultiplier = 3;
+
 	switch (Class) {
 		case Job_Mage:
 		case Job_Acolyte:
@@ -12,6 +15,15 @@ function	script	ClothArmorMastery	{
 			bonus bSPrecovRate,.@spRecovBonus;
 			bonus bCastrate,-.@castSpdBonus;
 			break;
+		case Job_Wizard:
+		case Job_Sage:
+		case Job_Priest:
+		case Job_Monk:
+			bonus bMaxHP,.@maxHpBonus * .@secondJobMultiplier;
+			bonus bMaxSP,.@maxSpBonus * .@secondJobMultiplier;
+			bonus bSPrecovRate,.@spRecovBonus * .@secondJobMultiplier;
+			bonus bCastrate,-.@castSpdBonus * .@secondJobMultiplier;
+			break;
 		default:
 			return;
 	}
@@ -19,11 +31,30 @@ function	script	ClothArmorMastery	{
 
 function	script	LightArmorMastery	{
 	.@maxHpBonus = 100;
+	.@fleeBonus = 10;
+	.@aspdBonus = 2;
+	.@critBonus = 3;
+
+	.@secondJobMultiplier = 2;
+	.@transcMultiplier = 3;
 
 	switch (Class) {
 		case Job_Thief:
 		case Job_Archer:
 			bonus bMaxHP,.@maxHpBonus;
+			bonus bFlee,.@fleeBonus;
+			bonus bAspd,.@aspdBonus;
+			bonus bCritical,.@critBonus;
+			break;
+		case Job_Assassin:
+		case Job_Rogue:
+		case Job_Hunter:
+		case Job_Bard:
+		case Job_Dancer:
+			bonus bMaxHP,.@maxHpBonus * .@secondJobMultiplier;
+			bonus bFlee,.@fleeBonus * .@secondJobMultiplier;
+			bonus bAspd,.@aspdBonus * .@secondJobMultiplier;
+			bonus bCritical,.@critBonus * .@secondJobMultiplier;
 			break;
 		default:
 			return;
@@ -33,22 +64,28 @@ function	script	LightArmorMastery	{
 function	script	HeavyArmorMastery	{
 	.@maxHpBonus = 120;
 	.@hpRecovBonus = 20;
-	.@bonusDef = 15;
+	.@defRateBonus = 10;
+	.@defBonus = 10; // doesnt get multiplied
+
+	.@secondJobMultiplier = 2;
+	.@transcMultiplier = 3;
 
 	switch (Class) {
 		case Job_Swordman:
 		case Job_Merchant:
 			bonus bMaxHP,.@maxHpBonus;
 			bonus bHPrecovRate,.@hpRecovBonus;
-			bonus bDef,.@bonusDef;
+			bonus bDefRate,.@defRateBonus;
+			bonus bDef,.@defBonus;
 			break;
 		case Job_Knight:
 		case Job_Crusader:
 		case Job_Blacksmith:
 		case Job_Alchemist:
-			bonus bMaxHP,.@maxHpBonus * 2;
-			bonus bHPrecovRate,.@hpRecovBonus * 2;
-			bonus bDef,.@bonusDef * 2;
+			bonus bMaxHP,.@maxHpBonus * .@secondJobMultiplier;
+			bonus bHPrecovRate,.@hpRecovBonus * .@secondJobMultiplier;
+			bonus bDefRate,.@defRateBonus * .@secondJobMultiplier;
+			bonus bDef,.@defBonus;
 			break;
 		default: 
 			return;
