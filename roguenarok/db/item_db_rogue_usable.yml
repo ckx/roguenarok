@@ -151,6 +151,36 @@ Body:
           NoConsume: true
       Script: |
           callfunc "SecondJobSelect",Job_Assassin,Job_Rogue;
+    - Id: 100007
+      AegisName: RGX_SKILLSCBOX1
+      Name: Skill Scroll Box 1
+      Type: Usable
+      Buy: 1
+      Weight: 100
+      Flags:
+        NoConsume: true
+      Script: |
+          callfunc "SkillScrollBoxTier1";
+    - Id: 100008
+      AegisName: RGX_SKILLSCBOX2
+      Name: Skill Scroll Box 2
+      Type: Usable
+      Buy: 1
+      Weight: 100
+      Flags:
+        NoConsume: true
+      Script: |
+          callfunc "SkillScrollBoxTier2";
+    - Id: 100009
+      AegisName: RGX_SKILLSCBOX3
+      Name: Skill Scroll Box 3
+      Type: Usable
+      Buy: 1
+      Weight: 100
+      Flags:
+        NoConsume: true
+      Script: |
+          callfunc "SkillScrollBoxTier3";
     - Id: 200001
       AegisName: NV_BASIC_SC
       Name: Basic Skill Scroll
