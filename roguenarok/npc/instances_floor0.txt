@@ -46,6 +46,7 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 		end;
 	OnMobDead:
 		GetDrops('instanceTier);
+		DropZeny('instanceTier);
 		'mobKills += 1;
 		dispbottom "Mob kills: " + 'mobKills + "/" + 'mobsNeeded;
 		if ('mobKills >= 'mobsNeeded) { 

@@ -1,0 +1,21 @@
+function	script	DropZeny	{
+	.@tier = getarg(0);
+
+	switch (.@tier) {
+		case 1:
+			.@zeny = rand(10,30);
+			break;
+		case 2:
+			.@zeny = rand(100,300);
+			break;
+		case 3:
+			.@zeny = rand(1000,3000);
+			break;
+		default: // We default to giving the player the passed argument
+			.@zeny = getarg(0);
+			break;
+	}
+	Zeny += .@zeny;
+	dispbottom "Gained " + .@zeny + " zeny.";
+	return;
+}
