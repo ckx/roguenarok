@@ -53,3 +53,23 @@ function	script	GetDrops	{
 	}
 	return;
 }
+
+// npc_name, y pos
+function	script	SetWarpPoint	{
+	.@npcName$ = getarg(0);
+	.@xPos = getarg(1);
+	.@yPos = getarg(2);
+
+	for ( .@i = -4; .@i <= 4; .@i++ ) { // x
+		for ( .@j = -4; .@j <= 4; .@j++ ) { // y
+			if ( checkcell( 'map$, (.@xPos+.@i), (.@yPos+.@j), cell_chkreach ) ) {// can pass
+				.@cell_x[.@size] = .@xPos+.@i;
+				.@cell_y[.@size] = .@yPos+.@j;
+				.@size++;
+			}
+		}
+	}
+	.@r = rand( .@size );// random index
+	movenpc .@npcName$,.@cell_x[.@r],.@cell_y[.@r];
+	return;
+}

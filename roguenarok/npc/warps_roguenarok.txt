@@ -1,5 +1,5 @@
 hugel,96,140,0	script	hugel420	45,1,1,{
-	OnTouch_:
+	OnTouch:
 		//if char is dead, they cant play.
 		if (@isGhost) {
 			dispbottom "Sorry, no ghosts allowed in the Labyrinth.";

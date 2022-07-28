@@ -66,7 +66,10 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 	OnBossDead:
 		specialeffect2 EF_MVP;
 		mapannounce strnpcinfo(4),"You beat the boss.",bc_map;
-		makeitem 100007,2,'map$,'x_boss,'y_boss; // Two T1 skill scroll boxes
+		getmapxy(.@map$,.@x,.@y,BL_PC);
+		makeitem 100007,2,.@map$,.@x,.@y; // Two T1 skill scroll boxes
+		'warpX = .@x;
+		'warpY = .@y - 5;
 		donpcevent instance_npcname("#ins_tdun02_warps")+"::OnEnable";
 		end;
 	OnInit:  // hide the NPC on the normal map
@@ -79,7 +82,11 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_mobs	-1,{
 ecl_tdun02,0,0,0	script	#ins_tdun02_warps	-1,{
 	end;
 	OnEnable:
-		movenpc instance_npcname("#ins_tdun02_warp01"),60,60;
+		SetWarpPoint(instance_npcname("#ins_tdun02_warp01"), 'warpX, 'warpY);
+		donpcevent instance_npcname("#ins_tdun02_warp01_sprite")+"::OnEnable";
+		getmapxy(.@map$,.@x,.@y,BL_NPC,instance_npcname("#ins_tdun02_warp01"));
+		SetWarpPoint(instance_npcname("#ins_tdun02_warp02"), .@x+3, 'warpY);
+		donpcevent instance_npcname("#ins_tdun02_warp02_sprite")+"::OnEnable";
 		end;
 }
 
@@ -100,4 +107,47 @@ ecl_tdun02,0,0,0	script	#ins_tdun02_warp01	45,1,1,{
 				dispbottom "OK, entering instance " + .@newInstname$ + " (ID: " + .@newInstID + ")";
 		}
 		instance_enter(.@newInstname$,-1,-1,.@characId,.@newInstID);
+		end;
+}
+
+ecl_tdun02,0,0,5	script	#ins_tdun02_warp01_sprite	-1,{
+	end;
+	OnEnable:
+		.@warpNpcName$ = instance_npcname("#ins_tdun02_warp01");
+		.@thisNpcName$ = instance_npcname("#ins_tdun02_warp01_sprite");
+		getmapxy(.@map$,.@x,.@y,BL_NPC,.@warpNpcName$);
+		setnpcdisplay .@thisNpcName$,"#Ifrit",1832;
+		movenpc .@thisNpcName$,.@x-1,.@y+1;
+	end;
+}
+
+ecl_tdun02,0,0,0	script	#ins_tdun02_warp02	45,1,1,{
+	end;
+	OnTouch:
+		.@characId = getcharid(0);
+		.@newInstname$ = "iz_dun00";
+		switch(.@newInstID = instance_create(.@newInstname$,IM_NONE,.@characId)) {
+			dispbottom "" + .@newInstID;
+			case IE_OTHER:
+				mes "An unknown error has occurred.";
+				close;
+			case IE_NOINSTANCE:
+				mes "Instance does not exist.";
+				close;
+			case IE_OK:
+				dispbottom "OK, entering instance " + .@newInstname$ + " (ID: " + .@newInstID + ")";
+		}
+		instance_enter(.@newInstname$,-1,-1,.@characId,.@newInstID);
+		end;
+}
+
+ecl_tdun02,0,0,5	script	#ins_tdun02_warp02_sprite	-1,{
+	end;
+	OnEnable:
+		.@warpNpcName$ = instance_npcname("#ins_tdun02_warp02");
+		.@thisNpcName$ = instance_npcname("#ins_tdun02_warp02_sprite");
+		getmapxy(.@map$,.@x,.@y,BL_NPC,.@warpNpcName$);
+		setnpcdisplay .@thisNpcName$,"#Talkin' 'Bout Drake",969;
+		movenpc .@thisNpcName$,.@x-1,.@y+1;
+	end;
 }
