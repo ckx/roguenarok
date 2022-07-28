@@ -16,8 +16,9 @@ hugel,96,140,0	script	hugel420	45,1,1,{
 			end;
 		}
 		// If an instance already exists, re-enter it
-		if(instance_id(IM_CHAR) != 0) {
-			instance_enter(@instname$,-1,-1,getcharid(0),instance_id(IM_CHAR));
+		// TODO: remove this...?
+		if(instId != 0 && instName$ != "") {
+			instance_enter(instName$,-1,-1,getcharid(0),instId);
 			end;
 		} 
 		CreateFloor0;

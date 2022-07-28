@@ -9,10 +9,11 @@ hugel,99,152,4	script	Stacey's Mom	10377,{
 	
 
 hugel,101,140,4	script	Toad, World Destroyer	614,{
-	if(@instID != 0) {
-		instance_destroy(@instID);
-		dispbottom "Instance ID " + @instID + " destroyed.";
-		@instID = 0;
+	if(instId != 0 && instName$ != "") {
+		instance_destroy(instId);
+		dispbottom "Instance ID " + instId + " destroyed.";
+		instId = 0;
+		instName$ = "";
 		end;
 	} else {
 		dispbottom "No instance to destroy.";

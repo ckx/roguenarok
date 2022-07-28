@@ -1,9 +1,9 @@
 function	script	CreateFloor0	{
-	@instname$ = "ecl_tdun02";
-	@instID = instance_create(@instname$,IM_NONE,getcharid(0));
-	dispbottom "" + @instID;
+	instName$ = "ecl_tdun02";
+	instId = instance_create(instName$,IM_NONE,getcharid(0));
+	dispbottom "" + instId;
 
-	switch(instance_enter(@instname$,60,90,getcharid(0),@instID)) {
+	switch(instance_enter(instName$,60,90,getcharid(0),instId)) {
 		case IE_OTHER:
 			mes "An unknown error has occurred.";
 			close;
@@ -11,11 +11,10 @@ function	script	CreateFloor0	{
 			mes "Instance does not exist.";
 			close;
 		case IE_OK:
-			dispbottom "OK, entering instance " + @inst_name$ + " (ID: " + @instID + ")";
+			dispbottom "OK, entering instance " + @inst_name$ + " (ID: " + instId + ")";
 	}
 
-	dispbottom "instname: " + @instname$ + "ID: " + @instID;
-	@mapname$ = instance_mapname(@instname$,@instID);
+	dispbottom "instname: " + instName$ + "ID: " + instId;
 }
 
 ecl_tdun02,64,91,4	script	Flower#start	978,{
