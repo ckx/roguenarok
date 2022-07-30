@@ -1,0 +1,51 @@
+// Increases mobs on a floor by parameters
+function	script	DetermineMobSpawnCount	{
+	// Arguments
+	.@currentMin = getarg(0);
+	.@currentMax = getarg(1);
+	.@increaseBy = getarg(2);
+
+	// set the actual mobSpawnCount
+	.@retMobs = rand(.@currentMin+.@increaseBy, .@currentMax+.@increaseBy);
+	return .@retMobs;
+}
+
+function	script	NewMobArena	{
+	'CurrentFloor = getarg(0);
+	'FloorTier = 'CurrentFloor / 2;
+
+	// Determine number of mobs to spawn this floor
+	setarray .@mobSpawnMinMaxBase[0],150,200;
+	.@mobsToAddPerTier = 50;
+	.@mobsToAddThisTier = .@mobsToAddPerTier * 'FloorTier;
+
+	'MobSpawnCount = DetermineMobSpawnCount(.@mobSpawnMinMaxBase[0], .@mobSpawnMinMaxBase[1], .@mobsToAddThisTier);
+
+	debugmes "Mobs to spawn this tier: " + 'MobSpawnCount;
+}
+
+
+// function	script	CreateMobArenaInstance	{
+// 	set @instname$,SelectInstance;
+// 	set .@instID,instance_create(@instname$,IM_CHAR,getcharid(0));
+// 	dispbottom "" + .@instID;
+
+// 	switch(instance_enter(@instname$,-1,-1,getcharid(0),.@instID)) {
+// 		case IE_OTHER:
+// 			mes "An unknown error has occurred.";
+// 			close;
+// 		case IE_NOINSTANCE:
+// 			mes "Instance does not exist.";
+// 			close;
+// 		case IE_OK:
+// 			dispbottom "OK, entering instance " + .@inst_name$ + " (ID: " + .@instID + ")";
+// 	}
+
+// 	dispbottom "instname: " + @instname$ + "ID: " + .@instID;
+// 	set .@mapname$,instance_mapname(@instname$,.@instID);
+// 	dispbottom "mapname: " + .@mapname$;
+
+// 	OnInstanceInit: 
+// 		monster .@mapname$,0,0,"",SelectMob("easy"),SelectMobAmount("many");
+// 		monster .@mapname$,0,0,"",SelectMob("hard"),SelectMobAmount("some");
+// }

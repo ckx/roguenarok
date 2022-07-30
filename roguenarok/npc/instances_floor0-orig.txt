@@ -17,34 +17,7 @@ function	script	CreateFloor0	{
 	dispbottom "instname: " + instName$ + "ID: " + instId;
 }
 
-// Increases mobs on a floor by parameters
-function	script	DetermineMobSpawnCount	{
-	// Arguments
-	.@currentMin = getarg(0);
-	.@currentMax = getarg(1);
-	.@increaseBy = getarg(2);
-
-	// set the actual mobSpawnCount
-	.@retMobs = rand(.@currentMin+.@increaseBy, .@currentMax+.@increaseBy);
-	return .@retMobs;
-}
-
-function	script	NewMobArena	{
-	'CurrentFloor = getarg(0);
-	'FloorTier = 'CurrentFloor / 2;
-
-	// Determine number of mobs to spawn this floor
-	setarray .@mobSpawnMinMaxBase[0],150,200;
-	.@mobsToAddPerTier = 50;
-	.@mobsToAddThisTier = .@mobsToAddPerTier * 'FloorTier;
-
-	'MobSpawnCount = DetermineMobSpawnCount(.@mobSpawnMinMaxBase[0], .@mobSpawnMinMaxBase[1], .@mobsToAddThisTier);
-
-	debugmes "Mobs to spawn this tier: " + 'MobSpawnCount;
-}
-
 ecl_tdun02,64,91,4	script	Flower#start	978,{
-	NewMobArena(5);
 	mapannounce strnpcinfo(4),"You picked the flower.",bc_map;
 	percentheal 100,100;
 	donpcevent instance_npcname("#ins_tdun02_mobs")+"::OnEnable";

@@ -19,3 +19,14 @@ function	script	DropZeny	{
 	dispbottom "Gained " + .@zeny + " zeny.";
 	return;
 }
+
+function	script	SetupWeaponRarityArrays	{
+	setarray $commonWeapons[0],
+		1102; // Sword [4]
+}
+
+function	script	SetupWeaponTierArrays	{
+	// setarray $weaponsTierAny[0],
+
+	// setarray $weaponsTier1[0],
+}

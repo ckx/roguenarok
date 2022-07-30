@@ -6,6 +6,20 @@ hugel,99,152,4	script	Stacey's Mom	10377,{
 	equip 1599;
 	end;
 }
+
+hugel,92,154,4	script	Ordenador	889,{
+	// setarray .@tier,1,2;
+	// setarray .@tier1,10,20,30,40,50;
+	// setarray .@tier2,100,200,300,400,500;
+
+	// for(.@i=0;.@i<getarraysize(.@tier);.@i++){
+	// 	for(.@m=0;.@m<getarraysize(getd(".@tier" + .@tier[.@i]));.@m++){
+	// 		debugmes "" + getd(".@tier" + .@tier[.@i] + "[" + .@m + "]");
+	// 	}
+	// }
+	// end;
+	NewMobArena(1);
+}
 	
 
 hugel,101,140,4	script	Toad, World Destroyer	614,{

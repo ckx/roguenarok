@@ -1,0 +1,112 @@
+function	script	SetupMobCrValues	{
+	setarray $mobCr[0],1,2,3,4,5,6,7,8,9,10;
+	setarray $mobCr1[0],
+		1002, //Poring
+		1063, //Lunatic
+		1113, // Drops
+		1049, // Picky
+		1007, // Fabre
+		1011; // Chonchon
+	
+	setarray $mobCr2[0],
+		1242, // Marin
+		1095, // Andre
+		1018, // Creamy
+		1105, // Deniro
+		1175, // Tarou
+		1053, // F thief bug
+		1054, // M thief bug
+		1015; // Zombie
+
+	setarray $mobCr3[0],
+		1030, // Anacondaq
+		1016, // Archer Skele
+		1060, // Bigfoot
+		1141, // Marina
+		1142, // Marine Sphere
+		1026, // Munak
+		1188, // Bongun
+		1166, // Savage
+		1028; // Soldier Skele
+
+	setarray $mobCr4[0],
+		1099, // Agriope
+		1110, // Dokebi
+		1509, // Lude
+		1836, // Magmaring
+		1144, // Marse
+		1146, // Matyr
+		1404, // Miyabi ningyo
+		1170, // Sohee
+		1280; // Steam gob
+
+	setarray $mobCr5[0],
+		1403, // Firelock
+		1102, // Bathory
+		1143, // Marionette
+		1061, // Nightmare
+		1500, // Parasite
+		1281, // Sage worm
+		1495, // Stone Shooter
+		1880; // Wood gob
+
+	setarray $mobCr6[0],
+		1364, // Assaulter
+		1633, // Beholder
+		1408, // Bloody Butterfly
+		1267, // Carat
+		1631, // Chung-E
+		1369, // Grand peco
+		1632, // Gremlin
+		1682, // Remover
+		1410; // Peach tree
+
+	setarray $mobCr7[0],
+		1275, // Alice
+		1301, // Am mut
+		1267, // Ancient mummy
+		1206, // Anolian
+		1377, // Elder
+		1371, // Fake angel
+		1884, // Mavka
+		1154, // Pasana
+		1774; // Seeker
+	
+	setarray $mobCr8[0],
+		1713, // Gold Acidus
+		1769, // Agav
+		1735, // Alicel
+		2069, // Iara
+		1837, // Fire imp
+		1295, // Owl baron
+		1320, // Owl duke
+		1995, // Pingucicula
+		1703, // Solace
+		1864; // Zombie slaughter
+	
+	setarray $mobcr9[0],
+		2016, // Aqua elemental
+		1974, // Banshee master
+		1268, // Bloody knight
+		1833, // Kasa
+		1754, // Brown skegg
+		1755, // Blue skegg
+		1701, // Mistress of shelter
+		1672, // Dimik
+		1831, // Salamander
+		1979; // Zakudam
+
+	setarray $mobCr10[0],
+		1720, // Hydro
+		1921, // Incant of Morroc (ghost)
+		1919, // Incant of morroc (mud)
+		1634, // Seyren
+		1636, // Howard
+		1637, // Margaretha
+		1638, // Cecil
+		1635, // Eremes
+		1639, // Katrinn
+		1704, // Thana odium
+		1765, // Mini valk
+		1839; // Byorgue
+}
